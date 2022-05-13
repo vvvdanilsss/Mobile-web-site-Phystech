@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styleOld.css">
 	<title>NewPhystech</title>
 
 </head>
@@ -15,7 +15,7 @@
 
 	<header class="header">
 		<a href="#" class="logo">
-			<h2>Новый</h2>
+			<h2>Новый</h2> 
 			<h1>Физтех</h1>
 		</a>
 		<input class="side-menu" type="checkbox" id="side-menu"/>
@@ -35,33 +35,58 @@
 
 	<div class="d2">
 		<h1>Новости</h1>
-		<ul class="gallery">
-			<li style="background: #000000;">
-				<nppcc href=""></nppcc></li>
-			<li style="background: #000000;">
-				<nppcc href=""></nppcc></li>
-			<li style="background: #000000;">
-				<nppcc href=""></nppcc></li>
-			<li style="background: #000000;">
-				<nppcc href=""></nppcc></li>
-			<li style="background: #000000;">
-				<nppcc href=""></nppcc></li>
-		</ul>
-		<p>
-			<a href="news" title="News">См. Больше</a>
-		</p>
 	</div>
+	<ul class="gallery">
+		<li>
+			<img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/%D0%90%D0%BD%D1%82%D0%B5%D0%BD%D0%BD%D1%8B%202022-05.jpg?itok=IaVtw">
+			<div class="text-k-photo">
+				<h1>Внимание текст
+					Внимание текст
+					Внимание текст
+					Внимание текст
+					Внимание текст </h1>
+			</div>
+		</li>	
+		<li>
+			<img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%20%D0%BC%D0%B5%D0%B3%D0%B0%20%D1%81.PNG?itok=PVSj8">
+			<div class="text-k-photo">
+				<h1>Внимание текст
+					Внимание текст
+					Внимание текст
+					Внимание текст
+					Внимание текст </h1>
+			</div>
+		</li>
+		<li>
+			<img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/DSCF8434.jpg?itok=gVVvh">
+			<div class="text-k-photo">
+				<h1>Внимание текст
+					Внимание текст
+					Внимание текст
+					Внимание текст
+					Внимание текст </h1>
+			</div>
+		</li>
+	</ul>
+
 	<div class="d3">
 		<h1>Семинары</h1>
 		<ul class="gallery">
-			<li1 style="background: #000000;">
+			<li>
 				<img src="https://physics.itmo.ru/sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/7953.jpg?itok=ist5H5yM" height="300">
-			</li1>
+			</li>
+			<li>
+				<div class="text-k-photo" style="width: 300px;">
+				<h1>Внимание текст
+					Внимание текст
+					Внимание текст
+					Внимание текст
+					Внимание текст </h1>
+			</div>
+			</li>
 		</ul>
-		<div class="razmer">
-			<a href="seminars" title="Seminars" >См. Больше</a>
-		</div>
 	</div>
+
 	<div class="d3">
 		<h1>Публикации</h1>
 		<h2 style="margin-right: auto; margin-top: 3px;">Последние десять публикаций с импакт-фактором >3 за последние несколько месяцев</h2>
@@ -124,8 +149,6 @@
 		</div>
 	</div>
 
-
-
 	<div class="d4">
 		<div class="d4">
 				<a href="https://physics.itmo.ru/ru/physics-in-itmo" title="About us">О...нас</a>
@@ -140,4 +163,5 @@
 	</div>
 
 </body>
+
 </html>
