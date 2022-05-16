@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>	
+
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-	<script src="newphys.js"></script>
-	<title>NewPhystechYouTube</title>
-	<div class="d1">
-		<h2>&nbsp</h2>
-		<div class="d0">
-			<h2>Новый</h2>
-			<h1>Физтех</h1>
-		</div>
-	</div>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styleOld.css">
+	<title>Video</title>
+
 </head>
 <body>
-	<div class="d2" style="margin-left: 4%;">
+
+	<header class="header">
+		<a href="#" class="logo">
+			<h2>Новый</h2> 
+			<h1>Физтех</h1>
+		</a>
+		<input class="side-menu" type="checkbox" id="side-menu"/>
+		<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+		<nav class="nav">
+				<ul class="menu">
+						<li><a href="#">Расписание</a></li>
+						<li><a href="#">Абитуриентам</a> </li>
+						<li><a href="#">Сотрудники</a></li>
+						<li><a href="#">Quicklinks</a></li>
+						<li><a href="#">Исследования</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">О New Phystech</a></li>
+				</ul>
+		</nav>
+	</header>
+	<div class="sotrudniki-begin" style="margin-left: 4%; margin-top: 2%;">
 		<h1>Видео</h1>
 	</div>
-	<div class="line"></div>
-	<div class="container">
-		<ul>
-			<li class="ikonka">
-			<a href="https://www.youtube.com/embed/FbzsPHJskcg?autoplay=0&start=0&rel=0" style="text-decoration: none; color:white; font-size: 50px;" class="video">
-                <img src="https://www.youtube.com/embed/FbzsPHJskcg?autoplay=0&start=0&rel=0" height="3500">Переход от электроники к оптике</a></li>
-			<li class="ikonka">
-			<a href="https://www.youtube.com/embed/fC52QN6sbA8?autoplay=0&start=0&rel=0" style="text-decoration: none; color:white; font-size: 50px;" class="video">
-                <img src="https://www.youtube.com/embed/fC52QN6sbA8?autoplay=0&start=0&rel=0" height="3500">Лазеры, нанофотоника и управление светом</a></li>
-			<li class="ikonka">
-			<a href="https://www.youtube.com/embed/KwP3tRTY74k?autoplay=0&start=0&rel=0" style="text-decoration: none; color:white; font-size: 50px;" class="video">
-                <img src="https://www.youtube.com/embed/KwP3tRTY74k?autoplay=0&start=0&rel=0" height="3500">Лекция «Беспроводная передача энергии» Полина Капитанова</a></li>
-		</ul>
+	<div class="line" style="margin-top: 2%;"></div>
 
-		<ul>
-			<li class="ikonka">
-			<a href="https://www.youtube.com/embed/knW6pDLBlj4?autoplay=0&start=0&rel=0" style="text-decoration: none; color:white; font-size: 50px;" class="video">
-                <img src="https://www.youtube.com/embed/knW6pDLBlj4?autoplay=0&start=0&rel=0" height="3500">Лекция «Сильное взаимодействие свет- материя в мезоскопических системах» Иван Шелых</a></li>
-			<li class="ikonka">
-			<a href="https://www.youtube.com/embed/dsjQV69jskA?autoplay=0&start=0&rel=0" style="text-decoration: none; color:white; font-size: 50px;" class="video">
-                <img src="https://www.youtube.com/embed/dsjQV69jskA?autoplay=0&start=0&rel=0" height="3500">Лекция «Перовскитная революция» Сергей Макаров</a></li>
-			<li class="ikonka">
-			<a href="https://www.youtube.com/embed/zPeCYUHRZ8Y?autoplay=0&start=0&rel=0" style="text-decoration: none; color:white; font-size: 50px;" class="video">
-                <img src="https://www.youtube.com/embed/zPeCYUHRZ8Y?autoplay=0&start=0&rel=0" height="3500">Лекция «Метаповерхности в радиодиапазоне и их применения» Станислав Глыбовский</a></li>
-		</ul>
-	</div>
+	<ul>
+		<li style="display: inline-block; margin-left: 2%;">
+			<div class="ikonki-vidosikov">
+				<a href="https://www.youtube.com/embed/FbzsPHJskcg?autoplay=0&start=0&rel=0" >
+					<img src="https://i.ytimg.com/vi_webp/FbzsPHJskcg/sddefault.webp">
+				</a>
+			</div>
+			<div class="vidosiki-opisanie" style="text-align: center;">
+				<h3>Переход от электроники к оптике', 'Лазеры, нанофотоника и управление светом</h3>
+			</div>
+		</li>
 
+		<li style="display: inline-block; margin-left: 2%;">
+			<div class="ikonki-vidosikov">
+				<a href="https://www.youtube.com/embed/fC52QN6sbA8?autoplay=0&start=0&rel=0" >
+					<img src="https://i.ytimg.com/vi_webp/fC52QN6sbA8/sddefault.webp">
+				</a>
+			</div>
+			<div class="vidosiki-opisanie" style="text-align: center;">
+				<h3>Лекция «Беспроводная передача энергии» Полина Капитанова</h3>
+			</div>
+		</li>
 
+		<li style="display: inline-block; margin-left: 2%;">
+			<div class="ikonki-vidosikov">
+				<a href="https://www.youtube.com/embed/FbzsPHJskcg?autoplay=0&start=0&rel=0" >
+					<img src="https://i.ytimg.com/vi_webp/fC52QN6sbA8/sddefault.webp">
+				</a>
+			</div>
+			<div class="vidosiki-opisanie" style="text-align: center;">
+				<h3>Лекция «Беспроводная передача энергии» Полина Капитанова</h3>
+			</div>
+		</li>
 
-	<div class="d4">
-		<div class="d4">
-				<a href="https://physics.itmo.ru/ru/physics-in-itmo" title="About us">О...нас</a>
-		</div>
-
-		<div class="d4">
-			<a href="https://physics.itmo.ru/ru/contacts" title="Contact">Контакты</a>
-		</div>
-		<div class="d4">
-			<a href="https://vk.com/physics.itmo" title="VK">VK</a>
-		</div>
-	</div>
-
+	</ul>
 </body>
 </html>
