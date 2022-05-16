@@ -15,7 +15,19 @@
 }
 
 
+
 .ikonki-sotrudnikov{
+	margin-top: 2%;
+	margin-left: 8%;
+}
+
+.ikonki-vidosikov{
+	margin-top: 2%;
+	margin-left: 8%;
+}
+
+
+.vidosiki{
 	margin-top: 2%;
 	margin-left: 8%;
 }
@@ -23,6 +35,13 @@
 
 
 .sotrudniki-opisanie{
+	margin-top: 2%;
+	font-family: 'Helvetica';
+	display: inline-block;
+	text-align: center;
+}
+
+.vidosiki-opisanie{
 	margin-top: 2%;
 	font-family: 'Helvetica';
 	display: inline-block;
@@ -192,7 +211,7 @@ padding: 0.5%;
 .line {
 	margin-left: auto;
 	margin-right: auto;
-	background: black;
+	background: #FFD700;
 	width: 1500px;
 	height: 2px;
 }
@@ -208,4 +227,13 @@ margin-left: 4%;
 width: 100%;
 height: 100%;
 
+
 }
+
+
+.vremya{
+	font-family: 'Helvetica';
+	padding: 2%;
+}
+
+
