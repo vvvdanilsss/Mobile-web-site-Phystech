@@ -23,13 +23,14 @@ header {
     font-size: 24px;
     cursor: pointer;
     margin-top: 24px;
-    margin-left: 6.5%;
     margin-bottom: 24px;
+    margin-left: 6.5%;
 }
 
 nav {
     margin-left: 24%;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .topnav a {
@@ -88,7 +89,6 @@ nav {
         color: #fff;
         font-size: 24px;
         display: block;
-        margin-top: -6px;
         margin-right: 6.5%;
     }
 
@@ -96,17 +96,20 @@ nav {
         width: 100%;
     }
 
-    .topnav.responsive {
-        position: relative;
-        top: 20%;
+    .topnav.responsive a:hover {
+        width: 100px;
     }
 
-    .topnav.responsive a.icon{
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
         display: none;
     }
 
     header .topnav.responsive {
-        height: 400px;
+        height: 100%;
     }
 
     .topnav.responsive a {
