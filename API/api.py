@@ -84,7 +84,7 @@ videos_picture = []
 
 
 a = "https://i.ytimg.com/vi_webp/"
-c = "/default.webp"
+c = "/sddefault.webp"
 
 for i in range(len(videos_video)):
   videos_video[i] = str(videos_video[i])
