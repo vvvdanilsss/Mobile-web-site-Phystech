@@ -116,11 +116,92 @@ soft_links = tree.xpath('//div[@class="field-content"]/@src') #не работа
 ####### сми ########
 
 
-tree = kod("https://physics.itmo.ru/ru/media/press")
-smi_name = tree.xpath('//div[@class="field field--name-type field--type-list-integer field--label-hidden field--item"]/text()')
-smi_who = tree.xpath('//div[@class="field field--name-source field--type-entity-reference field--label-hidden field--item"]/text()')
-smi_about = tree.xpath('//div[@class="field field--name-name field--type-string field--label-hidden field--item"]/text()')
-smi_date = tree.xpath('//time//text()')
+
+
+def kod(link):
+  url = link
+  headers = {'Content-Type': 'text/html',}
+  response = requests.get(url, headers=headers)
+  tree = html.fromstring(response.content)
+  return tree
+
+def parsing(link):
+  url = link
+  headers = {'Content-Type': 'text/html',}
+  response = requests.get(url, headers=headers)
+  soup = BeautifulSoup(response.text, "html.parser")
+  return soup
+
+def poisk(c):
+  n = ""
+  i = 24
+  a = str(re.search("field field--name", c))
+  if a != "None":
+    while a[i] != ",":
+      n += a[i]
+      i += 1
+    n = int(n)
+    return n
+  else:
+    return "1"  
+
+def udalenie(c, i):
+  c = c[:poisk(c)] + "g" + c[poisk(c)+1:]
+  return c
+
+def dobavlenie(soup):
+  i = poisk(soup)
+  while soup[i] != ">":
+    i += 1
+  i += 1
+  c = ""
+  while soup[i] != "<":
+    c += soup[i]
+    i += 1
+  # print(c)
+  return c 
+
+def links(soup):
+  n = ""
+  i = poisk(soup) - 35
+  while soup[i] != "=":
+    i -= 1
+  i += 2
+  while soup[i] != ">":
+    n += soup[i]
+    i += 1
+  for i in range(2):
+    n[:len(n)-1]
+  return n
+
+
+
+soup = str(parsing("https://physics.itmo.ru/ru/media/press"))
+# tree = kod("https://physics.itmo.ru/ru/media/press")
+# a = tree.xpath('//div[@class="field field--name"]/text()')
+# a = str(a[0])
+
+kods = []
+
+# poisk(soup) != "1"
+
+
+smi_about = []
+smi_links = []
+
+for i in range(17):
+  c = ""
+  smi_links.append(links(soup))
+  while dobavlenie(soup) != '':
+    # kods.append(poisk(soup))
+    # kods.append(dobavlenie(soup))
+    c += "<br><br>" + dobavlenie(soup)
+    soup = udalenie(soup, poisk(soup))
+  kods.append(c)
+  soup = udalenie(soup, poisk(soup))  
+
+smi_about = kods
+
 
 ###### научные группы #######
 
@@ -237,10 +318,8 @@ asp_kontact_number = tree.xpath('//div[@class="personality-admission-phone"]/a/t
 # print(soft_name)
 # print(soft_author)
 # print(soft_links)
-# print(smi_who) #разные размерности
-# print(smi_name) #разные размерности
 # print(smi_about)
-# print(smi_date)
+# print(smi_links)
 
 # print(group_name)
 # print(group_photo)
