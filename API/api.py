@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1Em_Wfv33C4EaHw2RrBwynwLNYHSXcD-M
 """
 
+from bs4 import BeautifulSoup
 import requests
 from urllib.request import urlopen
 from lxml import html 
@@ -222,6 +223,8 @@ group_spisok_rank = tree.xpath('//div[@class="field field--name-main-position fi
 
 tree = kod("https://physics.itmo.ru/ru/publications")
 publi_links = tree.xpath('//div[@class="export-links"]/span[@class="papers-export-link export-gost"]/a/@href')
+publi_links_other = tree.xpath('//div[@class="export-links"]/span[@class="papers-export-link export-txt"]/a/@href')
+publi_links.append(publi_links_other[0])
 
 ###### стажировки школьников летняя практика ######
 
