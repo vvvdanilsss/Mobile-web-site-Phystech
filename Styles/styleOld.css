@@ -275,16 +275,25 @@ height: 100%;
 	box-shadow: 0 0 0 4px #cbd6ee; 
 }
 
-.strelka{
-	margin-top: 2vh;
-	background: black;
-	height: 90%;
-	width: 0.5vh;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 
 .stroka{
 	font-family: 'Helvetica';
 	
+}
+
+#story{
+	margin-top: 5vh;
+	text-align: center;
+}
+
+#strelka{
+	background: #FFD700;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.7vh;
+	margin-bottom: 1.7vh;
+	height: 10vh;
+	width: 2vh;
+	border-radius: 0.7vh;
 }
