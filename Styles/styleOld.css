@@ -315,3 +315,33 @@ height: 100%;
 	width: 2vh;
 	border-radius: 0.7vh;
 }
+
+
+.publi{
+	font-family: 'Helvetica';
+	color: white;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+.knopki-for-publi {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  padding: 1rem;
+
+}
+
+.knopki-for-publi:hover {
+	background: #1d49aa;
+}
+
+.knopki-for-publi:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #cbd6ee; 
+}
