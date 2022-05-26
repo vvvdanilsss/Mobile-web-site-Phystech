@@ -206,16 +206,66 @@ smi_about = kods
 
 ###### научные группы #######
 
+
+def im(a, k):
+  i = 37
+  b = ""
+  g = ""
+  while a[k][i] != "\n":
+    b += a[k][i]
+    i += 1
+  i = 75
+  while a[k][i] != "\n":
+    g += a[k][i]
+    i += 1
+  b = "Группа " + b + " " + g
+  return b
+
+
+a = []
+group_names = []
+group_name = [] #название группы 
+
 tree = kod("https://physics.itmo.ru/ru/research-groups")
+a = tree.xpath('//div[@class="research-group-group-name"]/text()')
+group_group = tree.xpath('//div[@class="views-field views-field-title"]/span[@class="field-content"]/a[@class="use-ajax"]/div[@class="research-group-group-name"]/text()')
+group_links = tree.xpath('//span[@class="field-content"]/a/@href')
 
-group_name = tree.xpath('//div[@class="research-group-group-name"]/text()') #переделать в str и убрать пробелы и добаввить группа 
-group_photo = tree.xpath('//img[@class="img-responsive"]/@src')
+for k in range(len(a)):
+  group_name.append(im(a, k))
 
-# надо разделить персоны на группы 
-group_spisok_name = tree.xpath('//div[@class="field field--name-name field--type-string field--label-hidden field--item"]/text()')
-group_spisok_surname = tree.xpath('//div[@class="field field--name-second-name field--type-string field--label-hidden field--item"]/text()')
-group_spisok_rank = tree.xpath('//div[@class="field field--name-main-position field--type-entity-reference field--label-hidden field--item"]/text()')
-# надо сделать описание научной группы 
+
+names = []
+surnames = []
+group_full_names = [] # имя и фамилия персон
+group_full_photo = [] # фото персон
+rank = []
+
+
+for i in range(len(group_links)):
+  tree = kod("https://physics.itmo.ru/ru/" + group_links[i])
+  group_names = tree.xpath('//div[@class="field field--name-name field--type-string field--label-hidden field--item"]/text()')
+  group_surnames = tree.xpath('//div[@class="field field--name-second-name field--type-string field--label-hidden field--item"]/text()')
+  group_photo = tree.xpath('//div[@class="field field--name-photo field--type-image field--label-hidden field--item"]/img/@src')
+  names.append(group_names)
+  surnames.append(group_surnames)
+  rank.append(group_photo)
+  
+
+for i in range(len(names)):
+  g = []
+  h = []
+  for j in range(len(names[i])):
+    if j == 0:
+      g.append(names[i][j] + " " +surnames[i][j] + " (Руководитель группы)")
+    else:
+      g.append(names[i][j] + " " +surnames[i][j])
+    h.append("https://physics.itmo.ru/"+ rank[i][j])
+  group_full_names.append(g)
+  group_full_photo.append(h)  
+
+
+
 
 
 ###### публикации ########
