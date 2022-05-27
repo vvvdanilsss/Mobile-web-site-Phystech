@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>NewPhystech</title>
+
+</head>
+
+<body style="font-family: 'Helvetica';">
+	<header id="myHead" class="head">
+    <div class="headerLogo">
+        <p class="new">Новый</p>
+        <p class="phystech">Физтех</p></div>
+    <nav id="myTopnav" class="topnav">
+        <a id="abit">Абитуриентам</a>
+        <div id="abitur" class="abitur">
+            <a href="bacalavriat">Бакалавриат</a>
+            <a href="magistratura">Магистратура</a>
+            <a href="aspirantura">Аспирантура</a>
+        </div>
+        <a id="sotr">Сотрудники</a>
+        <div id="sotrud" class="sotrud">
+            <a href="staff">Сотрудники</a>
+            <a href="ur_help">Юридическая поддержка</a>
+        </div>
+        <a id="quick">Quicklinks</a>
+        <div id="quickl" class="quickl">
+            <a href="#">Mail</a>
+            <a href="#">Wiki</a>
+            <a href="#">Redmine</a>
+        </div>
+        <a id="issl">Исследования</a>
+        <div id="issled" class="issled">
+            <a href="#">Оборудование</a>
+            <a href="#">Научные группы</a>
+            <a href="publications">Публикации</a>
+            <a href="#">Патенты</a>
+        </div>
+        <a href="vacancy">Вакансии</a>
+        <a id="onas">О New Phystech</a>
+        <div id="onewph" class="onewph">
+            <a href="smiaboutus">СМИ о нас</a>
+            <a href="video">Видео</a>
+            <a href="history">История</a>
+        </div>
+    </nav>
+    <nav class="burger" id="myBurger">
+        <a href="#" id="menu" class="iconMenu">&#9776</a>
+        <a href="#" id="clos" class="iconClos">&#10006</a>
+    </nav>
+</header>
+		<div id="outMenu">
+		<div class="d2">
+        	<h1>Новости</h1>
+			<ul class="gallery">
+			<li style="background: #000000;">
+			    <a href="/news1">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/%D0%90%D0%BD%D1%82%D0%B5%D0%BD%D0%BD%D1%8B%202022-05.jpg?itok=IaVtw" height="350"></a>
+                <div class="text-k-photo">
+                <h1>Воркшоп с представителями бизнеса «Беспроводные технологии будущего» </h1></li>
+				<linews href=""></linews></li>
+			<li style="background: #000000;">
+			    <a href="/news2">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%20%D0%BC%D0%B5%D0%B3%D0%B0%20%D1%81.PNG?itok=PVSj8" height="350"></a>
+                <div class="text-k-photo">
+                <h1>Курс «Установки Mega-Science в России и за рубежом»</h1></li>
+				<linews href=""></linews></li>
+			<li style="background: #000000;">
+			    <a href="/news3">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/DSCF8434.jpg?itok=gVVvh" height="350"></a>
+                <div class="text-k-photo">
+                <h1>Конкурс стипендий для абитуриентов магистратуры</h1></li>
+				<linews href=""></linews></li>
+			<li style="background: #000000;">
+			    <a href="/news4">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/FUJI1384.JPG?itok=4MSUa" height="350"></a>
+                <div class="text-k-photo">
+                <h1>МРТ будущего: как в ИТМО разрабатывают новые методы анализа томографических медицинских изображений</h1></li>
+				<linews href=""></linews></li>
+			<li style="background: #000000;">
+			    <a href="/news5">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/p12365.jpg?itok=2X7o0" height="350"></a>
+                <div class="text-k-photo">
+               <h1>Асимметрия против сепсиса: российско-итальянская научная группа разработает оптический сенсор для ранней диагностики заболевания</h1></li>
+				<linews href=""></linews></li>
+		</ul>
+	</div>
+	<div class="d3">
+		<h1>Семинары</h1>
+		<ul class="gallery">
+			<li style="background: #000000;">
+			    <a href="https://physics.itmo.ru/en/seminar/theoretical-seminar-25052022-elena-anashkina">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8260.jpg?itok=8fVbLhri" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Nonlinear and laser effects in optical microresonators made of different glasses  </h1></li>
+			<li style="background: #000000;">
+			    <a href="https://physics.itmo.ru/en/seminar/theoretical-seminar-01062022-ksenia-chichay">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8261.png?itok=pR7M0x0d" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Dynamics of topological magnetic solitons: from domain walls to skyrmions.  </h1></li>
+			<li style="background: #000000;">
+			    <a href="https://physics.itmo.ru/en/seminar/microwave-seminar-23052022-grigoriy-bubnov">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8259.jpg?itok=WVvAQ34m" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Исследования поглощения волн миллиметрового диапазона в атмосфере земли и материалах криогенных рефлекторов  </h1></li>
+			<li style="background: #000000;">
+			    <a href="https://physics.itmo.ru/en/seminar/theoretical-seminar-18052022-andrey-bogdanov">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8143.png?itok=n_wQPeWb" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Bound States in the Continuum in Multipolar Lattices  </h1></li>
+			<li style="background: #000000;">
+			    <a href="https://physics.itmo.ru/en/seminar/microwave-seminar-16052022-dmitry-zhirihin">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8141.jpg?itok=VsYSvNPb" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Recent results on topological photonics  </h1></li>
+		</ul>
+	</div>
+	<div class="d3">
+		<h1>Публикации</h1>
+		<h2 style="margin-right: auto; margin-top: 3px;">Последние десять публикаций с импакт-фактором >3 за последние несколько месяцев</h2>
+	</div>
+
+	<div class="centre">
+		<h1>Статьи</h1>
+	</div>
+
+	<div class ="diagram_for_stati">
+		<div class="diagram_for_coloumn">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+	</div>
+
+	<div class="centre1">
+		<h1>Impact Factor</h1>
+	</div>
+
+	<div class ="diagram_for_stati">
+		<div class="diagram_for_coloumn">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+	</div>
+
+	<div class="centre2">
+		<h1>Scientific	Journal Ranking</h1>
+	</div>
+
+	<div class ="diagram_for_stati">
+		<div class="diagram_for_coloumn">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+		<div class="diagram_for_coloumn" style="height: 20px;">
+		</div>
+	</div>
+
+
+
+	<div class="d4">
+		<div class="d4">
+				<a href="https://physics.itmo.ru/ru/physics-in-itmo" title="About us">О...нас</a>
+		</div>
+
+		<div class="d4">
+			<a href="https://physics.itmo.ru/ru/contacts" title="Contact">Контакты</a>
+		</div>
+		<div class="d4">
+			<a href="https://vk.com/physics.itmo" title="VK">VK</a>
+		</div>
+	</div>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

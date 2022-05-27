@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styleNew.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>Publications</title>
+</head>
+<body>
+
+	<header id="myHead" class="head">
+    <div class="headerLogo">
+        <p class="new">Новый</p>
+        <p class="phystech">Физтех</p></div>
+    <nav id="myTopnav" class="topnav">
+        <a href="#">Расписание</a>
+        <a id="abit">Абитуриентам</a>
+        <div id="abitur" class="abitur">
+            <a href="#">Бакалавриат</a>
+            <a href="#">Магистратура</a>
+            <a href="#">Аспирантура</a>
+        </div>
+        <a id="sotr">Сотрудники</a>
+        <div id="sotrud" class="sotrud">
+            <a href="#">Сотрудники</a>
+            <a href="#">Юридическая поддержка</a>
+        </div>
+        <a id="quick">Quicklinks</a>
+        <div id="quickl" class="quickl">
+            <a href="#">Mail</a>
+            <a href="#">Wiki</a>
+            <a href="#">Redmine</a>
+        </div>
+        <a id="issl">Исследования</a>
+        <div id="issled" class="issled">
+            <a href="#">Оборудование</a>
+            <a href="#">Научные группы</a>
+            <a href="#">Публикации</a>
+            <a href="#">Патенты</a>
+        </div>
+        <a href="#">Вакансии</a>
+        <a id="onas">О New Phystech</a>
+        <div id="onewph" class="onewph">
+            <a href="#">СМИ о нас</a>
+            <a href="#">Видео</a>
+            <a href="#">История</a>
+        </div>
+    </nav>
+    <nav class="burger" id="myBurger">
+        <a href="#" id="menu" class="iconMenu">&#9776</a>
+        <a href="#" id="clos" class="iconClos">&#10006</a>
+    </nav>
+</header>
+	<div class="sotrudniki-begin" style="margin-left: 4%; margin-top: 2%;">
+			<h1>Публикации</h1>
+	</div>
+	<div class="line" style="margin-top: 2%;"></div>
+	<ul class="publi">
+		<li style="display: inline-block;">
+			<a href="https://physics.itmo.ru/all-publications-xml?page&_format=xml">
+				<input type="button" class="knopki-for-publi" value="Download XML (Word)">
+			</a>
+		</li>
+
+		<li style="display: inline-block;">
+			<a href="https://physics.itmo.ru/all-publications-export/?page&_format=xlsx">
+				<input type="button" class="knopki-for-publi" value="Download XLSX">
+			</a>
+		</li>
+
+		<li style="display: inline-block;">
+			<a href="https://physics.itmo.ru/all-ni-publications-xml?page&_format=xml">
+				<input type="button" class="knopki-for-publi" value="Download NI XML (Word)">
+			</a>
+		</li>
+
+		<li style="display: inline-block;">
+			<a href="https://physics.itmo.ru/all-publications-export-txt?page&_format=csv">
+				<input type="button" class="knopki-for-publi" value="IEEE">
+			</a>
+		</li>
+
+	</ul>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
