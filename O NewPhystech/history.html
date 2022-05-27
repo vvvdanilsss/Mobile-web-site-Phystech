@@ -3,30 +3,53 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="styleOld.css">
+	<link rel="stylesheet" href="styleMenu.css">
 	<title>History</title>
 </head>
 <body>
 
-	<header class="header">
-		<a href="#" class="logo">
-			<h2>Новый</h2> 
-			<h1>Физтех</h1>
-		</a>
-		<input class="side-menu" type="checkbox" id="side-menu"/>
-		<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-		<nav class="nav">
-				<ul class="menu">
-						<li><a href="#">Расписание</a></li>
-						<li><a href="#">Абитуриентам</a> </li>
-						<li><a href="#">Сотрудники</a></li>
-						<li><a href="#">Quicklinks</a></li>
-						<li><a href="#">Исследования</a></li>
-						<li><a href="#">Вакансии</a></li>
-						<li><a href="#">О New Phystech</a></li>
-				</ul>
-		</nav>
+	<header id="myHead" class="head">
+	    <div class="headerLogo">
+	        <p class="new">Новый</p>
+	        <p class="phystech">Физтех</p></div>
+	    <nav id="myTopnav" class="topnav">
+	        <a id="abit">Абитуриентам</a>
+	        <div id="abitur" class="abitur">
+	            <a href="#">Бакалавриат</a>
+	            <a href="#">Магистратура</a>
+	            <a href="#">Аспирантура</a>
+	        </div>
+	        <a id="sotr">Сотрудники</a>
+	        <div id="sotrud" class="sotrud">
+	            <a href="#">Сотрудники</a>
+	            <a href="#">Юридическая поддержка</a>
+	        </div>
+	        <a id="quick">Quicklinks</a>
+	        <div id="quickl" class="quickl">
+	            <a href="#">Mail</a>
+	            <a href="#">Wiki</a>
+	            <a href="#">Redmine</a>
+	        </div>
+	        <a id="issl">Исследования</a>
+	        <div id="issled" class="issled">
+	            <a href="#">Оборудование</a>
+	            <a href="#">Научные группы</a>
+	            <a href="#">Публикации</a>
+	            <a href="#">Патенты</a>
+	        </div>
+	        <a href="#">Вакансии</a>
+	        <a id="onas">О New Phystech</a>
+	        <div id="onewph" class="onewph">
+	            <a href="#">СМИ о нас</a>
+	            <a href="#">Видео</a>
+	            <a href="#">История</a>
+	        </div>
+	    </nav>
+	    <nav class="burger" id="myBurger">
+	        <a href="#" id="menu" class="iconMenu">&#9776</a>
+	        <a href="#" id="clos" class="iconClos">&#10006</a>
+	    </nav>
 	</header>
 	<div class="sotrudniki-begin" style="margin-left: 4%; margin-top: 2%;">
 			<h1>История</h1>
@@ -66,7 +89,8 @@
 		</li>
 
 		<li>
-			<img src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/2014-magistratura.jpg?itok=ISF6Uqoj">
+			<img style="border-radius: 2vh;"
+			src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/2014-magistratura.jpg?itok=ISF6Uqoj">
 			<h5>Первая магистерская программа</h5>
 			<h5>Январь 2014</h5>
 			<div id="strelka"></div>
@@ -95,5 +119,7 @@
 			<h5>Сентябрь 2017</h5>
 		</li>
 	</ul>
+	<script src="../GeneralPage/scriptMenu.js"></script>
+
 </body>
 </html>
