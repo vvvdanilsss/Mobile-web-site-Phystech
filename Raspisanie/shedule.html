@@ -5,59 +5,83 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleOld.css">
+    <link rel="stylesheet" href="styleMenu.css">
+    <link rel="stylesheet" href="styleRasp.css">
     <title>NewPhystech/Shedule</title>
 
 </head>
 
 <body>
 
-<header class="header">
-    <a href="#" class="logo">
-        <h2>Новый</h2>
-        <h1>Физтех</h1>
-    </a>
-    <input class="side-menu" type="checkbox" id="side-menu"/>
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-    <nav class="nav">
-        <ul class="menu">
-            <li><a href="#">Расписание</a></li>
-            <li><a href="#">Абитуриентам</a></li>
-            <li><a href="#">Сотрудники</a></li>
-            <li><a href="#">Quicklinks</a></li>
-            <li><a href="#">Исследования</a></li>
-            <li><a href="#">Вакансии</a></li>
-            <li><a href="#">О New Phystech</a></li>
-        </ul>
+<header id="myHead" class="head">
+    <div class="headerLogo">
+        <p class="new">Новый</p>
+        <p class="phystech">Физтех</p></div>
+    <nav id="myTopnav" class="topnav">
+        <a id="abit">Абитуриентам</a>
+        <div id="abitur" class="abitur">
+            <a href="#">Бакалавриат</a>
+            <a href="#">Магистратура</a>
+            <a href="#">Аспирантура</a>
+        </div>
+        <a id="sotr">Сотрудники</a>
+        <div id="sotrud" class="sotrud">
+            <a href="#">Сотрудники</a>
+            <a href="#">Юридическая поддержка</a>
+        </div>
+        <a id="quick">Quicklinks</a>
+        <div id="quickl" class="quickl">
+            <a href="#">Mail</a>
+            <a href="#">Wiki</a>
+            <a href="#">Redmine</a>
+        </div>
+        <a id="issl">Исследования</a>
+        <div id="issled" class="issled">
+            <a href="#">Оборудование</a>
+            <a href="#">Научные группы</a>
+            <a href="#">Публикации</a>
+            <a href="#">Патенты</a>
+        </div>
+        <a href="#">Вакансии</a>
+        <a id="onas">О New Phystech</a>
+        <div id="onewph" class="onewph">
+            <a href="#">СМИ о нас</a>
+            <a href="#">Видео</a>
+            <a href="#">История</a>
+        </div>
+    </nav>
+    <nav class="burger" id="myBurger">
+        <a href="#" id="menu" class="iconMenu">&#9776</a>
+        <a href="#" id="clos" class="iconClos">&#10006</a>
     </nav>
 </header>
-<div class="sotrudniki-begin">
+
+<div class="raspisanie">
     <h1>Расписание</h1>
 </div>
-<div class="line" style="margin-top: 2%;"></div>
+<div class="knopki">
+    <div id="cl1" class="click1">
+        <button id="baka">Бакалавриат</button>
+        <button id="maga">Магистратура</button>
+    </div>
+    <div id="cl2" class="click2">
+        <button id="v31">V3103</button>
+        <button id="v32">V3203</button>
+        <button id="v33">V3303</button>
+        <button id="v34">V3403</button>
+    </div>
+    <div id="cl3" class="click3">
+        <button id="pn">Пн</button>
+        <button id="vt">Вт</button>
+        <button id="sr">Ср</button>
+        <button id="cht">Чт</button>
+        <button id="pt">Пт</button>
+        <button id="sb">Сб</button>
+    </div>
+</div>
 
-<ul style="margin-left: 2%;">
-    <li style="margin-top:2%;">
-        <input type="button" class="knopki-for-shedule" value="Бакалавриат">
-        <input type="button" class="knopki-for-shedule" value="Магистратура">
-    </li>
-    <li style="margin-top:2%;">
-        <input type="button" class="knopki-for-shedule" value="V3103">
-        <input type="button" class="knopki-for-shedule" value="V3203">
-        <input type="button" class="knopki-for-shedule" value="V3303">
-        <input type="button" class="knopki-for-shedule" value="V3403">
-    </li>
-
-    <li style="margin-top:2%;">
-        <input type="button" class="knopki-for-shedule" style="border-radius: 3.7vh;" value="Пн">
-        <input type="button" class="knopki-for-shedule" style="border-radius: 3.7vh;" value="Вт">
-        <input type="button" class="knopki-for-shedule" style="border-radius: 3.7vh;" value="Ср">
-        <input type="button" class="knopki-for-shedule" style="border-radius: 3.7vh;" value="Чт">
-        <input type="button" class="knopki-for-shedule" style="border-radius: 3.7vh;" value="Пт">
-        <input type="button" class="knopki-for-shedule" style="border-radius: 3.7vh;" value="Сб">
-    </li>
-</ul>
+<script src="../GeneralPage/scriptMenu.js"></script>
+<script src="scriptRasp.js"></script>
 
 </body>
 </html>
