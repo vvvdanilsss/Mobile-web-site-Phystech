@@ -6,31 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styleOld.css">
-    <link rel="stylesheet" href="styleNew.css">
+    <link rel="stylesheet" href="styleMenu.css">
     <title>NewPhystech</title>
 
 </head>
 
 <body>
 
-<header class="header">
-    <div class="header_logo"><p>Новый Физтех</p></div>
-    <nav>
-        <div class="topnav" id="myTopnav">
-            <a href="#">Расписание</a>
-            <a href="#">Абитуриентам</a>
-            <a href="#">Сотрудники</a>
-            <a href="#">Quicklinks</a>
-            <a href="#">Исследования</a>
-            <a href="#">Вакансии</a>
-            <a href="#">О New Phystech</a>
-            <a href="#" id="menu" class="icon">&#9776</a>
+<header id="myHead" class="head">
+    <div class="headerLogo">
+        <p class="new">Новый</p>
+        <p class="phystech">Физтех</p></div>
+    <nav id="myTopnav" class="topnav">
+        <a href="#">Расписание</a>
+        <a id="abit">Абитуриентам</a>
+        <div id="abitur" class="abitur">
+            <a href="#">Бакалавриат</a>
+            <a href="#">Магистратура</a>
+            <a href="#">Аспирантура</a>
         </div>
+        <a id="sotr">Сотрудники</a>
+        <div id="sotrud" class="sotrud">
+            <a href="#">Сотрудники</a>
+            <a href="#">Юридическая поддержка</a>
+        </div>
+        <a id="quick">Quicklinks</a>
+        <div id="quickl" class="quickl">
+            <a href="#">Mail</a>
+            <a href="#">Wiki</a>
+            <a href="#">Redmine</a>
+        </div>
+        <a id="issl">Исследования</a>
+        <div id="issled" class="issled">
+            <a href="#">Оборудование</a>
+            <a href="#">Научные группы</a>
+            <a href="#">Публикации</a>
+            <a href="#">Патенты</a>
+        </div>
+        <a href="#">Вакансии</a>
+        <a id="onas">О New Phystech</a>
+        <div id="onewph" class="onewph">
+            <a href="#">СМИ о нас</a>
+            <a href="#">Видео</a>
+            <a href="#">История</a>
+        </div>
+    </nav>
+    <nav class="burger" id="myBurger">
+        <a href="#" id="menu" class="iconMenu">&#9776</a>
+        <a href="#" id="clos" class="iconClos">&#10006</a>
     </nav>
 </header>
 
-
-<div id="outMenu">
+<div>
     <div class="d2">
         <h1>Новости</h1>
     </div>
@@ -92,77 +119,8 @@
             несколько месяцев</h2>
     </div>
 
-    <div class="centre">
-        <h1>Статьи</h1>
-    </div>
+<script src="scriptMenu.js"></script>
 
-    <div class="diagram_for_stati">
-        <div class="diagram_for_coloumn">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-    </div>
-
-    <div class="centre1">
-        <h1>Impact Factor</h1>
-    </div>
-
-    <div class="diagram_for_stati">
-        <div class="diagram_for_coloumn">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-    </div>
-
-    <div class="centre2">
-        <h1>Scientific Journal Ranking</h1>
-    </div>
-
-    <div class="diagram_for_stati">
-        <div class="diagram_for_coloumn">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-        <div class="diagram_for_coloumn" style="height: 20px;">
-        </div>
-    </div>
-
-    <div class="d4">
-        <div class="d4">
-            <a href="https://physics.itmo.ru/ru/physics-in-itmo" title="About us">О...нас</a>
-        </div>
-
-        <div class="d4">
-            <a href="https://physics.itmo.ru/ru/contacts" title="Contact">Контакты</a>
-        </div>
-        <div class="d4">
-            <a href="https://vk.com/physics.itmo" title="VK">VK</a>
-        </div>
-    </div>
-</div>
-<script src="script.js"></script>
 </body>
 
 </html>

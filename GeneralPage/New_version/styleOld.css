@@ -3,6 +3,50 @@
 }
 
 
+.sotrudniki-graph{
+	display: center;
+}
+
+
+.sotrudniki-begin{
+	font-family: 'Helvetica';
+	margin-left: 4%;
+	margin-top: 2%;
+}
+
+
+
+.ikonki-sotrudnikov{
+	margin-top: 2%;
+	margin-left: 8%;
+}
+
+.ikonki-vidosikov{
+	margin-top: 2%;
+	margin-left: 8%;
+}
+
+
+.vidosiki{
+	margin-top: 2%;
+	margin-left: 8%;
+}
+
+
+
+.sotrudniki-opisanie{
+	margin-top: 2%;
+	font-family: 'Helvetica';
+	display: inline-block;
+	text-align: center;
+}
+
+.vidosiki-opisanie{
+	margin-top: 2%;
+	font-family: 'Helvetica';
+	display: inline-block;
+	text-align: center;
+}
 
 .d1 {
 color: white;
@@ -165,9 +209,11 @@ padding: 0.5%;
 
 
 .line {
-background: black;
-width: 1500px;
-height: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #FFD700;
+	width: 1500px;
+	height: 2px;
 }
 
 .ikonki {
@@ -181,4 +227,133 @@ margin-left: 4%;
 width: 100%;
 height: 100%;
 
+
+}
+
+
+.vremya{
+	font-family: 'Helvetica';
+	padding: 2%;
+}
+
+.opisanie-news{
+	font-family: 'Helvetica';
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin: 2vh;
+	width: auto;
+	display: block;
+
+}
+
+.perehod-news{
+	font-family: 'Helvetica';
+	margin-left: 2%;
+	color: blue;
+}
+
+.knopki-for-news {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  padding: 1rem;
+
+}
+
+.knopki-for-news:hover {
+	background: #1d49aa;
+}
+
+.knopki-for-news:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #cbd6ee; 
+}
+
+.ikonki-smi{
+	margin-top: 15%;
+	margin-left: 6.7%;
+	height: 30vh;
+	width: 30vh;
+	border-radius: 3vh;
+	background: black;
+	text-align: center;
+	color: white;
+}
+
+/*.strelka{
+	margin-top: 2vh;
+	background: black;
+	height: 90%;
+	width: 0.5vh;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+.stroka{
+	font-family: 'Helvetica';
+	
+}
+
+#story{
+	margin-top: 5vh;
+	text-align: center;
+}
+
+#strelka{
+	background: #FFD700;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.7vh;
+	margin-bottom: 1.7vh;
+	height: 10vh;
+	width: 2vh;
+	border-radius: 0.7vh;
+}
+
+
+.publi{
+	font-family: 'Helvetica';
+	color: white;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+.knopki-for-publi {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  padding: 1rem;
+
+}
+
+.knopki-for-publi:hover {
+	background: #1d49aa;
+}
+
+.knopki-for-publi:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #cbd6ee; 
+}
+
+
+.group{
+	margin-top: 10vh;
+	margin-left: 17vh;
+}
+
+#group-id{
+	margin-left: 2vh; 
+	color: black; 
+	list-style-type: none;
 }
