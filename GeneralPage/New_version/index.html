@@ -2,61 +2,59 @@
 <html>
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleMenu.css">
-    <title>NewPhystech</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>NewPhystech</title>
 
 </head>
 
-<body>
-
-<header id="myHead" class="head">
-    <div class="headerLogo">
-        <p class="new">Новый</p>
-        <p class="phystech">Физтех</p></div>
-    <nav id="myTopnav" class="topnav">
-        <a href="#">Расписание</a>
-        <a id="abit">Абитуриентам</a>
-        <div id="abitur" class="abitur">
-            <a href="#">Бакалавриат</a>
-            <a href="#">Магистратура</a>
-            <a href="#">Аспирантура</a>
-        </div>
-        <a id="sotr">Сотрудники</a>
-        <div id="sotrud" class="sotrud">
-            <a href="#">Сотрудники</a>
-            <a href="#">Юридическая поддержка</a>
-        </div>
-        <a id="quick">Quicklinks</a>
-        <div id="quickl" class="quickl">
-            <a href="#">Mail</a>
-            <a href="#">Wiki</a>
-            <a href="#">Redmine</a>
-        </div>
-        <a id="issl">Исследования</a>
-        <div id="issled" class="issled">
-            <a href="#">Оборудование</a>
-            <a href="#">Научные группы</a>
-            <a href="#">Публикации</a>
-            <a href="#">Патенты</a>
-        </div>
-        <a href="#">Вакансии</a>
-        <a id="onas">О New Phystech</a>
-        <div id="onewph" class="onewph">
-            <a href="#">СМИ о нас</a>
-            <a href="#">Видео</a>
-            <a href="#">История</a>
-        </div>
-    </nav>
-    <nav class="burger" id="myBurger">
-        <a href="#" id="menu" class="iconMenu">&#9776</a>
-        <a href="#" id="clos" class="iconClos">&#10006</a>
-    </nav>
-</header>
-
+<body style="font-family: 'Helvetica';">
+	<header id="myHead" class="head">
+	    <div class="headerLogo">
+		<p class="new">Новый</p>
+		<p class="phystech">Физтех</p></div>
+	    <nav id="myTopnav" class="topnav">
+		<a id="abit">Абитуриентам</a>
+		<div id="abitur" class="abitur">
+		    <a href="bacalavriat">Бакалавриат</a>
+		    <a href="magistratura">Магистратура</a>
+		    <a href="aspirantura">Аспирантура</a>
+		</div>
+		<a id="sotr">Сотрудники</a>
+		<div id="sotrud" class="sotrud">
+		    <a href="staff">Сотрудники</a>
+		    <a href="ur_help">Юридическая поддержка</a>
+		</div>
+		<a id="quick">Quicklinks</a>
+		<div id="quickl" class="quickl">
+		    <a href="#">Mail</a>
+		    <a href="#">Wiki</a>
+		    <a href="#">Redmine</a>
+		</div>
+		<a id="issl">Исследования</a>
+		<div id="issled" class="issled">
+		    <a href="#">Оборудование</a>
+		    <a href="#">Научные группы</a>
+		    <a href="publications">Публикации</a>
+		    <a href="#">Патенты</a>
+		</div>
+		<a href="vacancy">Вакансии</a>
+		<a id="onas">О New Phystech</a>
+		<div id="onewph" class="onewph">
+		    <a href="smiaboutus">СМИ о нас</a>
+		    <a href="video">Видео</a>
+		    <a href="history">История</a>
+		</div>
+	    </nav>
+	    <nav class="burger" id="myBurger">
+		<a href="#" id="menu" class="iconMenu">&#9776</a>
+		<a href="#" id="clos" class="iconClos">&#10006</a>
+	    </nav>
+	</header>
 <div>
     <div class="d2">
         <h1>Новости</h1>
