@@ -14,7 +14,7 @@ menu.onclick = function menuFunction() {
         z.className = "iconClos";
     }
     document.addEventListener('click', e => {
-        const target = e.target
+        const target = e.target;
         if (!target.closest('.head')) {
             var x = document.getElementById('myTopnav');
             x.className = "topnav";
@@ -25,83 +25,38 @@ menu.onclick = function menuFunction() {
         }
     })
 }
-abit.onclick = function clickAbit() {
-    var x = document.getElementById('abitur');
-    if (x.className === "abitur") {
+
+function clickMenu(element, mainElement) {
+    var x = document.getElementById(element);
+    if (x.className === element) {
         x.className += " click";
     } else {
-        x.className = "abitur";
+        x.className = element;
     }
     document.addEventListener('click', e => {
-            const target = e.target
-            if (!target.closest('#abit')) {
-                var x = document.getElementById('abitur');
-                x.className = "abitur";
-            }
+        const target = e.target;
+        if (!target.closest(mainElement)) {
+            x.className = element;
         }
-    )
+    })
 }
-sotr.onclick = function clickAbit() {
-    var x = document.getElementById('sotrud');
-    if (x.className === "sotrud") {
-        x.className += " click";
-    } else {
-        x.className = "sotrud";
-    }
-    document.addEventListener('click', e => {
-            const target = e.target
-            if (!target.closest('#sotr')) {
-                var x = document.getElementById('sotrud');
-                x.className = "sotrud";
-            }
-        }
-    )
-}
-quick.onclick = function clickAbit() {
-    var x = document.getElementById('quickl');
-    if (x.className === "quickl") {
-        x.className += " click";
-    } else {
-        x.className = "quickl";
-    }
-    document.addEventListener('click', e => {
-            const target = e.target
-            if (!target.closest('#quick')) {
-                var x = document.getElementById('quickl');
-                x.className = "quickl";
-            }
-        }
-    )
-}
-issl.onclick = function clickAbit() {
-    var x = document.getElementById('issled');
-    if (x.className === "issled") {
-        x.className += " click";
-    } else {
-        x.className = "issled";
-    }
-    document.addEventListener('click', e => {
-            const target = e.target
-            if (!target.closest('#issl')) {
-                var x = document.getElementById('issled');
-                x.className = "issled";
-            }
-        }
-    )
-}
-onas.onclick = function clickAbit() {
-    var x = document.getElementById('onewph');
-    if (x.className === "onewph") {
-        x.className += " click";
-    } else {
-        x.className = "onewph";
-    }
-    document.addEventListener('click', e => {
-            const target = e.target
-            if (!target.closest('#onas')) {
-                var x = document.getElementById('onewph');
-                x.className = "onewph";
-            }
-        }
-    )
-}
+
+abit.addEventListener('click', function () {
+    clickMenu("abitur", '#abit')
+})
+
+sotr.addEventListener('click', function () {
+    clickMenu("sotrud", '#sotr')
+})
+
+quick.addEventListener('click', function () {
+    clickMenu("quickl", '#quick')
+})
+
+issl.addEventListener('click', function () {
+    clickMenu("issled", '#issl')
+})
+
+onas.addEventListener('click', function () {
+    clickMenu("abitur", '#onas')
+})
