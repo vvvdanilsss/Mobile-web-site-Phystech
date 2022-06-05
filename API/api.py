@@ -321,22 +321,23 @@ stage_year_itogi = tree.xpath('//div[@class="field field--name-internship-result
 stage_year_video = tree.xpath('//iframe[@height="480"]/@src')
 
 ####### аспирантура #########
-tree = kod("https://physics.itmo.ru/ru/admission/phd")
 
-asp_kod_program = tree.xpath('//div[@class="field field--name-name field--type-string field--label-hidden field--item"]/text()')
-asp_names_program = tree.xpath('//div[@class="field field--name-description field--type-text-long field--label-hidden field--item"]/text()')
-asp_date = tree.xpath('//div[@class="field field--name-adm-phd-date field--type-datetime field--label-hidden field--item"]/time/text()')
-asp_date_about = tree.xpath('//div[@class="field field--name-adm-phd-date-text field--type-string field--label-hidden field--item"]/text()')
+tree = kod("https://physics.itmo.ru/ru/admission/master/advanced-quantum-and-nanophotonic-systems")
+asp1_budjet = tree.xpath('//div[@class="admission-master-in-a-glance-column-2"]/div[@class="field field--name-adm-master-budget-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp1_contract = tree.xpath('//div[@class="field field--name-adm-master-paid-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp1_vstup = tree.xpath('//div[@class="field field--name-adm-master-entrance-exams field--type-link field--label-above"]/div[@class="field--items"]/div[@class="field--item"]/a/text()')
 
-asp_napravlenia = tree.xpath('//div[@class="node--wrap"]/h2[@class="node-title"]/span/text()')
-asp_napravlenia_about = tree.xpath('//div[@class="field field--name-short-description field--type-text-long field--label-hidden field--item"]/p/text()')
+tree = kod("https://physics.itmo.ru/ru/admission/master/physics-of-radio-frequency-technologies")
+asp2_budjet = tree.xpath('//div[@class="admission-master-in-a-glance-column-2"]/div[@class="field field--name-adm-master-budget-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp2_contract = tree.xpath('//div[@class="field field--name-adm-master-paid-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp2_vstup = tree.xpath('//div[@class="field field--name-adm-master-entrance-exams field--type-link field--label-above"]/div[@class="field--items"]/div[@class="field--item"]/a/text()')
 
 
-asp_kontact_photo = tree.xpath('//div[@class="field field--name-photo field--type-image field--label-hidden field--item"]/img/@src')
-asp_kontact_name = tree.xpath('//div[@class="personality-admission-name"]/text()')
-asp_kontact_rank = tree.xpath('//div[@class="personality-admission-position"]/text()')
-asp_kontact_pochta = tree.xpath('//div[@class="personality-admission-email"]/text()')
-asp_kontact_number = tree.xpath('//div[@class="personality-admission-phone"]/a/text()')
+
+tree = kod("https://physics.itmo.ru/ru/admission/master/photonics-and-spintronics")
+asp3_budjet = tree.xpath('//div[@class="admission-master-in-a-glance-column-2"]/div[@class="field field--name-adm-master-budget-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp3_contract = tree.xpath('//div[@class="field field--name-adm-master-paid-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp3_vstup = tree.xpath('//div[@class="field field--name-adm-master-entrance-exams field--type-link field--label-above"]/div[@class="field--items"]/div[@class="field--item"]/a/text()')
 
 # скорее всего здесь всё очень похоже с магистратурой, поэтому можно ввести функцию def
 
