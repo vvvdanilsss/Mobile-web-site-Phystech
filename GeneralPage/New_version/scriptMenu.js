@@ -1,35 +1,44 @@
-menu.onclick = function menuFunction() {
-    var x = document.getElementById('myTopnav');
-    x.className += " responsive";
-    var y = document.getElementById('menu');
-    y.className += " responsive";
-    var z = document.getElementById('clos');
-    z.className += " responsive";
-    clos.onclick = function closFunction() {
-        var x = document.getElementById('myTopnav');
-        x.className = "topnav";
-        var y = document.getElementById('menu');
-        y.className = "iconMenu";
-        var z = document.getElementById('clos');
-        z.className = "iconClos";
+function open(idElement) {
+    var x = document.getElementById(idElement);
+    x.className += ' open';
+}
+
+function close(idName, className) {
+    var x = document.getElementById(idName);
+    x.className = className;
+}
+
+function openMenu() {
+    open('myBurger');
+    open('myBottom');
+    open('mySite');
+}
+
+function closeMenu() {
+    close('myBurger', 'up__burger');
+    close('myBottom', 'head__bottom');
+    close('mySite', 'body__site');
+}
+
+myBurger.addEventListener('click', e => {
+    var x = document.getElementById('myBurger');
+    if (x.className === 'up__burger') {
+        openMenu()
+    } else {
+        closeMenu()
     }
     document.addEventListener('click', e => {
         const target = e.target;
         if (!target.closest('.head')) {
-            var x = document.getElementById('myTopnav');
-            x.className = "topnav";
-            var y = document.getElementById('menu');
-            y.className = "iconMenu";
-            var z = document.getElementById('clos');
-            z.className = "iconClos";
+            closeMenu()
         }
     })
-}
+})
 
 function clickMenu(element, mainElement) {
     var x = document.getElementById(element);
     if (x.className === element) {
-        x.className += " click";
+        x.className += ' click';
     } else {
         x.className = element;
     }
@@ -41,22 +50,34 @@ function clickMenu(element, mainElement) {
     })
 }
 
-abit.addEventListener('click', function () {
-    clickMenu("abitur", '#abit')
+abit.addEventListener('click', e => {
+    clickMenu('abitur', '#abit')
 })
 
-sotr.addEventListener('click', function () {
-    clickMenu("sotrud", '#sotr')
+sotr.addEventListener('click', e => {
+    clickMenu('sotrud', '#sotr')
 })
 
-quick.addEventListener('click', function () {
-    clickMenu("quickl", '#quick')
+quick.addEventListener('click', e => {
+    clickMenu('quickl', '#quick')
 })
 
-issl.addEventListener('click', function () {
-    clickMenu("issled", '#issl')
+issl.addEventListener('click', e => {
+    clickMenu('issled', '#issl')
 })
 
-onas.addEventListener('click', function () {
-    clickMenu("abitur", '#onas')
+onas.addEventListener('click', e => {
+    clickMenu('onewph', '#onas')
 })
+
+window.addEventListener('scroll', e => {
+    var scroll = document.querySelector('.scrollTop')
+    scroll.classList.toggle('active', window.scrollY > 100)
+})
+
+function myScrollTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}

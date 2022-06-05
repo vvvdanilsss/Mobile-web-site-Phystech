@@ -7,177 +7,174 @@ a {
     text-decoration: none;
 }
 
+.body__site {
+    position: page;
+}
 
-.head {
+.body__site.open {
+    position: fixed;
+}
+
+.head__up {
+    background: #000000;
+    position: relative;
     width: 100%;
-    background: #000;
+    z-index: 10;
     display: flex;
-    position: sticky;
-    top: 0;
-    border-bottom-right-radius: 2vh;
-    border-bottom-left-radius: 2vh;
+    justify-content: space-between;
 }
 
-.headerLogo {
+.up__logo {
     color: #fff;
     font-weight: 800;
     cursor: pointer;
     font-family: 'Helvetica', serif;
+    margin: 0 auto 0 20px;
+    padding: 10px;
+}
+
+.logo__new {
+    font-size: 20px;
+}
+
+.logo__phystech {
+    margin-top: -15px;
+    font-size: 35px;
+}
+
+.up__burger {
+    width: 50px;
+    height: 45px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    margin: auto 20px auto auto;
+}
+
+.up__burger span {
     display: block;
-    margin: 24px 3.5% 24px 3.5%;
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    background: #ffffff;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
 }
 
-.new {
-    font-size: 38px;
+.up__burger span:nth-child(1) {
+    top: 10px;
+    left: 10px;
 }
 
-.phystech {
-    font-size: 42px;
+.up__burger span:nth-child(2),
+.up__burger span:nth-child(3) {
+    top: 20px;
+    left: 10px;
 }
 
-.topnav {
-    text-align: center;
-    margin: 56px auto 56px auto;
+.up__burger span:nth-child(4) {
+    top: 30px;
+    left: 10px;
 }
 
-.topnav a {
+.up__burger.open span:nth-child(1) {
+    top: 10px;
+    width: 0;
+    left: 50%;
+}
+
+.up__burger.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.up__burger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.up__burger.open span:nth-child(4) {
+    top: 10px;
+    width: 0;
+    left: 50%;
+}
+
+.head__bottom {
+    background: rgba(0, 0, 0, 0.70);
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .5s linear;
+}
+
+.head__bottom.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: -1px;
+}
+
+.botton__topnav {
+    text-align: left;
+}
+
+.botton__topnav a {
     color: #fff;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     font-family: 'Helvetica', serif;
-    padding: 12px 12px;
+    width: 250px;
+    margin: 5px auto 5px 20px;
+    padding: 10px;
 }
 
-.topnav a:hover {
+.botton__topnav a {
+    display: block;
+}
+
+#abit:focus, #sotr:focus, #quick:focus,
+#issl:focus, #onas:focus {
+    vertical-align: center;
     color: #ffff00;
 }
 
-.burger {
-    width: 100px;
-    margin: 30px 3.5% 30px 3.5%;
-}
-
-.iconMenu {
+.abitur, .sotrud, .quickl,
+.issled, .onewph {
     display: none;
 }
 
-.iconClos {
-    display: none;
+.abitur.click, .sotrud.click, .quickl.click,
+.issled.click, .onewph.click {
+    display: block;
 }
 
-.abitur {
-    display: none;
+.abitur a, .sotrud a, .quickl a,
+.issled a, .onewph a {
+    font-size: 15px;
+    width: 250px;
+    margin: 5px auto 5px 40px;
 }
 
-.sotrud {
-    display: none;
+.scrollTop {
+    position: fixed;
+    bottom: 800px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    background: url("knopka.png");
+    background-size: cover;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: all .5s linear;
 }
 
-.quickl {
-    display: none;
+.scrollTop.active {
+    bottom: 25px;
+    visibility: visible;
+    opacity: 1;
 }
-
-.issled {
-    display: none;
-}
-
-.onewph {
-    display: none;
-}
-
-.abitur a {
-    color: #808080;
-    font-weight: 800;
-    font-size: 18px;
-}
-
-.sotrud a {
-    color: #808080;
-    font-weight: 800;
-    font-size: 18px;
-}
-
-.quickl a {
-    color: #808080;
-    font-weight: 800;
-    font-size: 18px;
-}
-
-.issled a {
-    color: #808080;
-    font-weight: 800;
-    font-size: 18px;
-}
-
-.onewph a {
-    color: #808080;
-    font-weight: 800;
-    font-size: 18px;
-}
-
-@media screen and (max-width: 2100px) {
-    .topnav a {
-        display: none;
-    }
-
-    .iconMenu {
-        color: #fff;
-        font-weight: 800;
-        font-size: 42px;
-        cursor: pointer;
-        font-family: 'Helvetica', serif;
-        display: block;
-        padding: 18px 30px;
-    }
-
-    .iconMenu.responsive {
-        display: none;
-    }
-
-    .iconClos.responsive {
-        color: #fff;
-        font-weight: 200;
-        font-size: 42px;
-        cursor: pointer;
-        font-family: 'Helvetica', serif;
-        display: block;
-        padding: 18px 30px;
-    }
-
-    .topnav.responsive {
-        position: relative;
-        text-align: center;
-        margin: 24px auto;
-    }
-
-
-    .head.topnav.responsive {
-        height: 100%;
-    }
-
-    .topnav.responsive a {
-        display: block;
-    }
-
-    .abitur.click {
-        display: block;
-    }
-
-    .sotrud.click {
-        display: block;
-    }
-
-    .quickl.click {
-        display: block;
-    }
-
-    .issled.click {
-        display: block;
-    }
-
-    .onewph.click {
-        display: block;
-    }
-}
-

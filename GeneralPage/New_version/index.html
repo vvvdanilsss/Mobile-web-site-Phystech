@@ -2,59 +2,72 @@
 <html>
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<title>NewPhystech</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMenu.css">
+    <title>NewPhystech</title>
 
 </head>
-<body style="font-family: 'Helvetica';">
+
+<body style="font-family: 'Helvetica', serif;">
+
 <header id="myHead" class="head">
-	    <div class="headerLogo">
-		<p class="new">Новый</p>
-		<p class="phystech">Физтех</p></div>
-	    <nav id="myTopnav" class="topnav">
-		<a id="abit">Абитуриентам</a>
-		<div id="abitur" class="abitur">
-		    <a href="bacalavriat">Бакалавриат</a>
-		    <a href="magistratura">Магистратура</a>
-		    <a href="aspirantura">Аспирантура</a>
-		</div>
-		<a id="sotr">Сотрудники</a>
-		<div id="sotrud" class="sotrud">
-		    <a href="staff">Сотрудники</a>
-		    <a href="ur_help">Юридическая поддержка</a>
-		</div>
-		<a id="quick">Quicklinks</a>
-		<div id="quickl" class="quickl">
-		    <a href="#">Mail</a>
-		    <a href="#">Wiki</a>
-		    <a href="#">Redmine</a>
-		</div>
-		<a id="issl">Исследования</a>
-		<div id="issled" class="issled">
-		    <a href="#">Оборудование</a>
-		    <a href="#">Научные группы</a>
-		    <a href="publications">Публикации</a>
-		    <a href="#">Патенты</a>
-		</div>
-		<a href="vacancy">Вакансии</a>
-		<a id="onas">О New Phystech</a>
-		<div id="onewph" class="onewph">
-		    <a href="smiaboutus">СМИ о нас</a>
-		    <a href="video">Видео</a>
-		    <a href="history">История</a>
-		</div>
-	    </nav>
-	    <nav class="burger" id="myBurger">
-		<a href="#" id="menu" class="iconMenu">&#9776</a>
-		<a href="#" id="clos" class="iconClos">&#10006</a>
-	    </nav>
-	</header>
-<div>
+
+    <div class="head__up">
+        <nav class="up__logo">
+            <p class="logo__new">Новый</p>
+            <p class="logo__phystech">Физтех</p>
+        </nav>
+        <nav id="myBurger" class="up__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </div>
+
+    <div id="myBottom" class="head__bottom">
+        <nav id="myTopnav" class="botton__topnav">
+            <a href="#">Расписание</a>
+            <a href="#" id="abit">Абитуриентам &#9658</a>
+            <div id="abitur" class="abitur">
+                <a href="bacalavriat">&#9999 Бакалавриат</a>
+                <a href="magistratura">&#9999 Магистратура</a>
+                <a href="aspirantura">&#9999 Аспирантура</a>
+            </div>
+            <a href="#" id="sotr">Сотрудники &#9658</a>
+            <div id="sotrud" class="sotrud">
+                <a href="staff">&#9999 Сотрудники</a>
+                <a href="ur_help">&#9999 Юридическая поддержка</a>
+            </div>
+            <a href="#" id="quick">Quicklinks &#9658</a>
+            <div id="quickl" class="quickl">
+                <a href="#">&#9999 Mail</a>
+                <a href="#">&#9999 Wiki</a>
+                <a href="#">&#9999 Redmine</a>
+            </div>
+            <a href="#" id="issl">Исследования &#9658</a>
+            <div id="issled" class="issled">
+                <a href="#">&#9999 Оборудование</a>
+                <a href="#">&#9999 Научные группы</a>
+                <a href="publications">&#9999 Публикации</a>
+                <a href="#">&#9999 Патенты</a>
+            </div>
+            <a href="vacancy">Вакансии</a>
+            <a href="#" id="onas">О New Phystech &#9658</a>
+            <div id="onewph" class="onewph">
+                <a href="smiaboutus">&#9999 СМИ о нас</a>
+                <a href="video">&#9999 Видео</a>
+                <a href="history">&#9999 История</a>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+<div id="mySite" class="body__site">
     <div class="d2">
         <h1>Новости</h1>
     </div>
@@ -115,7 +128,9 @@
         <h2 style="margin-right: auto; margin-top: 3px;">Последние десять публикаций с импакт-фактором >3 за последние
             несколько месяцев</h2>
     </div>
+</div>
 
+<div class="scrollTop" onclick="myScrollTop()"></div>
 <script src="scriptMenu.js"></script>
 
 </body>
