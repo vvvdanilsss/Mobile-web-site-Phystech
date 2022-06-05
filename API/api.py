@@ -320,7 +320,7 @@ stage_year_names = tree.xpath('//div[@class="field--item"]/a/text()')
 stage_year_itogi = tree.xpath('//div[@class="field field--name-internship-results field--type-text-long field--label-above"]/div[@class="field--item"]/text()')
 stage_year_video = tree.xpath('//iframe[@height="480"]/@src')
 
-####### аспирантура #########
+####### магистратура #########
 
 tree = kod("https://physics.itmo.ru/ru/admission/master/advanced-quantum-and-nanophotonic-systems")
 asp1_budjet = tree.xpath('//div[@class="admission-master-in-a-glance-column-2"]/div[@class="field field--name-adm-master-budget-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
@@ -341,7 +341,7 @@ asp3_vstup = tree.xpath('//div[@class="field field--name-adm-master-entrance-exa
 
 # скорее всего здесь всё очень похоже с магистратурой, поэтому можно ввести функцию def
 
-########## магистратура #######
+########## аспирантура #######
 
 
 
