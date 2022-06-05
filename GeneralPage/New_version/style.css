@@ -358,11 +358,49 @@ height: 100%;
 	list-style-type: none;
 }
 
-.table{
-	list-style-type: none;
-	margin-top: 5vh;
-	margin-left: 2vh;
+
+.squre-prohod{
+	background-color: #191970;
+	color: white;
+	width: 70vh;
+	margin-top: 2vh;
+	padding: 1vh;
+	border-radius: 1.7vh;
 }
-#prohod-id{
-	font-size: 12vh;
+
+.squre-prohod li{
+	text-align: center;
+	margin-top: 2vh;
+	list-style: none;
+}
+
+.mest{
+	text-align: center;
+}
+
+.mesta{
+	width: 30vh;
+	text-align: center;
+	margin-top: 2vh;
+	display: inline-block;
+}
+
+.otstup-prohod{
+	padding: 2vh;
+}
+
+.about-us{
+	margin-top: 2vh;
+	padding: 1vh;
+	width: 70vh;
+}
+
+
+.contact{
+}
+
+.contact-photo{
+	display: inline-block;
+	margin-top: 0.5vh;
+	width:30vh;
 }
