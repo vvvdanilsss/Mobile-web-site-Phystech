@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-from fake_useragent import UserAgent
+# from fake_useragent import UserAgent
 
 links=[]
 gg=[]
@@ -482,11 +482,11 @@ for i in range(1, 6):
 d=0
 
 #hrefs_newsLast[0]
-
+"""
 FIND='<li'
 with open("smiaboutus.html", 'r+', encoding='utf-8') as f1, open(".html", 'w+', encoding='utf-8') as f2:
     x=f1.readlines()
-    for line in x:
+    for line in
             if FIND in line:
                 f2.write('https://physics.itmo.ru/'+str([d])
                 d+=1
@@ -494,7 +494,7 @@ with open("smiaboutus.html", 'r+', encoding='utf-8') as f1, open(".html", 'w+', 
                 f2.write(line)
 d=0
 #Шаблон
-"""
+
 
 FIND='<li'
 with open(".html", 'r+', encoding='utf-8') as f1, open(".html", 'w+', encoding='utf-8') as f2:
@@ -505,6 +505,6 @@ with open(".html", 'r+', encoding='utf-8') as f1, open(".html", 'w+', encoding='
                 d+=1
             else:
                 f2.write(line)
-d=0                
+d=0
 
 """

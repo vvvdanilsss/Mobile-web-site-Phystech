@@ -10,7 +10,7 @@ Original file is located at
 from bs4 import BeautifulSoup
 import requests
 from urllib.request import urlopen
-from lxml import html 
+from lxml import html
 
 
 #пишешь по аналогии как я потому что так удобно ориентироваться
@@ -31,7 +31,7 @@ tree = kod("https://physics.itmo.ru/ru")
 
 
 # Parsing the page
-# (We need to use page.content rather than 
+# (We need to use page.content rather than
 # page.text because html.fromstring implicitly
 # expects bytes as input.)
 
@@ -42,7 +42,7 @@ tree = kod("https://physics.itmo.ru/ru")
 
 # Get element using XPath
 
-# Новости 
+# Новости
 
 opisanie_news = tree.xpath('//div[@class="node--title"]/text()')
 photo_news = tree.xpath('//img[@class="img-responsive"]/@src')
@@ -53,7 +53,7 @@ photo_news = tree.xpath('//img[@class="img-responsive"]/@src')
 
 
 # надо писать окончательный путь
-# Семинары 
+# Семинары
 
 semianrs_photo = tree.xpath('//img[@class="img-responsive"]/@src')
 semianars_topic1 = tree.xpath('//div[@class="seminar-type-value"]/text()')
@@ -93,12 +93,12 @@ for i in range(len(videos_video)):
   b = ""
   while videos_video[i][j] != "?":
     b = b + videos_video[i][j]
-    j += 1 
+    j += 1
   videos_picture.append(a + b + c)
 
 ###### вакансии ######
 
-#создаётся словарь с названием вакансией и описанием 
+#создаётся словарь с названием вакансией и описанием
 
 tree = kod("https://physics.itmo.ru/ru/vacancies")
 vacancies_name = tree.xpath('//a[@hreflang="ru"]/text()')
@@ -106,7 +106,7 @@ vacancies_topic = tree.xpath('//h3/text()')
 
 
 ####### софт ########
-# создать словарь 
+# создать словарь
 
 tree = kod("https://physics.itmo.ru/ru/soft")
 soft_name = tree.xpath('//span[@class="field-content"]/text()')
@@ -144,7 +144,7 @@ def poisk(c):
     n = int(n)
     return n
   else:
-    return "1"  
+    return "1"
 
 def udalenie(c, i):
   c = c[:poisk(c)] + "g" + c[poisk(c)+1:]
@@ -160,7 +160,7 @@ def dobavlenie(soup):
     c += soup[i]
     i += 1
   # print(c)
-  return c 
+  return c
 
 def links(soup):
   n = ""
@@ -199,7 +199,7 @@ for i in range(17):
     c += "<br><br>" + dobavlenie(soup)
     soup = udalenie(soup, poisk(soup))
   kods.append(c)
-  soup = udalenie(soup, poisk(soup))  
+  soup = udalenie(soup, poisk(soup))
 
 smi_about = kods
 
@@ -224,7 +224,7 @@ def im(a, k):
 
 a = []
 group_names = []
-group_name = [] #название группы 
+group_name = [] #название группы
 
 tree = kod("https://physics.itmo.ru/ru/research-groups")
 a = tree.xpath('//div[@class="research-group-group-name"]/text()')
@@ -250,7 +250,7 @@ for i in range(len(group_links)):
   names.append(group_names)
   surnames.append(group_surnames)
   rank.append(group_photo)
-  
+
 
 for i in range(len(names)):
   g = []
@@ -262,14 +262,14 @@ for i in range(len(names)):
       g.append(names[i][j] + " " +surnames[i][j])
     h.append("https://physics.itmo.ru/"+ rank[i][j])
   group_full_names.append(g)
-  group_full_photo.append(h)  
+  group_full_photo.append(h)
 
 
 
 
 
 ###### публикации ########
-# будут только ссылки на доки с публикациями 
+# будут только ссылки на доки с публикациями
 
 tree = kod("https://physics.itmo.ru/ru/publications")
 publi_links = tree.xpath('//div[@class="export-links"]/span[@class="papers-export-link export-gost"]/a/@href')
@@ -286,7 +286,7 @@ stage_sum_date = tree.xpath('//div[@class="field field--name-internship-date-tex
 stage_sum_deadline = tree.xpath('//div[@class="field field--name-internship-date-end-text field--type-text-long field--label-hidden field--item"]/p/span[@class="internship-dates-yellow-date"]/text()')
 
 
-# подать заявку 
+# подать заявку
 stage_sum_podat = tree.xpath('//div[@class="field field--name-internship-date-button field--type-link field--label-hidden field--item"]/a/@href')
 
 stage_sum_about_last_year = tree.xpath('//div[@class="field field--name-internship-project-desc field--type-text-long field--label-hidden field--item"]/p/text()')
@@ -311,7 +311,7 @@ stage_sum_rank = tree.xpath('//div[@class="field field--name-main-position field
 
 tree = kod("https://physics.itmo.ru/ru/internship/school/yearly")
 
-stage_year_about_name = tree.xpath('//div[@class="field field--name-internship-project-name field--type-string field--label-hidden field--item"]/text()') 
+stage_year_about_name = tree.xpath('//div[@class="field field--name-internship-project-name field--type-string field--label-hidden field--item"]/text()')
 stage_year_about = tree.xpath('//div[@class="field field--name-internship-project-desc field--type-text-long field--label-hidden field--item"]/text()')
 stage_year_rank = tree.xpath('//div[@class="field--label"]/text()')
 stage_year_uchastniki = tree.xpath('//div[@class="field field--name-internship-teams-person-text field--type-string field--label-above"]/div[@class="field--item"]/text()')
@@ -325,7 +325,7 @@ tree = kod("https://physics.itmo.ru/ru/admission/phd")
 
 asp_kod_program = tree.xpath('//div[@class="field field--name-name field--type-string field--label-hidden field--item"]/text()')
 asp_names_program = tree.xpath('//div[@class="field field--name-description field--type-text-long field--label-hidden field--item"]/text()')
-asp_date = tree.xpath('//div[@class="field field--name-adm-phd-date field--type-datetime field--label-hidden field--item"]/time/text()') 
+asp_date = tree.xpath('//div[@class="field field--name-adm-phd-date field--type-datetime field--label-hidden field--item"]/time/text()')
 asp_date_about = tree.xpath('//div[@class="field field--name-adm-phd-date-text field--type-string field--label-hidden field--item"]/text()')
 
 asp_napravlenia = tree.xpath('//div[@class="node--wrap"]/h2[@class="node-title"]/span/text()')
@@ -338,7 +338,7 @@ asp_kontact_rank = tree.xpath('//div[@class="personality-admission-position"]/te
 asp_kontact_pochta = tree.xpath('//div[@class="personality-admission-email"]/text()')
 asp_kontact_number = tree.xpath('//div[@class="personality-admission-phone"]/a/text()')
 
-# скорее всего здесь всё очень похоже с магистратурой, поэтому можно ввести функцию def 
+# скорее всего здесь всё очень похоже с магистратурой, поэтому можно ввести функцию def
 
 ########## магистратура #######
 
