@@ -343,6 +343,13 @@ asp3_vstup = tree.xpath('//div[@class="field field--name-adm-master-entrance-exa
 
 ########## аспирантура #######
 
+########## бакалавриат #######
+
+tree = kod("https://physics.itmo.ru/ru/admission/bachelor")
+
+bac_budj_mest = tree.xpath('//div[@class="field field--name-budget-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+bac_kontr_mest = tree.xpath('//div[@class="field field--name-paid-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+bac_prohod = tree.xpath('//div[@class="field field--name-exam-results field--type-integer field--label-above"]/div[@class="field--item"]/text()')
 
 
 
