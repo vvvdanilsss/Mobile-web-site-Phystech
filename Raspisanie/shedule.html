@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styleMenu.css">
+    <link rel="stylesheet" href="../GeneralPage/New_version/styleMenu.css">
     <link rel="stylesheet" href="styleRasp.css">
     <title>NewPhystech/Shedule</title>
 
@@ -14,73 +14,99 @@
 <body>
 
 <header id="myHead" class="head">
-    <div class="headerLogo">
-        <p class="new">Новый</p>
-        <p class="phystech">Физтех</p></div>
-    <nav id="myTopnav" class="topnav">
-        <a id="abit">Абитуриентам</a>
-        <div id="abitur" class="abitur">
-            <a href="#">Бакалавриат</a>
-            <a href="#">Магистратура</a>
-            <a href="#">Аспирантура</a>
-        </div>
-        <a id="sotr">Сотрудники</a>
-        <div id="sotrud" class="sotrud">
-            <a href="#">Сотрудники</a>
-            <a href="#">Юридическая поддержка</a>
-        </div>
-        <a id="quick">Quicklinks</a>
-        <div id="quickl" class="quickl">
-            <a href="#">Mail</a>
-            <a href="#">Wiki</a>
-            <a href="#">Redmine</a>
-        </div>
-        <a id="issl">Исследования</a>
-        <div id="issled" class="issled">
-            <a href="#">Оборудование</a>
-            <a href="#">Научные группы</a>
-            <a href="#">Публикации</a>
-            <a href="#">Патенты</a>
-        </div>
-        <a href="#">Вакансии</a>
-        <a id="onas">О New Phystech</a>
-        <div id="onewph" class="onewph">
-            <a href="#">СМИ о нас</a>
-            <a href="#">Видео</a>
-            <a href="#">История</a>
-        </div>
-    </nav>
-    <nav class="burger" id="myBurger">
-        <a href="#" id="menu" class="iconMenu">&#9776</a>
-        <a href="#" id="clos" class="iconClos">&#10006</a>
-    </nav>
+
+    <div class="head__up">
+        <nav class="up__logo">
+            <p class="logo__new">Новый</p>
+            <p class="logo__phystech">Физтех</p>
+        </nav>
+        <nav id="myBurger" class="up__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </div>
+
+    <div id="myBottom" class="head__bottom">
+        <nav id="myTopnav" class="botton__topnav">
+            <a href="#">Расписание</a>
+            <a href="#" id="abit">Абитуриентам &#9658</a>
+            <div id="abitur" class="abitur">
+                <a href="bacalavriat">&#9999 Бакалавриат</a>
+                <a href="magistratura">&#9999 Магистратура</a>
+                <a href="aspirantura">&#9999 Аспирантура</a>
+            </div>
+            <a href="#" id="sotr">Сотрудники &#9658</a>
+            <div id="sotrud" class="sotrud">
+                <a href="staff">&#9999 Сотрудники</a>
+                <a href="ur_help">&#9999 Юридическая поддержка</a>
+            </div>
+            <a href="#" id="quick">Quicklinks &#9658</a>
+            <div id="quickl" class="quickl">
+                <a href="#">&#9999 Mail</a>
+                <a href="#">&#9999 Wiki</a>
+                <a href="#">&#9999 Redmine</a>
+            </div>
+            <a href="#" id="issl">Исследования &#9658</a>
+            <div id="issled" class="issled">
+                <a href="#">&#9999 Оборудование</a>
+                <a href="#">&#9999 Научные группы</a>
+                <a href="publications">&#9999 Публикации</a>
+                <a href="#">&#9999 Патенты</a>
+            </div>
+            <a href="vacancy">Вакансии</a>
+            <a href="#" id="onas">О New Phystech &#9658</a>
+            <div id="onewph" class="onewph">
+                <a href="smiaboutus">&#9999 СМИ о нас</a>
+                <a href="video">&#9999 Видео</a>
+                <a href="history">&#9999 История</a>
+            </div>
+        </nav>
+    </div>
+
 </header>
 
-<div class="raspisanie">
-    <h1>Расписание</h1>
-</div>
-<div class="knopki">
-    <div id="cl1" class="click1">
-        <button id="baka">Бакалавриат</button>
-        <button id="maga">Магистратура</button>
+<div id="mySite" class="body__site">
+    <div class="raspisanie">
+        <h1>Расписание</h1>
+        <div class="raspisanie__knopki">
+            <div class="knopki__level">
+                <button id="baka" onclick="bakaOnclick()">Бакалавриат</button>
+                <button id="maga" onclick="magaOnclick()">Магистратура</button>
+            </div>
+            <div id="knopki__group__baka" class="knopki__group__baka">
+                <button id="z3143">Z3143</button>
+                <button id="z3144">Z3144</button>
+                <button id="z3243">Z3243</button>
+                <button id="z3244">Z3244</button>
+                <button id="z3343">Z3344</button>
+            </div>
+            <div id="knopki__group__maga" class="knopki__group__maga">
+                <button id="z41761">Z41761</button>
+                <button id="z41762">Z41762</button>
+                <button id="z41772">Z41772</button>
+                <button id="z41773">Z41773</button>
+                <button id="z41775">Z41775</button>
+            </div>
+        </div>
     </div>
-    <div id="cl2" class="click2">
-        <button id="v31">V3103</button>
-        <button id="v32">V3203</button>
-        <button id="v33">V3303</button>
-        <button id="v34">V3403</button>
-    </div>
-    <div id="cl3" class="click3">
-        <button id="pn">Пн</button>
-        <button id="vt">Вт</button>
-        <button id="sr">Ср</button>
-        <button id="cht">Чт</button>
-        <button id="pt">Пт</button>
-        <button id="sb">Сб</button>
+    <div class="raspisanie__pdf">
+        <embed id="pdf__z3143" class="pdf__z3143" src="../Files/z3143.pdf" width="100%" height="100%"/>
+        <embed id="pdf__z3144" class="pdf__z3144" src="../Files/z3144.pdf" width="100%" height="100%"/>
+        <embed id="pdf__z3243" class="pdf__z3243" src="../Files/z3243.pdf" width="100%" height="100%"/>
+        <embed id="pdf__z3244" class="pdf__z3244" src="../Files/z3244.pdf" width="100%" height="100%"/>
+        <embed id="pdf__z3343" class="pdf__z3343" src="../Files/z3343.pdf" width="100%" height="100%"/>
+        <embed id="pdf__z41761" class="pdf__z41761" src="../Files/z41761.pdf" width="100%" height="100%"/>
+        <embed id="pdf__z41762" class="pdf__z41762" src="../Files/z41762.pdf" width="100%" height="100%"/>
+        <embed id="pdf__z41772" class="pdf__z41772" src="../Files/z41772.pdf" width="100%" height="100%"/>
+        <embed id="pdf__z41773" class="pdf__z41773" src="../Files/z41773.pdf" width="100%" height="100%"/>
+        <embed id="pdf__z41775" class="pdf__z41775" src="../Files/z41775.pdf" width="100%" height="100%"/>
     </div>
 </div>
 
-<script src="../GeneralPage/scriptMenu.js"></script>
+<div class="scrollTop" onclick="myScrollTop()"></div>
+<script src="../GeneralPage/New_version/scriptMenu.js"></script>
 <script src="scriptRasp.js"></script>
 
 </body>
