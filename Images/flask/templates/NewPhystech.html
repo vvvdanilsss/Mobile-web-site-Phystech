@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="import" href="{{ url_for('static', filename='JaMenu.html') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>NewPhystech</title>
+
+</head>
+
+
+<body style="font-family: 'Helvetica', serif;">
+
+    <script>
+      var link = document.querySelector('link[rel=import]');
+      var content = link.import.querySelector('#myHead');
+      document.body.appendChild(content.cloneNode(true));
+    </script>
+
+<div id="mySite" class="body__site">
+    <div class="d2">
+        <h1>Новости</h1>
+    </div>
+    <ul class="gallery">
+        <li>
+			    <a href="/news1">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/p12609_0.jpg?itok=cgHNN" height="350"></a>
+                <div class="text-k-photo">
+                <h1>Еще один шаг к квантовым компьютерам: ученые ИТМО предложили модель, которая позволит защитить квантовые вычисления от беспорядка</h1></li>
+				<linews></linews>
+            <li>
+			    <a href="/news2">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/IMG_2018.jpg?itok=9QmKj" height="350"></a>
+                <div class="text-k-photo">
+                <h1>Лауреат ITMO.EduLeaders Андрей Кудлис — о том, почему физика полезна всем</h1></li>
+				<linews></linews>
+            <li>
+			    <a href="/news3">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B0-22.jpg?itok=nnZ2h" height="350"></a>
+                <div class="text-k-photo">
+                <h1>Открытый конкурс «Умная Упаковка»</h1></li>
+				<linews></linews>
+            <li>
+			    <a href="/news4">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/%D0%90%D0%BD%D1%82%D0%B5%D0%BD%D0%BD%D1%8B%202022-05.jpg?itok=IaVtw" height="350"></a>
+                <div class="text-k-photo">
+                <h1>Воркшоп с представителями бизнеса «Беспроводные технологии будущего» </h1></li>
+				<linews></linews>
+			<li>
+			    <a href="/news5">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%20%D0%BC%D0%B5%D0%B3%D0%B0%20%D1%81.PNG?itok=PVSj8" height="350"></a>
+                <div class="text-k-photo">
+               <h1>Курс «Установки Mega-Science в России и за рубежом»</h1></li>
+				<linews></linews>
+    </ul>
+
+    <div class="d3">
+        <h1>Семинары</h1>
+        <ul class="gallery">
+            <li>
+			    <a href="https://physics.itmo.ru/en/seminar/microwave-seminar-06062022-alexey-nevzorov">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8296.jpg?itok=8gP1J2TG" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Основанные на физике нейросетевые методы обработки сигналов  </h1></li>
+            <li>
+			    <a href="https://physics.itmo.ru/en/seminar/microwave-seminar-06062022-alexey-kalentyev">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8342.jpg?itok=IzWsjR0V" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Интеллектуальная САПР “Смекалец”: проектирование СВЧ МИС одной кнопкой  </h1></li>
+            <li>
+			    <a href="https://physics.itmo.ru/en/seminar/microwave-seminar-30052022-dinesh-rano">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8295.jpg?itok=XcfvCMz5" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Conceptualization, Analysis, and Design of Miniaturized EBG Surfaces and Antenna for WBAN Applications  </h1></li>
+            <li>
+			    <a href="https://physics.itmo.ru/en/seminar/theoretical-seminar-01062022-ksenia-chichay">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8261.png?itok=pR7M0x0d" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Dynamics of topological magnetic solitons: from domain walls to skyrmions.  </h1></li>
+			<li>
+			    <a href="https://physics.itmo.ru/en/seminar/theoretical-seminar-25052022-elena-anashkina">
+                <img src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8260.jpg?itok=8fVbLhri" height="350"></a>
+                <div class="text-k-photo">
+                <h1>    Nonlinear and laser effects in optical microresonators made of different glasses  </h1></li>
+        </ul>
+    </div>
+</div>
+
+<div class="scrollTop" onclick="myScrollTop()"></div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
