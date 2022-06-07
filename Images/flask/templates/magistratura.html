@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>NewPhystech</title>
+
+</head>
+
+
+
+
+<body style="font-family: 'Helvetica';">
+<header id="myHead" class="head">
+	    <div class="headerLogo">
+		<p class="new">Новый</p>
+		<p class="phystech">Физтех</p></div>
+	    <nav id="myTopnav" class="topnav">
+		<a id="abit">Абитуриентам</a>
+		<div id="abitur" class="abitur">
+		    <a href="bacalavriat">Бакалавриат</a>
+		    <a href="magistratura">Магистратура</a>
+		    <a href="aspirantura">Аспирантура</a>
+		</div>
+		<a id="sotr">Сотрудники</a>
+		<div id="sotrud" class="sotrud">
+		    <a href="staff">Сотрудники</a>
+		    <a href="ur_help">Юридическая поддержка</a>
+		</div>
+		<a id="quick">Quicklinks</a>
+		<div id="quickl" class="quickl">
+		    <a href="#">Mail</a>
+		    <a href="#">Wiki</a>
+		    <a href="#">Redmine</a>
+		</div>
+		<a id="issl">Исследования</a>
+		<div id="issled" class="issled">
+		    <a href="#">Оборудование</a>
+		    <a href="#">Научные группы</a>
+		    <a href="publications">Публикации</a>
+		    <a href="#">Патенты</a>
+		</div>
+		<a href="vacancy">Вакансии</a>
+		<a id="onas">О New Phystech</a>
+		<div id="onewph" class="onewph">
+		    <a href="smiaboutus">СМИ о нас</a>
+		    <a href="video">Видео</a>
+		    <a href="history">История</a>
+		</div>
+	    </nav>
+	    <nav class="burger" id="myBurger">
+		<a href="#" id="menu" class="iconMenu">&#9776</a>
+		<a href="#" id="clos" class="iconClos">&#10006</a>
+	    </nav>
+	</header>
+
+
+<div id="mySite" class="body__site">
+  <div class="sotrudniki-begin" style="margin-left:4%; margin-top:2%;">
+		<h1>Магистратура</h1>
+  </div>
+  <div class="line" style="margin-top:2%;"></div>
+
+  <div class="center" style="margin-top:10vh;">
+		<ul class="squre-prohode">
+			<h2>Направления подготовки</h2>
+			<li style="margin-top:1vh; margin-left:2vh;"><a class="center" href=""><h2>Современные квантовые и нанофотонные системы</h2></a>
+			</li>
+			<li style="margin-left:2vh;"><a class="center" href=""><h2>Физика радиочастотных технологий</h2></a>
+			</li>
+			<li style="margin-left:2vh;"><a class="center" href=""  style="list-style: inside;"	><h2>Фотоника и спинтроника</h2></a></li>
+
+		</ul>
+
+  </div>
+    </div>
+<div class="scrollTop" onclick="myScrollTop()"></div>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
