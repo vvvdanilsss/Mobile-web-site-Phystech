@@ -385,19 +385,45 @@
 
 
 .squre-prohod {
-    margin-left: 50vh;
+    margin-left: 20px;
     background-color: #191970;
     color: white;
-    width: 70vh;
-    margin-top: 2vh;
+    width: 600px;
+    margin-top: 10px;
     padding: 1vh;
     border-radius: 1.7vh;
+}
+
+.squre-napravlenia{
+  background-color: #191970;
+  color:white;
+  border-radius: 10px;
+  width: 300px;
+  height: 220px;
+}
+
+#squre-napravlenia-li{
+  margin-top: 20px;
+  list-style: none;
+  color: white;
+  margin-top:10px;
+  margin-left:20px;
+  color:white;
 }
 
 .squre-prohod li {
     text-align: center;
     margin-top: 2vh;
     list-style: none;
+}
+
+.squre-prohod, ul, li, a:visited{
+  color:inherit;
+}
+
+
+.squre-prohod li:visited{
+  color: inherit;
 }
 
 .mest {
