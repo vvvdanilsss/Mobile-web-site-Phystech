@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../Styles/style.css">
   <link rel="stylesheet" href="../Styles/styleMenu.css">
 	<title>MagistreSovr</title>
-
 </head>
 <body style="font-family: 'Helvetica';">
-<header id="myHead" class="head">
-	    <div class="headerLogo">
-		<p class="new">Новый</p>
-		<p class="phystech">Физтех</p></div>
-	    <nav id="myTopnav" class="topnav">
-		<a id="abit">Абитуриентам</a>
-		<div id="abitur" class="abitur">
-		    <a href="bacalavriat">Бакалавриат</a>
-		    <a href="magistratura">Магистратура</a>
-		    <a href="aspirantura">Аспирантура</a>
-		</div>
-		<a id="sotr">Сотрудники</a>
-		<div id="sotrud" class="sotrud">
-		    <a href="staff">Сотрудники</a>
-		    <a href="ur_help">Юридическая поддержка</a>
-		</div>
-		<a id="quick">Quicklinks</a>
-		<div id="quickl" class="quickl">
-		    <a href="#">Mail</a>
-		    <a href="#">Wiki</a>
-		    <a href="#">Redmine</a>
-		</div>
-		<a id="issl">Исследования</a>
-		<div id="issled" class="issled">
-		    <a href="#">Оборудование</a>
-		    <a href="#">Научные группы</a>
-		    <a href="publications">Публикации</a>
-		    <a href="#">Патенты</a>
-		</div>
-		<a href="vacancy">Вакансии</a>
-		<a id="onas">О New Phystech</a>
-		<div id="onewph" class="onewph">
-		    <a href="smiaboutus">СМИ о нас</a>
-		    <a href="video">Видео</a>
-		    <a href="history">История</a>
-		</div>
-	    </nav>
-	    <nav class="burger" id="myBurger">
-		<a href="#" id="menu" class="iconMenu">&#9776</a>
-		<a href="#" id="clos" class="iconClos">&#10006</a>
-	    </nav>
+	<header id="myHead" class="head">
+	    <div class="head__up">
+	        <nav class="up__logo">
+	            <a href="/">
+	            <p class="logo__new">Новый</p>
+	            <p class="logo__phystech">Физтех</p>
+	            </a>
+	        </nav>
+	        <nav id="myBurger" class="up__burger">
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	        </nav>
+	    </div>
+
+	    <div id="myBottom" class="head__bottom">
+	        <nav id="myTopnav" class="botton__topnav">
+	            <a href="timetable">Расписание</a>
+	            <a href="staff" >Сотрудники</a>
+	            <a href="vacancy">Вакансии</a>
+	            <a href="#" id="abit">Абитуриентам &#9658</a>
+	            <div id="abitur" class="abitur">
+	                <a href="bacalavriat">&#9999 Бакалавриат</a>
+	                <a href="magistratura">&#9999 Магистратура</a>
+	                <a href="aspirantura">&#9999 Аспирантура</a>
+	            </div>
+	            <a href="#" id="quick">Quicklinks &#9658</a>
+	            <div id="quickl" class="quickl">
+	                <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
+	                <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
+	                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
+	            </div>
+	            <a href="#" id="issl">Исследования &#9658</a>
+	            <div id="issled" class="issled">
+	                <a href="science-groups">&#9999 Научные группы</a>
+	                <a href="publications">&#9999 Публикации</a>
+	            </div>
+	            <a href="#" id="onas">О New Phystech &#9658</a>
+	            <div id="onewph" class="onewph">
+	                <a href="smiaboutus">&#9999 СМИ о нас</a>
+	                <a href="video">&#9999 Видео</a>
+	                <a href="history">&#9999 История</a>
+	            </div>
+	        </nav>
+	    </div>
+
 	</header>
   <div class="sotrudniki-begin" style="margin-left:4%; margin-top:2%;">
 		<h1>Современные квантовые и нанофотонные системы</h1>
@@ -75,7 +79,7 @@
 	      </li>
 	      <li>
 	        <h2>
-						<h3>
+						<h4>
 								Конкурс «Портфолио» Университета ИТМО;
 								МегаОлимпиада ИТМО;
 								Медалист/победитель "Я-профессионал";
@@ -83,64 +87,64 @@
 								Вступительный экзамен;
 								Конкурс докладов «Конгресс молодых ученых»;
 								Конкурс лучших научных работ стажировки физического факультета;
-						</h3>
+						</h4>
 	        </h2>
 	      </li>
-	      <li>
-	        <div class="mest">
-	          <div class="mesta">
-	            <h2>
-	              Бюджетных мест
-	            </h2>
-	            <h1>
-	              25
-	            </h1>
-	          </div>
-	          <div class="mesta">
-	            <h2>
-	              Контрактных мест
-	            </h2>
-	            <h1>
-	              10
-	            </h1>
-	          </div>
-	        </div>
-	      </li>
+
+        <div class="mest">
+          <div class="mesta">
+            <h3>
+              Бюджетных мест
+            </h3>
+            <h3>
+              25
+            </h3>
+          </div>
+          <div class="mesta" style="margin-left:10px;">
+            <h3>
+              Контрактных мест
+            </h3>
+            <h3>
+              10
+            </h3>
+          </div>
+        </div>
 	    <div class="about-us">
-	      <h3>В рамках программы вы будете учиться у физиков мирового уровня, публикующихся в высокорейтинговых международных журналах. Более того, у вас будут все условия для того, чтобы опубликовать свое исследование в таком журнале наравне с ними. Новый физтех активно коллаборирует с заграничными коллегами из мира науки,  а значит — вы сможете пройти стажировку в таких университетах как: University of Iceland, University of Lorraine, University of Exeter, University of Sheffield и других.
-	      </h3>
-	      <h3 style="margin-top: 2vh;">
+	      <h3>
+					В рамках программы вы будете учиться у физиков мирового уровня, публикующихся в высокорейтинговых международных журналах. Более того, у вас будут все условия для того, чтобы опубликовать свое исследование в таком журнале наравне с ними. Новый физтех активно коллаборирует с заграничными коллегами из мира науки,  а значит — вы сможете пройти стажировку в таких университетах как: University of Iceland, University of Lorraine, University of Exeter, University of Sheffield и других.
+				</h3>
+				<h3>
 					У студентов этой программы будет возможность выбрать важные и интересные им курсы из разных областей физики (а еще химии, биологии и даже программирования) и таким образом сформировать свой уникальный набор профессиональных навыков.
 				</h3>
-				<h3 style="margin-top: 2vh;">
+				<h3>
 					Вы сможете стать не только физиком-экспериментатором или -теоретиком, но и специалистом в сфере междисциплинарных исследований на стыке физики, химии и биологии, или даже работать с вычислительными методами и машинным обучением
 				</h3>
-				<h3 style="margin-top: 2vh">
+				<h3 style="margin-top:10px;">
 					В рамках программы реализуются четыре специализации:
-					<ul>
-						<li>
-							<h4>
-								«Квантовые материалы» — теоретические методы моделирования материалов, в которых многочастичные квантовые корреляции качественным образом меняют свойства систем.
-							</h4>
-						</li>
-						<li>
-							<h4>
-								«Нанофотоника» —  студенты специализации будут углубленно изучать аналитические, численные и экспериментальные методы нанооптики.
-							</h4>
-						</li>
-						<li>
-							<h4>
-								«Гибридные материалы» — главный акцент специализации – междисциплинарные исследования, поэтому она отлично подходит студентам с разным бэкграундом (физика, химия, материаловедение, биология и др.), которые хотят заниматься исследованиями на стыке наук.
-							</h4>
-						</li>
-						<li>
-							<h4>
-								«Компьютерное моделирование квантовых и нанофотонных систем» — студенты будут изучать вычислительные методы в области нанофотоники и физики конденсированного состояния, где активно проводятся как фундаментальные исследования, так и прикладные разработки.
-							</h4>
-						</li>
-					</ul>
 				</h3>
-	      <h1 style="margin-top: 5vh;">
+				<ul>
+					<li>
+						<p>
+							«Квантовые материалы» — теоретические методы моделирования материалов, в которых многочастичные квантовые корреляции качественным образом меняют свойства систем.
+						</p>
+					</li>
+					<li>
+						<p>
+							«Нанофотоника» —  студенты специализации будут углубленно изучать аналитические, численные и экспериментальные методы нанооптики.
+						</p>
+					</li>
+					<li>
+						<p>
+							«Гибридные материалы» — главный акцент специализации – междисциплинарные исследования, поэтому она отлично подходит студентам с разным бэкграундом (физика, химия, материаловедение, биология и др.), которые хотят заниматься исследованиями на стыке наук.
+						</p>
+					</li>
+					<li>
+						<p>
+							«Компьютерное моделирование квантовых и нанофотонных систем» — студенты будут изучать вычислительные методы в области нанофотоники и физики конденсированного состояния, где активно проводятся как фундаментальные исследования, так и прикладные разработки.
+						</p>
+					</li>
+				</ul>
+        <h1 style="margin-top: 5vh;">
 	        Контактное лицо
 	      </h1>
 	    </div>
@@ -149,7 +153,7 @@
 	      <div class="contact-photo">
 	        <img src="https://physics.itmo.ru/sites/default/files/styles/round/public/personality/photo/6877.jpg?itok=xPUlvbHz" alt="Avatar" style="border-radius: 50%; width:30vh;">
 	      </div>
-	      <div class="contact-photo">
+        <div class="contact-photo">
 	        <h2 class="contact">Виталий Васянович</h2>
 	        <h2 class="contact">Ведущий PR-специалист</h2>
 	        <h2 class="contact">v.vasjanovics@metalab.ifmo.ru</h2>
@@ -160,7 +164,7 @@
 	  </div>
 	</ul>
 	</div>
-<script src="../GeneralPage/New_version/scriptMenu.js"></script>
+<script src="../Scripts/scriptMenu.js"></script>
 
 </body>
 

@@ -11,50 +11,56 @@
 
 </head>
 <body style="font-family: 'Helvetica';">
-<header id="myHead" class="head">
-	    <div class="headerLogo">
-		<p class="new">Новый</p>
-		<p class="phystech">Физтех</p></div>
-	    <nav id="myTopnav" class="topnav">
-		<a id="abit">Абитуриентам</a>
-		<div id="abitur" class="abitur">
-		    <a href="bacalavriat">Бакалавриат</a>
-		    <a href="magistratura">Магистратура</a>
-		    <a href="aspirantura">Аспирантура</a>
-		</div>
-		<a id="sotr">Сотрудники</a>
-		<div id="sotrud" class="sotrud">
-		    <a href="staff">Сотрудники</a>
-		    <a href="ur_help">Юридическая поддержка</a>
-		</div>
-		<a id="quick">Quicklinks</a>
-		<div id="quickl" class="quickl">
-		    <a href="#">Mail</a>
-		    <a href="#">Wiki</a>
-		    <a href="#">Redmine</a>
-		</div>
-		<a id="issl">Исследования</a>
-		<div id="issled" class="issled">
-		    <a href="#">Оборудование</a>
-		    <a href="#">Научные группы</a>
-		    <a href="publications">Публикации</a>
-		    <a href="#">Патенты</a>
-		</div>
-		<a href="vacancy">Вакансии</a>
-		<a id="onas">О New Phystech</a>
-		<div id="onewph" class="onewph">
-		    <a href="smiaboutus">СМИ о нас</a>
-		    <a href="video">Видео</a>
-		    <a href="history">История</a>
-		</div>
-	    </nav>
-	    <nav class="burger" id="myBurger">
-		<a href="#" id="menu" class="iconMenu">&#9776</a>
-		<a href="#" id="clos" class="iconClos">&#10006</a>
-	    </nav>
+	<header id="myHead" class="head">
+	    <div class="head__up">
+	        <nav class="up__logo">
+	            <a href="/">
+	            <p class="logo__new">Новый</p>
+	            <p class="logo__phystech">Физтех</p>
+	            </a>
+	        </nav>
+	        <nav id="myBurger" class="up__burger">
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	        </nav>
+	    </div>
+
+	    <div id="myBottom" class="head__bottom">
+	        <nav id="myTopnav" class="botton__topnav">
+	            <a href="timetable">Расписание</a>
+	            <a href="staff" >Сотрудники</a>
+	            <a href="vacancy">Вакансии</a>
+	            <a href="#" id="abit">Абитуриентам &#9658</a>
+	            <div id="abitur" class="abitur">
+	                <a href="bacalavriat">&#9999 Бакалавриат</a>
+	                <a href="magistratura">&#9999 Магистратура</a>
+	                <a href="aspirantura">&#9999 Аспирантура</a>
+	            </div>
+	            <a href="#" id="quick">Quicklinks &#9658</a>
+	            <div id="quickl" class="quickl">
+	                <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
+	                <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
+	                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
+	            </div>
+	            <a href="#" id="issl">Исследования &#9658</a>
+	            <div id="issled" class="issled">
+	                <a href="science-groups">&#9999 Научные группы</a>
+	                <a href="publications">&#9999 Публикации</a>
+	            </div>
+	            <a href="#" id="onas">О New Phystech &#9658</a>
+	            <div id="onewph" class="onewph">
+	                <a href="smiaboutus">&#9999 СМИ о нас</a>
+	                <a href="video">&#9999 Видео</a>
+	                <a href="history">&#9999 История</a>
+	            </div>
+	        </nav>
+	    </div>
+
 	</header>
   <div class="sotrudniki-begin" style="margin-left:4%; margin-top:2%;">
-		<h1>Современные квантовые и нанофотонные системы</h1>
+		<h1>Фотоника и спинтроника</h1>
   </div>
   <div class="line" style="margin-top:2%;"></div>
 	<div class="center">
@@ -75,7 +81,7 @@
 	      </li>
 	      <li>
 	        <h2>
-						<h3>
+						<h4>
 								Конкурс «Портфолио» Университета ИТМО;
 								МегаОлимпиада ИТМО;
 								Медалист/победитель "Я-профессионал";
@@ -83,32 +89,31 @@
 								Вступительный экзамен;
 								Конкурс докладов «Конгресс молодых ученых»;
 								Конкурс лучших научных работ стажировки физического факультета;
-						</h3>
+						</h4>
 	        </h2>
 	      </li>
-	      <li>
-	        <div class="mest">
-	          <div class="mesta">
-	            <h2>
-	              Бюджетных мест
-	            </h2>
-	            <h1>
-	              16
-	            </h1>
-	          </div>
-	          <div class="mesta">
-	            <h2>
-	              Контрактных мест
-	            </h2>
-	            <h1>
-	              5
-	            </h1>
-	          </div>
-	        </div>
-	      </li>
+
+        <div class="mest">
+          <div class="mesta">
+            <h3>
+              Бюджетных мест
+            </h3>
+            <h3>
+              16
+            </h3>
+          </div>
+          <div class="mesta" style="margin-left:10px;">
+            <h3>
+              Контрактных мест
+            </h3>
+            <h3>
+              5
+            </h3>
+          </div>
+        </div>
 	    <div class="about-us">
 	      <h3>Фотоника и спинтроника – два бурно развивающихся и тесно связанных физических направления, которые уже сейчас во многом определяют нашу жизнь и будут еще более востребованы в ближайшем будущем. В перспективе они призваны заменить электронные устройства на оптико-спинтронные, которые будут более дешевыми, компактными и быстродействующими. Образовательная программа основана на оригинальных курсах ведущих ученых из ФТИ им. А.Ф. Иоффе, Академического Университета им. Ж.И. Алферова, Высшей Школы Экономики и Университета ИТМО. Для научно-исследовательской работы магистрам предоставляется широкий выбор теоретических, экспериментальных и технологических тематик, результаты работы студенты представляют на международных конференциях и публикуют в высокорейтинговых физических журналах.
-</h3>
+				</h3>
         <h1 style="margin-top: 5vh;">
 	        Контактное лицо
 	      </h1>
@@ -129,7 +134,7 @@
 	  </div>
 	</ul>
 	</div>
-<script src="../GeneralPage/New_version/scriptMenu.js"></script>
+<script src="../Scripts/scriptMenu.js"></script>
 
 </body>
 
