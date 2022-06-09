@@ -539,3 +539,29 @@
 .vacanse-squre{
   padding: 20px;
 }
+
+.squre-infa-about-down{
+  font-family: 'Helvetica';
+  color: white;
+  width: 100%;
+  height: 300px;
+  background: black;
+}
+
+.squre-infa-about-down-networks{
+  text-align: center;
+  padding: 20px;
+}
+
+.squre-infa-contact-phone{
+  text-align: center;
+}
+
+.squre-infa-contact-address{
+  padding: 20px;
+  text-align: center;
+}
+
+.squre-infa-contact{
+  display: inline-block;
+}
