@@ -23,12 +23,12 @@ a {
     display: flex;
     justify-content: space-between;
     border-radius: 0 0 12px 12px;
+    transition: all .5s linear;
 }
 
-.head__up:visited{
-  border-radius: 0 0 0 0;
+.head__up.open {
+    border-radius: 0 0 0 0;
 }
-
 
 
 .up__logo {
@@ -42,14 +42,12 @@ a {
 
 .logo__new {
     font-size: 20px;
-        color: #fff;
 
 }
 
 .logo__phystech {
-    margin-top: -15px;
+    margin-top: -10px;
     font-size: 35px;
-        color: #fff;
 
 }
 
@@ -124,7 +122,6 @@ a {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-    margin-top: -10px;
     border-radius: 0 0 12px 12px;
 }
 
@@ -191,6 +188,6 @@ a {
     opacity: 1;
 }
 
-span{
-  border-radius: 2.7px;
+span {
+    border-radius: 2.7px;
 }

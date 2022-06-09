@@ -42,50 +42,50 @@ maga.addEventListener('click', e => {
 })
 
 z3143.addEventListener('click', e => {
-    groupOnClick('pdf__z3143',
+    groupOnClick('img__z3143',
         '#z3143')
 })
 
 z3144.addEventListener('click', e => {
-    groupOnClick('pdf__z3144',
+    groupOnClick('img__z3144',
         '#z3144')
 })
 
 z3243.addEventListener('click', e => {
-    groupOnClick('pdf__z3243',
+    groupOnClick('img__z3243',
         '#z3243')
 })
 
 z3244.addEventListener('click', e => {
-    groupOnClick('pdf__z3244',
+    groupOnClick('img__z3244',
         '#z3244')
 })
 
-z3343.addEventListener('click', e => {
-    groupOnClick('pdf__z3343',
-        '#z3343')
+z33431.addEventListener('click', e => {
+    groupOnClick('img__z33431',
+        '#z33431')
 })
 z41761.addEventListener('click', e => {
-    groupOnClick('pdf__z41761',
+    groupOnClick('img__z41761',
         '#z41761')
 })
 
 z41762.addEventListener('click', e => {
-    groupOnClick('pdf__z41762',
+    groupOnClick('img__z41762',
         '#z41762')
 })
 
 z41772.addEventListener('click', e => {
-    groupOnClick('pdf__z41772',
+    groupOnClick('img__z41772',
         '#z41772')
 })
 
 z41773.addEventListener('click', e => {
-    groupOnClick('pdf__z41773',
+    groupOnClick('img__z41773',
         '#z41773')
 })
 
 z41775.addEventListener('click', e => {
-    groupOnClick('pdf__z41775',
+    groupOnClick('img__z41775',
         '#z41775')
 })

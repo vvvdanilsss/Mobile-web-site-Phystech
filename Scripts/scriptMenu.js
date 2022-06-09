@@ -10,12 +10,14 @@ function close(idName, className) {
 
 function openMenu() {
     open('myBurger');
+    open('myUp');
     open('myBottom');
     open('mySite');
 }
 
 function closeMenu() {
     close('myBurger', 'up__burger');
+    close('myUp', 'head__up');
     close('myBottom', 'head__bottom');
     close('mySite', 'body__site');
 }
