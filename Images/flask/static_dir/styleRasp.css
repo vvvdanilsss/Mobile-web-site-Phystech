@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 ul {
@@ -9,53 +8,74 @@ ul {
 }
 
 .raspisanie {
-    font-size: 24px;
-    margin-top: 3.5%;
-    margin-left: 3.5%;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
     font-family: 'Helvetica', serif;
 }
 
 button {
     border: 0;
-    border-radius: 12px;
+    border-radius: 20px;
     background: #4676D7;
-    margin-left: 3.5%;
-    margin-top: 3.5%;
-    padding: 24px 24px;
-    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 15px;
     color: white;
 }
 
-.click3 button {
-    border-radius: 3.7vh
-}
-
-button:hover {
-    background: #1d49aa;
+.knopki__group__baka button,
+.knopki__group__maga button {
+    font-size: 10px;
 }
 
 button:focus {
     outline: none;
-    box-shadow: 0 0 0 4px #cbd6ee;
-}
-button:visited{
-    color: black;
-    outline: none;
-    box-shadow: 0 0 0 4px #cbd6ee;
     background: #1d49aa;
-}
-.click2 {
-    display: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
 }
 
-.click3 {
-    display: none;
+.knopki__group__baka {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s linear;
 }
 
-.click2.on {
-    display: block;
+.knopki__group__maga {
+    position: fixed;
+    margin-top: -62.2px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s linear;
 }
 
-.click3.on {
-    display: block;
+.knopki__group__baka.on,
+.knopki__group__maga.on {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__z3143, .img__z3144, .img__z3243,
+.img__z3244, .img__z33431, .img__z41761,
+.img__z41762, .img__z41772, .img__z41773,
+.img__z41775 {
+    position: fixed;
+    top: 300px;
+    left: 15px;
+    width: 350px;
+    height: 450px;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+.img__z3143.on, .img__z3144.on, .img__z3243.on,
+.img__z3244.on, .img__z33431.on, .img__z41761.on,
+.img__z41762.on, .img__z41772.on, .img__z41773.on,
+.img__z41775.on {
+    pointer-events: visiblePainted;
+    visibility: visible;
+    opacity: 1;
 }

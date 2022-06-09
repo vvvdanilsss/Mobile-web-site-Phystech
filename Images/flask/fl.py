@@ -50,10 +50,6 @@ def news5():
 def smiabobus():
     return render_template('smiabobus.html')
 
-@app.route("/magistratura")
-def magistratura():
-    return render_template('magistratura.html')
-
 @app.route("/bacalavriat")
 def bacalavriat():
     return render_template('bacalavriat.html')
@@ -62,6 +58,33 @@ def bacalavriat():
 def aspirantura():
     return render_template('aspirantura.html')
 
+@app.route("/vacancy")
+def vacancy():
+    return render_template('vacancy.html')
+
+@app.route("/science-groups")
+def sciencegroups():
+    return render_template('science-groups.html')
+
+@app.route("/publications")
+def publications():
+    return render_template('publications.html')
+
+@app.route("/magistratura")
+def magistratura():
+    return render_template('magistratura.html')
+
+@app.route("/magistreFot")
+def magistreFot():
+    return render_template('magistreFot.html')
+
+@app.route("/magistreRad")
+def magistreRad():
+    return render_template('magistreRad.html')
+
+@app.route("/magistreSovr")
+def magistreSovr():
+    return render_template('magistreSovr.html')
 
 
 

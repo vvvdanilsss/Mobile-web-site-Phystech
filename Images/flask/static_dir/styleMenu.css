@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 .body__site {
@@ -22,7 +23,14 @@ a {
     z-index: 10;
     display: flex;
     justify-content: space-between;
+    border-radius: 0 0 12px 12px;
+    transition: all .5s linear;
 }
+
+.head__up.open {
+    border-radius: 0 0 0 0;
+}
+
 
 .up__logo {
     color: #fff;
@@ -35,11 +43,13 @@ a {
 
 .logo__new {
     font-size: 20px;
+
 }
 
 .logo__phystech {
-    margin-top: -15px;
+    margin-top: -10px;
     font-size: 35px;
+
 }
 
 .up__burger {
@@ -113,7 +123,7 @@ a {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-    margin-top: -1px;
+    border-radius: 0 0 12px 12px;
 }
 
 .botton__topnav {
@@ -177,4 +187,8 @@ a {
     bottom: 25px;
     visibility: visible;
     opacity: 1;
+}
+
+span {
+    border-radius: 2.7px;
 }

@@ -375,6 +375,34 @@ asp_kontact_number = tree.xpath('//div[@class="personality-admission-phone"]/a/t
 
 # //ul[@class='facetOptions']/li/a[@role='checkbox']/@href
 
+
+########## бакалавриат #######
+
+tree = kod("https://physics.itmo.ru/ru/admission/bachelor")
+
+bac_budj_mest = tree.xpath('//div[@class="field field--name-budget-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+bac_kontr_mest = tree.xpath('//div[@class="field field--name-paid-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+bac_prohod = tree.xpath('//div[@class="field field--name-exam-results field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+
+####### магистратура #########
+
+tree = kod("https://physics.itmo.ru/ru/admission/master/advanced-quantum-and-nanophotonic-systems")
+asp1_budjet = tree.xpath('//div[@class="admission-master-in-a-glance-column-2"]/div[@class="field field--name-adm-master-budget-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp1_contract = tree.xpath('//div[@class="field field--name-adm-master-paid-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp1_vstup = tree.xpath('//div[@class="field field--name-adm-master-entrance-exams field--type-link field--label-above"]/div[@class="field--items"]/div[@class="field--item"]/a/text()')
+
+tree = kod("https://physics.itmo.ru/ru/admission/master/physics-of-radio-frequency-technologies")
+asp2_budjet = tree.xpath('//div[@class="admission-master-in-a-glance-column-2"]/div[@class="field field--name-adm-master-budget-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp2_contract = tree.xpath('//div[@class="field field--name-adm-master-paid-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp2_vstup = tree.xpath('//div[@class="field field--name-adm-master-entrance-exams field--type-link field--label-above"]/div[@class="field--items"]/div[@class="field--item"]/a/text()')
+
+
+
+tree = kod("https://physics.itmo.ru/ru/admission/master/photonics-and-spintronics")
+asp3_budjet = tree.xpath('//div[@class="admission-master-in-a-glance-column-2"]/div[@class="field field--name-adm-master-budget-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp3_contract = tree.xpath('//div[@class="field field--name-adm-master-paid-places field--type-integer field--label-above"]/div[@class="field--item"]/text()')
+asp3_vstup = tree.xpath('//div[@class="field field--name-adm-master-entrance-exams field--type-link field--label-above"]/div[@class="field--items"]/div[@class="field--item"]/a/text()')
+
 d=0
 #"""
 #Главная страница
@@ -385,13 +413,13 @@ with open("NewPhystech_OLD.html", 'r+', encoding='utf-8') as f1, open("NewPhyste
     for line in x:
             if FIND1 in line:
                 if d!=4:
-                    f2.write('			    <a href="/news'+str(d+1)+'">'+"\n"+'                <img src="'+picture20[d]+'" height="350"></a>'+"\n"+'                <div class="text-k-photo">'+"\n"+'                <h1>'+opisanie_news[d]+'</h1></li>'+"\n")
+                    f2.write('			    <a href="/news'+str(d+1)+'">'+"\n"+'                <img class="general-photo" src="'+picture20[d]+'">'+"\n"+'                '+"\n"+'                <h5>'+opisanie_news[d]+'</h5></a></li>'+"\n")
                 else:
-                    f2.write('			    <a href="/news'+str(d+1)+'">'+"\n"+'                <img src="'+picture20[d]+'" height="350"></a>'+"\n"+'                <div class="text-k-photo">'+"\n"+'               <h1>'+opisanie_news[d]+'</h1></li>'+"\n")
+                    f2.write('			    <a href="/news'+str(d+1)+'">'+"\n"+'                <img class="general-photo" src="'+picture20[d]+'">'+"\n"+'                '+"\n"+'               <h5>'+opisanie_news[d]+'</h5></a></li>'+"\n")
                     d=0
                 d+=1
             if FIND2 in line:
-                f2.write('			    <a href="https://physics.itmo.ru' + str(seminars_href[d-1]) + '">' + "\n" + '                <img src="https://physics.itmo.ru/' + semianrs_photo[d-1] + '" height="350"></a>' + "\n" + '                <div class="text-k-photo">' + "\n" + '                <h1>'+str(semianars_topic2[d-1]).replace('\n\t\t\t','')+'</h1></li>' + "\n")
+                f2.write('			    <a href="https://physics.itmo.ru' + str(seminars_href[d-1]) + '">' + "\n" + '                <img class="general-photo" src="https://physics.itmo.ru/' + semianrs_photo[d-1] + '">' + "\n" + '                ' + "\n" + '                <h5>'+str(semianars_topic2[d-1]).replace('\n\t\t\t','')+'</h5></a></li>' + "\n")
                 d+=1
             else:
 
@@ -405,7 +433,7 @@ with open("video_OLD.html", 'r+', encoding='utf-8') as f1, open("video.html", 'w
     x=f1.readlines()
     for line in x:
             if FIND in line:
-                f2.write('			        <a href="' + str(videos_video[d]) + '" >' + "\n" + '					    <img style="width: 640px; height: 480px;" src="' +videos_picture[d] + '">' + "\n" +'					</a>'+"\n"+'				</div>' + "\n" +  "\n" + '			<div class="vidosiki-opisanie" style="text-align: center;">' + "\n" + '				<h3>' + str(videos_about[d]) + '</h3></div></li>' + "\n")
+                f2.write('			        <a href="' + str(videos_video[d]) + '" >' + "\n" + '					    <img src="' +videos_picture[d] + '" alt="Avatar" style="border-radius:10px; width:320px;">' + "\n"+'				<p>' + str(videos_about[d]) + '</p></a></li>' + "\n")
                 d+=1
             else:
                 f2.write(line)
@@ -420,7 +448,7 @@ with open("staff_start.html", 'r+', encoding='utf-8') as f1, open("staff_OLD.htm
     x=f1.readlines()
     for line in x:
             if FIND in line:
-                f2.write(('		<listaff style="display: inline-block; margin-left: 2%;">'+'\n'+'			<div class="ikonki-sotrudnikov">'+'\n'+'			<img src="staff_src" alt="Avatar" style="border-radius: 50%;">'+'\n'+'			</div>'+'\n'+'            <div class="sotrudniki-opisanie" style="display: block; margin-top: 1%;">'+'\n'+'                <h3>staff_name</h3>'+'\n'+'            </div>'+'\n'+'            <div class="sotrudniki-opisanie" style="display: block; margin-top: 1%;">'+'\n'+'                <p>staff_about</p>'+'\n'+'            </div>'+'\n'+'        </listaff>'+'\n')*(len(sotrudniki_photo)-5))
+                f2.write(('		<li style="color:black; text-align:center;">'+'\n'+'			<img src="staff_src" alt="Avatar" style="border-radius: 50%;">'+'\n'+'                <p>staff_name</p>'+'\n'+'                <p>staff_about</p>'+'\n'+'        </li>'+'\n')*(len(sotrudniki_photo)-5))
             else:
                 f2.write(line)
 
@@ -438,7 +466,7 @@ with open("staff_OLD.html", 'r+', encoding='utf-8') as f1, open("staff.html", 'w
                 c+=1
                 continue
             if FIND2 in line:
-                f2.write('              <h3>'+str(sotrudniki_name1[d])+' '+str(sotrudniki_name2[d])+'</h3>'+"\n")
+                f2.write('              <p>'+str(sotrudniki_name1[d])+' '+str(sotrudniki_name2[d])+'</p>'+"\n")
                 continue
             if FIND3 in line:
                 f2.write('          <p>'+str(sotrudniki_about[d])+'</p>'+"\n")
@@ -452,7 +480,7 @@ with open("staff_OLD.html", 'r+', encoding='utf-8') as f1, open("staff.html", 'w
 d = 0
 c=[]
 
-FIND='<p'
+FIND='<p3'
 FIND1='Название новости'
 for i in range(1, 6):
     d=0
@@ -481,6 +509,63 @@ for i in range(1, 6):
 #"""
 d=0
 
+FIND1='prohod-b'
+FIND2='budj-b'
+FIND3='kontr-b'
+with open("bacalavriat_OLD.html", 'r+', encoding='utf-8') as f1, open("bacalavriat.html", 'w+', encoding='utf-8') as f2:
+    x=f1.readlines()
+    for line in x:
+            if FIND1 in line:
+                f2.write(str(*bac_prohod)+'\n')
+                continue
+            if FIND2 in line:
+                f2.write(str(*bac_budj_mest)+'\n')
+                continue
+            if FIND3 in line:
+                f2.write(str(*bac_kontr_mest)+'\n')
+            else:
+                f2.write(line)
+d=0
+
+FIND2='budj-b'
+FIND3='kontr-b'
+with open("magistreSovr_OLD.html", 'r+', encoding='utf-8') as f1, open("magistreSovr.html", 'w+', encoding='utf-8') as f2:
+    x=f1.readlines()
+    for line in x:
+            if FIND2 in line:
+                f2.write(str(*asp1_budjet)+'\n')
+                continue
+            if FIND3 in line:
+                f2.write(str(*asp1_contract)+'\n')
+            else:
+                f2.write(line)
+d=0
+FIND2='budj-b'
+FIND3='kontr-b'
+with open("magistreRad_OLD.html", 'r+', encoding='utf-8') as f1, open("magistreRad.html", 'w+', encoding='utf-8') as f2:
+    x=f1.readlines()
+    for line in x:
+            if FIND2 in line:
+                f2.write(str(*bac_budj_mest)+'\n')
+                continue
+            if FIND3 in line:
+                f2.write(str(*bac_kontr_mest)+'\n')
+            else:
+                f2.write(line)
+d=0
+FIND2='budj-b'
+FIND3='kontr-b'
+with open("magistreFot_OLD.html", 'r+', encoding='utf-8') as f1, open("magistreFot_OLD.html", 'w+', encoding='utf-8') as f2:
+    x=f1.readlines()
+    for line in x:
+            if FIND2 in line:
+                f2.write(str(*bac_budj_mest)+'\n')
+                continue
+            if FIND3 in line:
+                f2.write(str(*bac_kontr_mest)+'\n')
+            else:
+                f2.write(line)
+d=0
 #hrefs_newsLast[0]
 """
 FIND='<li'
