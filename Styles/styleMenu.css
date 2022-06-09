@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 .body__site {
@@ -42,11 +43,6 @@ a {
 
 .logo__new {
     font-size: 20px;
-<<<<<<< HEAD
-        color: #fff;
-=======
-
->>>>>>> 85449db0a074677649b23349e7ecc877712ae70c
 }
 
 
@@ -195,5 +191,5 @@ a {
 }
 
 span {
-    border-radius: 2.7px;
+    border-radius: 2px;
 }
