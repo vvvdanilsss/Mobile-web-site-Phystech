@@ -44,10 +44,23 @@ a {
     font-size: 20px;
 }
 
-.logo__phystech {
+.logo__new {
     margin-top: -15px;
     font-size: 35px;
 }
+
+.logo__new:visited {
+    font-size: 20px;
+    color: white;
+}
+
+.logo__phystech:visited {
+    margin-top: -15px;
+    font-size: 35px;
+    color:white;
+}
+
+
 
 .up__burger {
     width: 50px;
