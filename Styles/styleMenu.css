@@ -42,25 +42,16 @@ a {
 
 .logo__new {
     font-size: 20px;
+        color: #fff;
+
 }
 
-.logo__new {
+.logo__phystech {
     margin-top: -15px;
     font-size: 35px;
+        color: #fff;
+
 }
-
-.logo__new:visited {
-    font-size: 20px;
-    color: white;
-}
-
-.logo__phystech:visited {
-    margin-top: -15px;
-    font-size: 35px;
-    color:white;
-}
-
-
 
 .up__burger {
     width: 50px;
