@@ -24,6 +24,14 @@ a {
     justify-content: space-between;
 }
 
+.head__up:focus{
+  border-radius: 9px 9px 9px 9px;
+}
+
+.head__up:hover{
+  border-radius: 0 0 0 0;
+}
+
 .up__logo {
     color: #fff;
     font-weight: 800;
@@ -114,6 +122,7 @@ a {
     opacity: 1;
     transform: translateY(0);
     margin-top: -1px;
+    border-radius: 0 0 9px 9px;
 }
 
 .botton__topnav {
@@ -177,4 +186,8 @@ a {
     bottom: 25px;
     visibility: visible;
     opacity: 1;
+}
+
+span{
+  border-radius: 2.7px;
 }

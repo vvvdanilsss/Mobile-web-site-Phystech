@@ -9,58 +9,76 @@
 </head>
 <body style="font-family: 'Helvetica';">
 	<header id="myHead" class="head">
-	    <div class="headerLogo">
-	        <p class="new">Новый</p>
-	        <p class="phystech">Физтех</p></div>
-	    <nav id="myTopnav" class="topnav">
-	        <a id="abit">Абитуриентам</a>
-	        <div id="abitur" class="abitur">
-	            <a href="#">Бакалавриат</a>
-	            <a href="#">Магистратура</a>
-	            <a href="#">Аспирантура</a>
-	        </div>
-	        <a id="sotr">Сотрудники</a>
-	        <div id="sotrud" class="sotrud">
-	            <a href="#">Сотрудники</a>
-	            <a href="#">Юридическая поддержка</a>
-	        </div>
-	        <a id="quick">Quicklinks</a>
-	        <div id="quickl" class="quickl">
-	            <a href="#">Mail</a>
-	            <a href="#">Wiki</a>
-	            <a href="#">Redmine</a>
-	        </div>
-	        <a id="issl">Исследования</a>
-	        <div id="issled" class="issled">
-	            <a href="#">Оборудование</a>
-	            <a href="#">Научные группы</a>
-	            <a href="#">Публикации</a>
-	            <a href="#">Патенты</a>
-	        </div>
-	        <a href="#">Вакансии</a>
-	        <a id="onas">О New Phystech</a>
-	        <div id="onewph" class="onewph">
-	            <a href="#">СМИ о нас</a>
-	            <a href="#">Видео</a>
-	            <a href="#">История</a>
-	        </div>
-	    </nav>
-	    <nav class="burger" id="myBurger">
-	        <a href="#" id="menu" class="iconMenu">&#9776</a>
-	        <a href="#" id="clos" class="iconClos">&#10006</a>
-	    </nav>
-	</header>
-  <div class="sotrudniki-begin" style="margin-left:4%; margin-top:2%;">
+    <div class="head__up">
+        <nav class="up__logo">
+            <a href="/">
+            <p class="logo__new">Новый</p>
+            <p class="logo__phystech">Физтех</p>
+            </a>
+        </nav>
+        <nav id="myBurger" class="up__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </div>
+
+    <div id="myBottom" class="head__bottom">
+        <nav id="myTopnav" class="botton__topnav">
+            <a href="timetable">Расписание</a>
+            <a href="staff" >Сотрудники</a>
+            <a href="vacancy">Вакансии</a>
+            <a href="#" id="abit">Абитуриентам &#9658</a>
+            <div id="abitur" class="abitur">
+                <a href="bacalavriat">&#9999 Бакалавриат</a>
+                <a href="magistratura">&#9999 Магистратура</a>
+                <a href="aspirantura">&#9999 Аспирантура</a>
+            </div>
+            <a href="#" id="quick">Quicklinks &#9658</a>
+            <div id="quickl" class="quickl">
+                <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
+                <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
+            </div>
+            <a href="#" id="issl">Исследования &#9658</a>
+            <div id="issled" class="issled">
+                <a href="science-groups">&#9999 Научные группы</a>
+                <a href="publications">&#9999 Публикации</a>
+            </div>
+            <a href="#" id="onas">О New Phystech &#9658</a>
+            <div id="onewph" class="onewph">
+                <a href="smiaboutus">&#9999 СМИ о нас</a>
+                <a href="video">&#9999 Видео</a>
+                <a href="history">&#9999 История</a>
+            </div>
+        </nav>
+    </div>
+
+</header>
+  <div class="sotrudniki-begin" style="padding:20px;">
 		<h1>Вакансии</h1>
   </div>
   <div class="line" style="margin-top:2%;"></div>
-  <div class="center">
-    <ul class="squre-prohod" id="group-id" style="background:#D3D3D3;">
-  			<li>Аспирант в области аксионной электродинамики</li>
-        <li>Аспирант в области аксионной электродинамики</li>
-        <li>Аспирант в области аксионной электродинамики</li>
+  <div class="vacanse-squre">
+    <ul class="vacanse-list" style="background:#191970;">
+				<li>
+					<h4>
+						Аспирант в области аксионной электродинамики
+					</h4>
+				</li>
+				<li>
+					<h4>
+						Аспирант в области аксионной электродинамики
+					</h4>
+				</li>
+				<li>
+					<h4>
+						Аспирант в области аксионной электродинамики
+					</h4>
+				</li>
   	</ul>
   </div>
-	<script src="../GeneralPage/New_version/scriptMenu.js"></script>
+	<script src="../Scripts/scriptMenu.js"></script>
 </body>
 </html>
