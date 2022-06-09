@@ -13,110 +13,69 @@
 <body>
 
 	<header id="myHead" class="head">
-	    <div class="headerLogo">
-	        <p class="new">Новый</p>
-	        <p class="phystech">Физтех</p></div>
-	    <nav id="myTopnav" class="topnav">
-	        <a id="abit">Абитуриентам</a>
-	        <div id="abitur" class="abitur">
-	            <a href="#">Бакалавриат</a>
-	            <a href="#">Магистратура</a>
-	            <a href="#">Аспирантура</a>
-	        </div>
-	        <a id="sotr">Сотрудники</a>
-	        <div id="sotrud" class="sotrud">
-	            <a href="#">Сотрудники</a>
-	            <a href="#">Юридическая поддержка</a>
-	        </div>
-	        <a id="quick">Quicklinks</a>
-	        <div id="quickl" class="quickl">
-	            <a href="#">Mail</a>
-	            <a href="#">Wiki</a>
-	            <a href="#">Redmine</a>
-	        </div>
-	        <a id="issl">Исследования</a>
-	        <div id="issled" class="issled">
-	            <a href="#">Оборудование</a>
-	            <a href="#">Научные группы</a>
-	            <a href="#">Публикации</a>
-	            <a href="#">Патенты</a>
-	        </div>
-	        <a href="#">Вакансии</a>
-	        <a id="onas">О New Phystech</a>
-	        <div id="onewph" class="onewph">
-	            <a href="#">СМИ о нас</a>
-	            <a href="#">Видео</a>
-	            <a href="#">История</a>
-	        </div>
-	    </nav>
-	    <nav class="burger" id="myBurger">
-	        <a href="#" id="menu" class="iconMenu">&#9776</a>
-	        <a href="#" id="clos" class="iconClos">&#10006</a>
-	    </nav>
-	</header>
+    <div class="head__up">
+        <nav class="up__logo">
+            <a href="/">
+            <p class="logo__new">Новый</p>
+            <p class="logo__phystech">Физтех</p>
+            </a>
+        </nav>
+        <nav id="myBurger" class="up__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </div>
+
+    <div id="myBottom" class="head__bottom">
+        <nav id="myTopnav" class="botton__topnav">
+            <a href="timetable">Расписание</a>
+            <a href="staff" >Сотрудники</a>
+            <a href="vacancy">Вакансии</a>
+            <a href="#" id="abit">Абитуриентам &#9658</a>
+            <div id="abitur" class="abitur">
+                <a href="bacalavriat">&#9999 Бакалавриат</a>
+                <a href="magistratura">&#9999 Магистратура</a>
+                <a href="aspirantura">&#9999 Аспирантура</a>
+            </div>
+            <a href="#" id="quick">Quicklinks &#9658</a>
+            <div id="quickl" class="quickl">
+                <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
+                <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
+            </div>
+            <a href="#" id="issl">Исследования &#9658</a>
+            <div id="issled" class="issled">
+                <a href="science-groups">&#9999 Научные группы</a>
+                <a href="publications">&#9999 Публикации</a>
+            </div>
+            <a href="#" id="onas">О New Phystech &#9658</a>
+            <div id="onewph" class="onewph">
+                <a href="smiaboutus">&#9999 СМИ о нас</a>
+                <a href="video">&#9999 Видео</a>
+                <a href="history">&#9999 История</a>
+            </div>
+        </nav>
+    </div>
+
+</header>
 	<div class="sotrudniki-begin">
 		<h1>Сотрудники</h1>
 	</div>
 	<div class="line" style="margin-top: 2%;"></div>
-
-
-	<ul>
-		<li style="display: inline-block; margin-left: 2%;">
-			<div class="ikonki-sotrudnikov">
-			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3386.jpeg?itok=nboBlZb_" alt="Avatar" style="border-radius: 50%;">
-			</div>
-
-			<div class="sotrudniki-opisanie">
-				<h3>Павел Белов</h3>
-			</div>
-
-			<div class="sotrudniki-opisanie" style="display: block; margin-top: 1%;">
+	<ul style="width:100%;">
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3386.jpeg?itok=nboBlZb_" alt="Avatar" style="border-radius:50%;">
+			<p>Павел Белов</p>
 			<p>Директор физико-технического мегафакультета</p>
-		</div>
 		</li>
-		<li style="display: inline-block; margin-left: 2%;">
-			<div class="ikonki-sotrudnikov">
-			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3386.jpeg?itok=nboBlZb_" alt="Avatar" style="border-radius: 50%;">
-			</div>
-
-			<div class="sotrudniki-opisanie">
-				<h3>Павел Белов</h3>
-			</div>
-
-			<div class="sotrudniki-opisanie" style="display: block; margin-top: 1%;">
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3386.jpeg?itok=nboBlZb_" alt="Avatar" style="border-radius:50%;">
+			<p>Павел Белов</p>
 			<p>Директор физико-технического мегафакультета</p>
-			</div>
-
-		</li>
-
-				<li style="display: inline-block; margin-left: 2%;">
-			<div class="ikonki-sotrudnikov">
-			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3386.jpeg?itok=nboBlZb_" alt="Avatar" style="border-radius: 50%;">
-			</div>
-
-			<div class="sotrudniki-opisanie">
-				<h3>Павел Белов</h3>
-			</div>
-
-			<div class="sotrudniki-opisanie" style="display: block; margin-top: 1%;">
-			<p>Директор физико-технического мегафакультета</p>
-		</div>
-		</li>
-		<li style="display: inline-block; margin-left: 2%;">
-			<div class="ikonki-sotrudnikov">
-			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3386.jpeg?itok=nboBlZb_" alt="Avatar" style="border-radius: 50%;">
-			</div>
-
-			<div class="sotrudniki-opisanie">
-				<h3>Павел Белов</h3>
-			</div>
-
-			<div class="sotrudniki-opisanie" style="display: block; margin-top: 1%;">
-			<p>Директор физико-технического мегафакультета</p>
-		</div>
 		</li>
 	</ul>
-
-	<script src="../GeneralPage/scriptMenu.js"></script>
+	<script src="../Scripts/scriptMenu.js"></script>
 </body>
 </html>
