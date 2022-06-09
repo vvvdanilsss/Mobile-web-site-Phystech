@@ -8,8 +8,9 @@ ul {
 }
 
 .raspisanie {
-    font-size: 20px;
-    margin: 30px;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
     font-family: 'Helvetica', serif;
 }
 
@@ -42,7 +43,7 @@ button:focus {
 }
 
 .knopki__group__maga {
-    position: absolute;
+    position: fixed;
     margin-top: -62.2px;
     visibility: hidden;
     opacity: 0;
@@ -55,22 +56,25 @@ button:focus {
     opacity: 1;
 }
 
-.pdf__z3143, .pdf__z3144, .pdf__z3243,
-.pdf__z3244, .pdf__z3343, .pdf__z41761,
-.pdf__z41762, .pdf__z41772, .pdf__z41773,
-.pdf__z41775 {
+.img__z3143, .img__z3144, .img__z3243,
+.img__z3244, .img__z33431, .img__z41761,
+.img__z41762, .img__z41772, .img__z41773,
+.img__z41775 {
     position: fixed;
     top: 300px;
+    left: 15px;
+    width: 350px;
+    height: 450px;
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
     transition: all .5s linear;
 }
 
-.pdf__z3143.on, .pdf__z3144.on, .pdf__z3243.on,
-.pdf__z3244.on, .pdf__z3343.on, .pdf__z41761.on,
-.pdf__z41762.on, .pdf__z41772.on, .pdf__z41773.on,
-.pdf__z41775.on {
+.img__z3143.on, .img__z3144.on, .img__z3243.on,
+.img__z3244.on, .img__z33431.on, .img__z41761.on,
+.img__z41762.on, .img__z41772.on, .img__z41773.on,
+.img__z41775.on {
     pointer-events: visiblePainted;
     visibility: visible;
     opacity: 1;
