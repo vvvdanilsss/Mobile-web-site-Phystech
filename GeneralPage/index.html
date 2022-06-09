@@ -2,12 +2,13 @@
 <html>
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../Styles/style.css">
-    <link rel="stylesheet" href="../Styles/styleMenu.css">
-    <title>NewPhystech</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../Styles/style.css">
+  <link rel="stylesheet" href="../Styles/styleMenu.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>NewPhystech</title>
 
 </head>
 
@@ -30,32 +31,26 @@
 
     <div id="myBottom" class="head__bottom">
         <nav id="myTopnav" class="botton__topnav">
-            <a href="#">Расписание</a>
+            <a href="timetable">Расписание</a>
+            <a href="staff" >Сотрудники</a>
+            <a href="vacancy">Вакансии</a>
             <a href="#" id="abit">Абитуриентам &#9658</a>
             <div id="abitur" class="abitur">
                 <a href="bacalavriat">&#9999 Бакалавриат</a>
                 <a href="magistratura">&#9999 Магистратура</a>
                 <a href="aspirantura">&#9999 Аспирантура</a>
             </div>
-            <a href="#" id="sotr">Сотрудники &#9658</a>
-            <div id="sotrud" class="sotrud">
-                <a href="staff">&#9999 Сотрудники</a>
-                <a href="ur_help">&#9999 Юридическая поддержка</a>
-            </div>
             <a href="#" id="quick">Quicklinks &#9658</a>
             <div id="quickl" class="quickl">
-                <a href="#">&#9999 Mail</a>
-                <a href="#">&#9999 Wiki</a>
-                <a href="#">&#9999 Redmine</a>
+                <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
+                <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
             </div>
             <a href="#" id="issl">Исследования &#9658</a>
             <div id="issled" class="issled">
-                <a href="#">&#9999 Оборудование</a>
-                <a href="#">&#9999 Научные группы</a>
+                <a href="science-groups">&#9999 Научные группы</a>
                 <a href="publications">&#9999 Публикации</a>
-                <a href="#">&#9999 Патенты</a>
             </div>
-            <a href="vacancy">Вакансии</a>
             <a href="#" id="onas">О New Phystech &#9658</a>
             <div id="onewph" class="onewph">
                 <a href="smiaboutus">&#9999 СМИ о нас</a>
@@ -69,46 +64,46 @@
 
 <div class="news">
   <h2 style="color:black;">Новости</h2>
-  <ul class="news-list" id="news-id">
-    <li>
-      <a href="#">
-        <img  class="general-photo" src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/%D0%90%D0%BD%D1%82%D0%B5%D0%BD%D0%BD%D1%8B%202022-05.jpg?itok=IaVtw">
-        <h5>Воркшоп с представителями бизнеса «Беспроводные технологии будущего»</h5>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img  class="general-photo" src="https://physics.itmo.ru//sites/default/files/styles/pict_800/public/news/%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%20%D0%BC%D0%B5%D0%B3%D0%B0%20%D1%81.PNG?itok=PVSj8" >
-        <h5>Курс «Установки Mega-Science в России и за рубежом»</h5>
-      </a>
-    </li>
+    <ul class="news-list" id="news-id">
+            <li>
+				<linews></linews>
+            <li>
+				<linews></linews>
+            <li>
+				<linews></linews>
+            <li>
+				<linews></linews>
+			<li>
+				<linews></linews>
   </ul>
 </div>
 
 <div class="news">
   <h2 style="color:black;">Семинары</h2>
-  <ul class="news-list" id="semianrs-id">
-    <li>
-      <img class="general-photo" src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8260.jpg?itok=8fVbLhri">
-      <h5>  Nonlinear and laser effects in optical microresonators made of different glasses  </h5>
-    </li>
-    <li>
-      <img  class="general-photo" src="https://physics.itmo.ru//sites/default/files/styles/seminar_speaker_grid/public/speaker-photo/8261.png?itok=pR7M0x0d" >
-      <h5>   Dynamics of topological magnetic solitons: from domain walls to skyrmions.  </h5>
-    </li>
+    <ul class="news-list" id="semianrs-id">
+            <li>
+				<lisem></lisem>
+            <li>
+				<lisem></lisem>
+            <li>
+				<lisem></lisem>
+            <li>
+				<lisem></lisem>
+			<li>
+				<lisem></lisem>
   </ul>
 </div>
 
 <div class="squre-infa-about-down">
   <div class="squre-infa-about-down-networks">
-    <a href="https://vk.com/physics.itmo">
-      <img src="https://physics.itmo.ru/sites/default/files/2022-05/vk.png" alt="">
+    <a href="https://vk.com/physics.itmo" style="width:50px;">
+    <img src="https://physics.itmo.ru/sites/default/files/2022-05/vk.png" alt="">
     </a>
     <a href="https://t.me/physics_itmo">
-      <img style="margin-left: 20px;" src="https://physics.itmo.ru/sites/default/files/2022-05/telegram.png" alt="">
+      <img style="margin-left: 50px;" src="https://physics.itmo.ru/sites/default/files/2022-05/telegram.png" alt="">
     </a>
     <a href="https://www.youtube.com/channel/UCQTIT_zjRMhryifECo4bWfQ">
-      <img style="margin-left: 20px;" src="https://physics.itmo.ru/sites/default/files/2022-05/youtube.png" alt="">
+      <img style="margin-left: 50px;" src="https://physics.itmo.ru/sites/default/files/2022-05/youtube.png" alt="">
     </a>
   </div>
 
@@ -128,8 +123,6 @@
 
 
 </div>
-
-
 <div class="scrollTop" onclick="myScrollTop()"></div>
 <script src="../Scripts/scriptMenu.js"></script>
 
