@@ -2,13 +2,12 @@
 <html>
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<title>NewPhystech</title>
+    <title>NewPhystech</title>
 
 </head>
 
@@ -16,11 +15,11 @@
 <body style="font-family: 'Helvetica', serif;">
 
 <header id="myHead" class="head">
-    <div class="head__up">
+    <div id="myUp" class="head__up">
         <nav class="up__logo">
             <a href="/">
-            <p class="logo__new">Новый</p>
-            <p class="logo__phystech">Физтех</p>
+                <p class="logo__new">Новый</p>
+                <p class="logo__phystech">Физтех</p>
             </a>
         </nav>
         <nav id="myBurger" class="up__burger">
@@ -34,7 +33,7 @@
     <div id="myBottom" class="head__bottom">
         <nav id="myTopnav" class="botton__topnav">
             <a href="timetable">Расписание</a>
-            <a href="staff" >Сотрудники</a>
+            <a href="staff">Сотрудники</a>
             <a href="vacancy">Вакансии</a>
             <a href="#" id="abit">Абитуриентам &#9658</a>
             <div id="abitur" class="abitur">
@@ -46,7 +45,8 @@
             <div id="quickl" class="quickl">
                 <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
                 <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
-                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999
+                    Redmine</a>
             </div>
             <a href="#" id="issl">Исследования &#9658</a>
             <div id="issled" class="issled">
@@ -63,213 +63,213 @@
     </div>
 
 </header>
-
-<div class="group">
-<h2>Группа Павла Белова</h2>
-		<ul class="group-list" id="group-id">
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3386.jpeg?itok=nboBlZb_>"
-					 alt="Avatar" style="border-radius: 50%;">
-<p>Павел Белов (Руководитель группы)</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/407.jpg?itok=r_hosbc8>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Евгений Корешин</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2414.jpg?itok=S6H4Qqp7>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Полина Иванова</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7723.jpg?itok=n-wXl8j0>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Иван Матченя</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7068.jpg?itok=O06hnHuI>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Григорий Карсаков</p>
-			</li>
-		</ul>
-	</div>
-	<div class="group">
-<h2>Группа Сергея  Макарова</h2>
-		<ul class="group-list" id="group-id">
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3742.jpg?itok=KC-IM5rs>"
-					 alt="Avatar" style="border-radius: 50%;">
-<p>Павел Ворошилов</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2690.jpg?itok=uX12hQLy>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Сослан Хубежов</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2540.jpg?itok=_BhF1eJx>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Лев Логунов</p>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2537.jpg?itok=7Pq5XeBg>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Александра Фурасова</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1272.png?itok=4TAqigOE>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Эдуард Даниловский</p>
-			</li>
-		</ul>
-	</div>
-<div class="group">
-<h2>Группа Сергея  Макарова</h2>
-		<ul class="group-list" id="group-id">
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2150.jpg?itok=AaAvz1Kd>"
-					 alt="Avatar" style="border-radius: 50%;">
-<p>Лев Зеленков</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3977.png?itok=tcomZJyA>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Георгий Зограф</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/980.jpg?itok=U0yKXa21>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Хади Шамхи Аль-Наима</p>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2686.jpg?itok=0BX5OhW_>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Мария Санджиева</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5851.jpg?itok=6MCeutAE>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Николай Зверьков</p>
-			</li>
-		</ul>
-	</div>
-<div class="group">
-<h2>Группа Сергея  Макарова</h2>
-		<ul class="group-list" id="group-id">
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3749.jpg?itok=ZN7OYSbI>"
-					 alt="Avatar" style="border-radius: 50%;">
-<p>Михаил Баранов</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8380.jpg?itok=aA_w8SHL>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Мария Попова</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/386.jpg?itok=_EEl3GQP>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Александр Берестенников</p>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/963.jpg?itok=NwtsGQS1>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Дарья Маркина</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1080.jpg?itok=gF2kfZo0>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Сергей Аношкин</p>
-			</li>
-		</ul>
-	</div>
-<div class="group">
-<h2>Группа Сергея  Макарова</h2>
-		<ul class="group-list" id="group-id">
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/958.jpg?itok=TuDSd9KO>"
-					 alt="Avatar" style="border-radius: 50%;">
-<p>Григорий Верхоглядов</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2313.jpg?itok=X63OtQ61>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Павел Тонкаев</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/953.jpg?itok=1dxo6_8f>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Анна Николаева</p>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6276.png?itok=vc5fJNch>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Михаил Машарин</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3191.jpg?itok=Rhw-0zoM>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Артем Полушкин</p>
-			</li>
-		</ul>
-	</div>
-<div class="group">
-<h2>Группа Сергея  Макарова</h2>
-		<ul class="group-list" id="group-id">
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3457.jpg?itok=8Uo8ms4i>"
-					 alt="Avatar" style="border-radius: 50%;">
-<p>Дмитрий Татаринов</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2379.jpg?itok=uYlhW35J>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Аболфазл Махмудпур</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2219.jpg?itok=qIIEsdIF>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Дарья Хмелевская</p>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6828.jpg?itok=DtDNF26S>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Александр Марунченко</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7074.jpg?itok=nYeL0mRB>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Руслан Азизов</p>
-			</li>
-		</ul>
-	</div>
-<div class="group">
-<h2>Группа Сергея  Макарова</h2>
-		<ul class="group-list" id="group-id">
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3178.jpg?itok=r7Dp5VZi>"
-					 alt="Avatar" style="border-radius: 50%;">
-<p>Ралина Салихова</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2144.jpg?itok=xY8vf0TH>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Даниил Рябов</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6869.jpg?itok=WUYWS9Hn>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Елена Бодяго</p>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3826.jpg?itok=YQLgU6fa>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Евгения Гречанинова</p>
-			</li>
-			<li>
-<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2415.png?itok=0RTOKuN6>"
-						alt="Avatar" style="border-radius: 50%;">
-<p>Анна Образцова</p>
-			</li>
-		</ul>
-	</div>
-
+<div id="mySite" class="body__site">
+    <div class="group">
+        <h2>Группа Павла Белова</h2>
+        <ul class="group-list" id="group-id">
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3386.jpeg?itok=nboBlZb_>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Павел Белов (Руководитель группы)</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/407.jpg?itok=r_hosbc8>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Евгений Корешин</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2414.jpg?itok=S6H4Qqp7>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Полина Иванова</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7723.jpg?itok=n-wXl8j0>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Иван Матченя</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7068.jpg?itok=O06hnHuI>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Григорий Карсаков</p>
+            </li>
+        </ul>
+    </div>
+    <div class="group">
+        <h2>Группа Сергея Макарова</h2>
+        <ul class="group-list" id="group-id">
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3742.jpg?itok=KC-IM5rs>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Павел Ворошилов</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2690.jpg?itok=uX12hQLy>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Сослан Хубежов</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2540.jpg?itok=_BhF1eJx>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Лев Логунов</p>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2537.jpg?itok=7Pq5XeBg>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Александра Фурасова</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1272.png?itok=4TAqigOE>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Эдуард Даниловский</p>
+            </li>
+        </ul>
+    </div>
+    <div class="group">
+        <h2>Группа Сергея Макарова</h2>
+        <ul class="group-list" id="group-id">
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2150.jpg?itok=AaAvz1Kd>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Лев Зеленков</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3977.png?itok=tcomZJyA>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Георгий Зограф</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/980.jpg?itok=U0yKXa21>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Хади Шамхи Аль-Наима</p>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2686.jpg?itok=0BX5OhW_>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Мария Санджиева</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5851.jpg?itok=6MCeutAE>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Николай Зверьков</p>
+            </li>
+        </ul>
+    </div>
+    <div class="group">
+        <h2>Группа Сергея Макарова</h2>
+        <ul class="group-list" id="group-id">
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3749.jpg?itok=ZN7OYSbI>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Михаил Баранов</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8380.jpg?itok=aA_w8SHL>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Мария Попова</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/386.jpg?itok=_EEl3GQP>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Александр Берестенников</p>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/963.jpg?itok=NwtsGQS1>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Дарья Маркина</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1080.jpg?itok=gF2kfZo0>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Сергей Аношкин</p>
+            </li>
+        </ul>
+    </div>
+    <div class="group">
+        <h2>Группа Сергея Макарова</h2>
+        <ul class="group-list" id="group-id">
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/958.jpg?itok=TuDSd9KO>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Григорий Верхоглядов</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2313.jpg?itok=X63OtQ61>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Павел Тонкаев</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/953.jpg?itok=1dxo6_8f>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Анна Николаева</p>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6276.png?itok=vc5fJNch>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Михаил Машарин</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3191.jpg?itok=Rhw-0zoM>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Артем Полушкин</p>
+            </li>
+        </ul>
+    </div>
+    <div class="group">
+        <h2>Группа Сергея Макарова</h2>
+        <ul class="group-list" id="group-id">
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3457.jpg?itok=8Uo8ms4i>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Дмитрий Татаринов</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2379.jpg?itok=uYlhW35J>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Аболфазл Махмудпур</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2219.jpg?itok=qIIEsdIF>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Дарья Хмелевская</p>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6828.jpg?itok=DtDNF26S>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Александр Марунченко</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7074.jpg?itok=nYeL0mRB>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Руслан Азизов</p>
+            </li>
+        </ul>
+    </div>
+    <div class="group">
+        <h2>Группа Сергея Макарова</h2>
+        <ul class="group-list" id="group-id">
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3178.jpg?itok=r7Dp5VZi>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Ралина Салихова</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2144.jpg?itok=xY8vf0TH>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Даниил Рябов</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6869.jpg?itok=WUYWS9Hn>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Елена Бодяго</p>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3826.jpg?itok=YQLgU6fa>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Евгения Гречанинова</p>
+            </li>
+            <li>
+                <img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2415.png?itok=0RTOKuN6>"
+                     alt="Avatar" style="border-radius: 50%;">
+                <p>Анна Образцова</p>
+            </li>
+        </ul>
+    </div>
+</div>
 <div class="scrollTop" onclick="myScrollTop()"></div>
-	<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

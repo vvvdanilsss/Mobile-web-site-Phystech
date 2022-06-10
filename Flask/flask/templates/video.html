@@ -2,13 +2,12 @@
 <html>
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<title>NewPhystech</title>
+    <title>NewPhystech</title>
 
 </head>
 
@@ -16,11 +15,11 @@
 <body style="font-family: 'Helvetica', serif;">
 
 <header id="myHead" class="head">
-    <div class="head__up">
+    <div id="myUp" class="head__up">
         <nav class="up__logo">
             <a href="/">
-            <p class="logo__new">Новый</p>
-            <p class="logo__phystech">Физтех</p>
+                <p class="logo__new">Новый</p>
+                <p class="logo__phystech">Физтех</p>
             </a>
         </nav>
         <nav id="myBurger" class="up__burger">
@@ -34,7 +33,7 @@
     <div id="myBottom" class="head__bottom">
         <nav id="myTopnav" class="botton__topnav">
             <a href="timetable">Расписание</a>
-            <a href="staff" >Сотрудники</a>
+            <a href="staff">Сотрудники</a>
             <a href="vacancy">Вакансии</a>
             <a href="#" id="abit">Абитуриентам &#9658</a>
             <div id="abitur" class="abitur">
@@ -46,7 +45,8 @@
             <div id="quickl" class="quickl">
                 <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
                 <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
-                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999
+                    Redmine</a>
             </div>
             <a href="#" id="issl">Исследования &#9658</a>
             <div id="issled" class="issled">
@@ -65,46 +65,54 @@
 </header>
 
 <div id="mySite" class="body__site">
-	<div class="sotrudniki-begin" style="margin-left: 4%; margin-top: 2%;">
-		<h1>Видео</h1>
-	</div>
-	<div class="line" style="margin-top: 2%;"></div>
-	<ul style="width:100%;">
-		<li style="color:black; text-align:center;">
-			        <a href="https://www.youtube.com/embed/FbzsPHJskcg?autoplay=0&start=0&rel=0" >
-					    <img src="https://i.ytimg.com/vi_webp/FbzsPHJskcg/sddefault.webp" alt="Avatar" style="border-radius:10px; width:320px;">
-				<p>Переход от электроники к оптике</p></a></li>
-	<ul style="width:100%;">
-		<li style="color:black; text-align:center;">
-			        <a href="https://www.youtube.com/embed/fC52QN6sbA8?autoplay=0&start=0&rel=0" >
-					    <img src="https://i.ytimg.com/vi_webp/fC52QN6sbA8/sddefault.webp" alt="Avatar" style="border-radius:10px; width:320px;">
-				<p>Лазеры, нанофотоника и управление светом</p></a></li>
-	<ul style="width:100%;">
-		<li style="color:black; text-align:center;">
-			        <a href="https://www.youtube.com/embed/KwP3tRTY74k?autoplay=0&start=0&rel=0" >
-					    <img src="https://i.ytimg.com/vi_webp/KwP3tRTY74k/sddefault.webp" alt="Avatar" style="border-radius:10px; width:320px;">
-				<p>Лекция «Беспроводная передача энергии» Полина Капитанова</p></a></li>
-	</ul>
+    <div class="sotrudniki-begin" style="margin-left: 4%; margin-top: 2%;">
+        <h1>Видео</h1>
+    </div>
+    <div class="line" style="margin-top: 2%;"></div>
+    <ul style="width:100%;">
+        <li style="color:black; text-align:center;">
+            <a href="https://www.youtube.com/embed/FbzsPHJskcg?autoplay=0&start=0&rel=0">
+                <img src="https://i.ytimg.com/vi_webp/FbzsPHJskcg/sddefault.webp" alt="Avatar"
+                     style="border-radius:10px; width:320px;">
+                <p>Переход от электроники к оптике</p></a></li>
+        <ul style="width:100%;">
+            <li style="color:black; text-align:center;">
+                <a href="https://www.youtube.com/embed/fC52QN6sbA8?autoplay=0&start=0&rel=0">
+                    <img src="https://i.ytimg.com/vi_webp/fC52QN6sbA8/sddefault.webp" alt="Avatar"
+                         style="border-radius:10px; width:320px;">
+                    <p>Лазеры, нанофотоника и управление светом</p></a></li>
+            <ul style="width:100%;">
+                <li style="color:black; text-align:center;">
+                    <a href="https://www.youtube.com/embed/KwP3tRTY74k?autoplay=0&start=0&rel=0">
+                        <img src="https://i.ytimg.com/vi_webp/KwP3tRTY74k/sddefault.webp" alt="Avatar"
+                             style="border-radius:10px; width:320px;">
+                        <p>Лекция «Беспроводная передача энергии» Полина Капитанова</p></a></li>
+            </ul>
 
 
-	<ul style="width:100%;">
-		<li style="color:black; text-align:center;">
-			        <a href="https://www.youtube.com/embed/knW6pDLBlj4?autoplay=0&start=0&rel=0" >
-					    <img src="https://i.ytimg.com/vi_webp/knW6pDLBlj4/sddefault.webp" alt="Avatar" style="border-radius:10px; width:320px;">
-				<p>Лекция «Сильное взаимодействие свет- материя в мезоскопических системах» Иван Шелых</p></a></li>
-	<ul style="width:100%;">
-		<li style="color:black; text-align:center;">
-			        <a href="https://www.youtube.com/embed/dsjQV69jskA?autoplay=0&start=0&rel=0" >
-					    <img src="https://i.ytimg.com/vi_webp/dsjQV69jskA/sddefault.webp" alt="Avatar" style="border-radius:10px; width:320px;">
-				<p>Лекция «Перовскитная революция» Сергей Макаров</p></a></li>
-	<ul style="width:100%;">
-		<li style="color:black; text-align:center;">
-			        <a href="https://www.youtube.com/embed/zPeCYUHRZ8Y?autoplay=0&start=0&rel=0" >
-					    <img src="https://i.ytimg.com/vi_webp/zPeCYUHRZ8Y/sddefault.webp" alt="Avatar" style="border-radius:10px; width:320px;">
-				<p>Лекция «Метаповерхности в радиодиапазоне и их применения» Станислав Глыбовский</p></a></li>
-	</ul>
-            </div>
+            <ul style="width:100%;">
+                <li style="color:black; text-align:center;">
+                    <a href="https://www.youtube.com/embed/knW6pDLBlj4?autoplay=0&start=0&rel=0">
+                        <img src="https://i.ytimg.com/vi_webp/knW6pDLBlj4/sddefault.webp" alt="Avatar"
+                             style="border-radius:10px; width:320px;">
+                        <p>Лекция «Сильное взаимодействие свет- материя в мезоскопических системах» Иван Шелых</p></a>
+                </li>
+                <ul style="width:100%;">
+                    <li style="color:black; text-align:center;">
+                        <a href="https://www.youtube.com/embed/dsjQV69jskA?autoplay=0&start=0&rel=0">
+                            <img src="https://i.ytimg.com/vi_webp/dsjQV69jskA/sddefault.webp" alt="Avatar"
+                                 style="border-radius:10px; width:320px;">
+                            <p>Лекция «Перовскитная революция» Сергей Макаров</p></a></li>
+                    <ul style="width:100%;">
+                        <li style="color:black; text-align:center;">
+                            <a href="https://www.youtube.com/embed/zPeCYUHRZ8Y?autoplay=0&start=0&rel=0">
+                                <img src="https://i.ytimg.com/vi_webp/zPeCYUHRZ8Y/sddefault.webp" alt="Avatar"
+                                     style="border-radius:10px; width:320px;">
+                                <p>Лекция «Метаповерхности в радиодиапазоне и их применения» Станислав Глыбовский</p>
+                            </a></li>
+                    </ul>
+</div>
 <div class="scrollTop" onclick="myScrollTop()"></div>
-	<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
