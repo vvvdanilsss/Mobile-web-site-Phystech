@@ -2,24 +2,24 @@
 <html>
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
-    <title>NewPhystech</title>
+	<title>NewPhystech</title>
 
 </head>
 
 
-<body>
+<body style="font-family: 'Helvetica', serif;">
 
 <header id="myHead" class="head">
-    <div id="myUp" class="head__up">
+    <div class="head__up">
         <nav class="up__logo">
             <a href="/">
-                <p class="logo__new">Новый</p>
-                <p class="logo__phystech">Физтех</p>
+            <p class="logo__new">Новый</p>
+            <p class="logo__phystech">Физтех</p>
             </a>
         </nav>
         <nav id="myBurger" class="up__burger">
@@ -33,7 +33,7 @@
     <div id="myBottom" class="head__bottom">
         <nav id="myTopnav" class="botton__topnav">
             <a href="timetable">Расписание</a>
-            <a href="staff">Сотрудники</a>
+            <a href="staff" >Сотрудники</a>
             <a href="vacancy">Вакансии</a>
             <a href="#" id="abit">Абитуриентам &#9658</a>
             <div id="abitur" class="abitur">
@@ -45,8 +45,7 @@
             <div id="quickl" class="quickl">
                 <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
                 <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
-                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999
-                    Redmine</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
             </div>
             <a href="#" id="issl">Исследования &#9658</a>
             <div id="issled" class="issled">
@@ -64,164 +63,116 @@
 
 </header>
 
-<div id="mySite" class="body__site">
-    <div class="sotrudniki-begin" style="margin-left:4%; margin-top:2%;">
-        <h1>Современные квантовые и нанофотонные системы</h1>
-    </div>
-    <div class="line" style="margin-top:2%;"></div>
-    <div class="center">
-        <div class="otstup-prohod">
-            <ul class="squre-prohod">
-                <li>
-                    <h2>
-                        16.04.01
-                    </h2>
-                    <h2>
-                        Техническая физика
-                    </h2>
-                </li>
-                <li>
-                    <h2>
-                        Экзамены вступительных испытаний:
-                    </h2>
-                </li>
-                <li>
-                    <h2>
-                        <h4>
-                            Конкурс «Портфолио» Университета ИТМО;
-                            МегаОлимпиада ИТМО;
-                            Медалист/победитель "Я-профессионал";
-                            Конкурс именных стипендий физического факультета;
-                            Вступительный экзамен;
-                            Конкурс докладов «Конгресс молодых ученых»;
-                            Конкурс лучших научных работ стажировки физического факультета;
-                        </h4>
-                    </h2>
-                </li>
 
-                <div class="mest">
-                    <div class="mesta">
-                        <h3>
-                            Бюджетных мест
-                        </h3>
-                        <h3 style="color: #FFD700;">
-                            25
-                        </h3>
-                    </div>
-                    <div class="mesta" >
-                        <h3>
-                            Контрактных мест
-                        </h3>
-                        <h3 style="color: #FFD700;">
-                            10
-                        </h3>
-                    </div>
-                </div>
-                <div class="about-us">
-                    <h3>
-                        В рамках программы вы будете учиться у физиков мирового уровня, публикующихся в
-                        высокорейтинговых международных журналах. Более того, у вас будут все условия для того, чтобы
-                        опубликовать свое исследование в таком журнале наравне с ними. Новый физтех активно
-                        коллаборирует с заграничными коллегами из мира науки, а значит — вы сможете пройти стажировку в
-                        таких университетах как: University of Iceland, University of Lorraine, University of Exeter,
-                        University of Sheffield и других.
-                    </h3>
-                    <h3>
-                        У студентов этой программы будет возможность выбрать важные и интересные им курсы из разных
-                        областей физики (а еще химии, биологии и даже программирования) и таким образом сформировать
-                        свой уникальный набор профессиональных навыков.
-                    </h3>
-                    <h3>
-                        Вы сможете стать не только физиком-экспериментатором или -теоретиком, но и специалистом в сфере
-                        междисциплинарных исследований на стыке физики, химии и биологии, или даже работать с
-                        вычислительными методами и машинным обучением
-                    </h3>
-                    <h3 style="margin-top:10px;">
-                        В рамках программы реализуются четыре специализации:
-                    </h3>
-                    <ul>
-                        <li>
-                            <p>
-                                «Квантовые материалы» — теоретические методы моделирования материалов, в которых
-                                многочастичные квантовые корреляции качественным образом меняют свойства систем.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                «Нанофотоника» — студенты специализации будут углубленно изучать аналитические,
-                                численные и экспериментальные методы нанооптики.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                «Гибридные материалы» — главный акцент специализации – междисциплинарные исследования,
-                                поэтому она отлично подходит студентам с разным бэкграундом (физика, химия,
-                                материаловедение, биология и др.), которые хотят заниматься исследованиями на стыке
-                                наук.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                «Компьютерное моделирование квантовых и нанофотонных систем» — студенты будут изучать
-                                вычислительные методы в области нанофотоники и физики конденсированного состояния, где
-                                активно проводятся как фундаментальные исследования, так и прикладные разработки.
-                            </p>
-                        </li>
-                    </ul>
-                    <h1 style="margin-top: 5vh;">
-                        Контактное лицо
-                    </h1>
-                </div>
-                <!-- list-style-type: none; -->
-                <div class="contact">
-                    <div class="contact-photo">
-                        <img src="https://physics.itmo.ru/sites/default/files/styles/round/public/personality/photo/6877.jpg?itok=xPUlvbHz"
-                             alt="Avatar" style="border-radius: 50%; width:30vh;">
-                    </div>
-                    <div class="contact-photo">
-                        <h2 class="contact">Виталий Васянович</h2>
-                        <h2 class="contact">Ведущий PR-специалист</h2>
-                        <h2 class="contact">v.vasjanovics@metalab.ifmo.ru</h2>
-                        <h2 class="contact">+7 909 589 9233</h2>
-                    </div>
+<div class="sotrudniki-begin" style="margin-left:4%; margin-top:2%;">
+		<h1>Современные квантовые и нанофотонные системы</h1>
+  </div>
+  <div class="line" style="margin-top:2%;"></div>
+	<div class="center">
+	  <div class="otstup-prohod">
+	    <ul class="squre-prohod">
+	      <li>
+	        <h2>
+	          16.04.01
+	        </h2>
+	        <h2>
+	          Техническая физика
+	        </h2>
+	      </li>
+	      <li>
+	        <h2>
+	          Экзамены вступительных испытаний:
+	        </h2>
+	      </li>
+	      <li>
+	        <h2>
+						<h4>
+								Конкурс «Портфолио» Университета ИТМО;
+								МегаОлимпиада ИТМО;
+								Медалист/победитель "Я-профессионал";
+								Конкурс именных стипендий физического факультета;
+								Вступительный экзамен;
+								Конкурс докладов «Конгресс молодых ученых»;
+								Конкурс лучших научных работ стажировки физического факультета;
+						</h4>
+	        </h2>
+	      </li>
 
-                </div>
+        <div class="mest">
+          <div class="mesta">
+            <h3>
+              Бюджетных мест
+            </h3>
+            <h3>
+25
+            </h3>
+          </div>
+          <div class="mesta" style="margin-left:10px;">
+            <h3>
+              Контрактных мест
+            </h3>
+            <h3>
+10
+            </h3>
+          </div>
         </div>
-        </ul>
-    </div>
-    <div class="squre-infa-about-down">
-        <div class="squre-infa-about-down-networks">
-            <a href="https://vk.com/physics.itmo">
-                <img src="https://physics.itmo.ru/sites/default/files/2022-05/vk.png" alt="">
-            </a>
-            <a href="https://t.me/physics_itmo">
-                <img style="margin-left: 20px;" src="https://physics.itmo.ru/sites/default/files/2022-05/telegram.png"
-                     alt="">
-            </a>
-            <a href="https://www.youtube.com/channel/UCQTIT_zjRMhryifECo4bWfQ">
-                <img style="margin-left: 20px;" src="https://physics.itmo.ru/sites/default/files/2022-05/youtube.png"
-                     alt="">
-            </a>
-        </div>
+	    <div class="about-us">
+	      <h3>
+					В рамках программы вы будете учиться у физиков мирового уровня, публикующихся в высокорейтинговых международных журналах. Более того, у вас будут все условия для того, чтобы опубликовать свое исследование в таком журнале наравне с ними. Новый физтех активно коллаборирует с заграничными коллегами из мира науки,  а значит — вы сможете пройти стажировку в таких университетах как: University of Iceland, University of Lorraine, University of Exeter, University of Sheffield и других.
+				</h3>
+				<h3>
+					У студентов этой программы будет возможность выбрать важные и интересные им курсы из разных областей физики (а еще химии, биологии и даже программирования) и таким образом сформировать свой уникальный набор профессиональных навыков.
+				</h3>
+				<h3>
+					Вы сможете стать не только физиком-экспериментатором или -теоретиком, но и специалистом в сфере междисциплинарных исследований на стыке физики, химии и биологии, или даже работать с вычислительными методами и машинным обучением
+				</h3>
+				<h3 style="margin-top:10px;">
+					В рамках программы реализуются четыре специализации:
+				</h3>
+				<ul>
+					<li>
+						<p>
+							«Квантовые материалы» — теоретические методы моделирования материалов, в которых многочастичные квантовые корреляции качественным образом меняют свойства систем.
+						</p>
+					</li>
+					<li>
+						<p>
+							«Нанофотоника» —  студенты специализации будут углубленно изучать аналитические, численные и экспериментальные методы нанооптики.
+						</p>
+					</li>
+					<li>
+						<p>
+							«Гибридные материалы» — главный акцент специализации – междисциплинарные исследования, поэтому она отлично подходит студентам с разным бэкграундом (физика, химия, материаловедение, биология и др.), которые хотят заниматься исследованиями на стыке наук.
+						</p>
+					</li>
+					<li>
+						<p>
+							«Компьютерное моделирование квантовых и нанофотонных систем» — студенты будут изучать вычислительные методы в области нанофотоники и физики конденсированного состояния, где активно проводятся как фундаментальные исследования, так и прикладные разработки.
+						</p>
+					</li>
+				</ul>
+        <h1 style="margin-top: 5vh;">
+	        Контактное лицо
+	      </h1>
+	    </div>
+	    <!-- list-style-type: none; -->
+	    <div class="contact">
+	      <div class="contact-photo">
+	        <img src="https://physics.itmo.ru/sites/default/files/styles/round/public/personality/photo/6877.jpg?itok=xPUlvbHz" alt="Avatar" style="border-radius: 50%; width:30vh;">
+	      </div>
+        <div class="contact-photo">
+	        <h2 class="contact">Виталий Васянович</h2>
+	        <h2 class="contact">Ведущий PR-специалист</h2>
+	        <h2 class="contact">v.vasjanovics@metalab.ifmo.ru</h2>
+					<h2 class="contact">+7 909 589 9233</h2>
+	      </div>
 
-        <div class="squre-infa-contact">
-            <div class="squre-infa-contact-phone">
-                <h5>Телефон</h5>
-                <h5>+7 (812) 607-02-61</h5>
-                <h5 style="margin-top: 10px;">E-Mail</h5>
-                <h5>edu@physics.itmo.ru</h5>
-            </div>
-            <div class="squre-infa-contact-address">
-                <h5>Адрес</h5>
-                <h5>199034, Россия, Санкт-Петербург,
-                    Биржевая линия, д. 16, офис 538</h5>
-            </div>
-        </div>
-
-    </div>
-</div>
+	    </div>
+	  </div>
+	</ul>
+	</div>
 <div class="scrollTop" onclick="myScrollTop()"></div>
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 

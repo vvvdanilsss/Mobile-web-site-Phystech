@@ -149,7 +149,7 @@ a {
 #abit:focus, #sotr:focus, #quick:focus,
 #issl:focus, #onas:focus {
     vertical-align: center;
-    color: #ffff00;
+    color: #FFD700;
 }
 
 .abitur, .sotrud, .quickl,
@@ -170,24 +170,24 @@ a {
 }
 
 .scrollTop {
-  position: fixed;
-  bottom: 800px;
-  right: 25px;
-  width: 40px;
-  height: 50.5px;
-  background: url("knopka.png");
-  background-size: cover;
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1;
-  transition: all .5s linear;
+    position: fixed;
+    bottom: 800px;
+    right: 25px;
+    width: 40px;
+    height: 50.5px;
+    background: url("knopka.png");
+    background-size: cover;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: all .5s linear;
 }
 
 .scrollTop.active {
-  bottom: 60px;
-  visibility: visible;
-  opacity: 0.8;
+    bottom: 60px;
+    visibility: visible;
+    opacity: 1;
 }
 
 #quick {
