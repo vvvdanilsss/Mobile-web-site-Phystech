@@ -94,7 +94,7 @@ html {
 
 .text-k-photo {
 
-    padding: 1;
+    padding: 1px;
     background: black;
     color: white;
 }
@@ -230,11 +230,6 @@ html {
     text-align: center;
     color: white;
 }
-
-
-
-}
-
 
 .story {
     margin-top: 10px;
