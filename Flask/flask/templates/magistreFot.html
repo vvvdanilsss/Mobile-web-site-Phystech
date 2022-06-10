@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>NewPhystech</title>
+
+</head>
+
+
+<body style="font-family: 'Helvetica', serif;">
+
+<header id="myHead" class="head">
+    <div class="head__up">
+        <nav class="up__logo">
+            <a href="/">
+            <p class="logo__new">Новый</p>
+            <p class="logo__phystech">Физтех</p>
+            </a>
+        </nav>
+        <nav id="myBurger" class="up__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </div>
+
+    <div id="myBottom" class="head__bottom">
+        <nav id="myTopnav" class="botton__topnav">
+            <a href="timetable">Расписание</a>
+            <a href="staff" >Сотрудники</a>
+            <a href="vacancy">Вакансии</a>
+            <a href="#" id="abit">Абитуриентам &#9658</a>
+            <div id="abitur" class="abitur">
+                <a href="bacalavriat">&#9999 Бакалавриат</a>
+                <a href="magistratura">&#9999 Магистратура</a>
+                <a href="aspirantura">&#9999 Аспирантура</a>
+            </div>
+            <a href="#" id="quick">Quicklinks &#9658</a>
+            <div id="quickl" class="quickl">
+                <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
+                <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
+            </div>
+            <a href="#" id="issl">Исследования &#9658</a>
+            <div id="issled" class="issled">
+                <a href="science-groups">&#9999 Научные группы</a>
+                <a href="publications">&#9999 Публикации</a>
+            </div>
+            <a href="#" id="onas">О New Phystech &#9658</a>
+            <div id="onewph" class="onewph">
+                <a href="smiaboutus">&#9999 СМИ о нас</a>
+                <a href="video">&#9999 Видео</a>
+                <a href="history">&#9999 История</a>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+
+<div id="mySite" class="body__site">
+  <div class="sotrudniki-begin" style="margin-left:4%; margin-top:2%;">
+		<h1>Современные квантовые и нанофотонные системы</h1>
+  </div>
+  <div class="line" style="margin-top:2%;"></div>
+	<div class="center">
+	  <div class="otstup-prohod">
+	    <ul class="squre-prohod">
+	      <li>
+	        <h2>
+	          16.04.01
+	        </h2>
+	        <h2>
+	          Техническая физика
+	        </h2>
+	      </li>
+	      <li>
+	        <h2>
+	          Экзамены вступительных испытаний:
+	        </h2>
+	      </li>
+	      <li>
+	        <h2>
+						<h3>
+								Конкурс «Портфолио» Университета ИТМО;
+								МегаОлимпиада ИТМО;
+								Медалист/победитель "Я-профессионал";
+								Конкурс именных стипендий физического факультета;
+								Вступительный экзамен;
+								Конкурс докладов «Конгресс молодых ученых»;
+								Конкурс лучших научных работ стажировки физического факультета;
+						</h3>
+	        </h2>
+	      </li>
+	      <li>
+	        <div class="mest">
+	          <div class="mesta">
+	            <h2>
+	              Бюджетных мест
+	            </h2>
+	            <h1>
+	              16
+	            </h1>
+	          </div>
+	          <div class="mesta">
+	            <h2>
+	              Контрактных мест
+	            </h2>
+	            <h1>
+	              5
+	            </h1>
+	          </div>
+	        </div>
+	      </li>
+	    <div class="about-us">
+	      <h3>Фотоника и спинтроника – два бурно развивающихся и тесно связанных физических направления, которые уже сейчас во многом определяют нашу жизнь и будут еще более востребованы в ближайшем будущем. В перспективе они призваны заменить электронные устройства на оптико-спинтронные, которые будут более дешевыми, компактными и быстродействующими. Образовательная программа основана на оригинальных курсах ведущих ученых из ФТИ им. А.Ф. Иоффе, Академического Университета им. Ж.И. Алферова, Высшей Школы Экономики и Университета ИТМО. Для научно-исследовательской работы магистрам предоставляется широкий выбор теоретических, экспериментальных и технологических тематик, результаты работы студенты представляют на международных конференциях и публикуют в высокорейтинговых физических журналах.
+</h3>
+        <h1 style="margin-top: 5vh;">
+	        Контактное лицо
+	      </h1>
+	    </div>
+	    <!-- list-style-type: none; -->
+	    <div class="contact">
+	      <div class="contact-photo">
+	        <img src="https://physics.itmo.ru/sites/default/files/styles/round/public/personality/photo/6877.jpg?itok=xPUlvbHz" alt="Avatar" style="border-radius: 50%; width:30vh;">
+	      </div>
+        <div class="contact-photo">
+	        <h2 class="contact">Виталий Васянович</h2>
+	        <h2 class="contact">Ведущий PR-специалист</h2>
+	        <h2 class="contact">v.vasjanovics@metalab.ifmo.ru</h2>
+					<h2 class="contact">+7 909 589 9233</h2>
+	      </div>
+
+	    </div>
+	  </div>
+	</ul>
+	</div>
+    </div>
+<div class="scrollTop" onclick="myScrollTop()"></div>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

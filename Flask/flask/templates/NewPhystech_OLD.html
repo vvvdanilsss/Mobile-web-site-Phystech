@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>NewPhystech</title>
+
+</head>
+
+
+<body style="font-family: 'Helvetica', serif;">
+
+<header id="myHead" class="head">
+    <div id="myUp" class="head__up">
+        <nav class="up__logo">
+            <a href="/">
+                <p class="logo__new">Новый</p>
+                <p class="logo__phystech">Физтех</p>
+            </a>
+        </nav>
+        <nav id="myBurger" class="up__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </div>
+
+    <div id="myBottom" class="head__bottom">
+        <nav id="myTopnav" class="botton__topnav">
+            <a href="timetable">Расписание</a>
+            <a href="staff">Сотрудники</a>
+            <a href="vacancy">Вакансии</a>
+            <a href="#" id="abit">Абитуриентам &#9658</a>
+            <div id="abitur" class="abitur">
+                <a href="bacalavriat">&#9999 Бакалавриат</a>
+                <a href="magistratura">&#9999 Магистратура</a>
+                <a href="aspirantura">&#9999 Аспирантура</a>
+            </div>
+            <a href="#" id="quick">Quicklinks &#9658</a>
+            <div id="quickl" class="quickl">
+                <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
+                <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999
+                    Redmine</a>
+            </div>
+            <a href="#" id="issl">Исследования &#9658</a>
+            <div id="issled" class="issled">
+                <a href="science-groups">&#9999 Научные группы</a>
+                <a href="publications">&#9999 Публикации</a>
+            </div>
+            <a href="#" id="onas">О New Phystech &#9658</a>
+            <div id="onewph" class="onewph">
+                <a href="smiaboutus">&#9999 СМИ о нас</a>
+                <a href="video">&#9999 Видео</a>
+                <a href="history">&#9999 История</a>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+<div id="mySite" class="body__site">
+
+    <div class="news">
+        <h2 style="color:black;">Новости</h2>
+        <ul class="news-list" id="news-id">
+            <li>
+                <linews></linews>
+            <li>
+                <linews></linews>
+            <li>
+                <linews></linews>
+            <li>
+                <linews></linews>
+            <li>
+                <linews></linews>
+        </ul>
+    </div>
+
+    <div class="news">
+        <h2 style="color:black;">Семинары</h2>
+        <ul class="news-list" id="semianrs-id">
+            <li>
+                <lisem></lisem>
+            <li>
+                <lisem></lisem>
+            <li>
+                <lisem></lisem>
+            <li>
+                <lisem></lisem>
+            <li>
+                <lisem></lisem>
+        </ul>
+    </div>
+
+    <div class="squre-infa-about-down">
+        <div class="squre-infa-about-down-networks">
+            <a href="https://vk.com/physics.itmo">
+                <img src="https://physics.itmo.ru/sites/default/files/2022-05/vk.png" alt="">
+            </a>
+            <a href="https://t.me/physics_itmo">
+                <img style="margin-left: 20px;" src="https://physics.itmo.ru/sites/default/files/2022-05/telegram.png"
+                     alt="">
+            </a>
+            <a href="https://www.youtube.com/channel/UCQTIT_zjRMhryifECo4bWfQ">
+                <img style="margin-left: 20px;" src="https://physics.itmo.ru/sites/default/files/2022-05/youtube.png"
+                     alt="">
+            </a>
+        </div>
+
+        <div class="squre-infa-contact">
+            <div class="squre-infa-contact-phone">
+                <h5>Телефон</h5>
+                <h5>+7 (812) 607-02-61</h5>
+                <h5 style="margin-top: 10px;">E-Mail</h5>
+                <h5>edu@physics.itmo.ru</h5>
+            </div>
+            <div class="squre-infa-contact-address">
+                <h5>Адрес</h5>
+                <h5>199034, Россия, Санкт-Петербург,
+                    Биржевая линия, д. 16, офис 538</h5>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="scrollTop" onclick="myScrollTop()"></div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

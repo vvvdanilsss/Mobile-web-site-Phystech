@@ -1,0 +1,2914 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>NewPhystech</title>
+
+</head>
+
+
+<body style="font-family: 'Helvetica', serif;">
+
+<header id="myHead" class="head">
+    <div class="head__up">
+        <nav class="up__logo">
+            <a href="/">
+            <p class="logo__new">Новый</p>
+            <p class="logo__phystech">Физтех</p>
+            </a>
+        </nav>
+        <nav id="myBurger" class="up__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </div>
+
+    <div id="myBottom" class="head__bottom">
+        <nav id="myTopnav" class="botton__topnav">
+            <a href="timetable">Расписание</a>
+            <a href="staff" >Сотрудники</a>
+            <a href="vacancy">Вакансии</a>
+            <a href="#" id="abit">Абитуриентам &#9658</a>
+            <div id="abitur" class="abitur">
+                <a href="bacalavriat">&#9999 Бакалавриат</a>
+                <a href="magistratura">&#9999 Магистратура</a>
+                <a href="aspirantura">&#9999 Аспирантура</a>
+            </div>
+            <a href="#" id="quick">Quicklinks &#9658</a>
+            <div id="quickl" class="quickl">
+                <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
+                <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
+            </div>
+            <a href="#" id="issl">Исследования &#9658</a>
+            <div id="issled" class="issled">
+                <a href="science-groups">&#9999 Научные группы</a>
+                <a href="publications">&#9999 Публикации</a>
+            </div>
+            <a href="#" id="onas">О New Phystech &#9658</a>
+            <div id="onewph" class="onewph">
+                <a href="smiaboutus">&#9999 СМИ о нас</a>
+                <a href="video">&#9999 Видео</a>
+                <a href="history">&#9999 История</a>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+<div id="mySite" class="body__site">
+	<div class="sotrudniki-begin">
+		<h1>Сотрудники</h1>
+	</div>
+	<div class="line" style="margin-top: 2%;"></div>
+
+
+	<ul style="width:100%;">
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3386.jpeg?itok=nboBlZb_" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Белов</p>
+          <p>Директор физико-технического мегафакультета, профессор</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1098.jpg?itok=r4Nh7Mqi" alt="Avatar" style="border-radius: 50%;">
+              <p>Ирина Мельчакова</p>
+          <p>Декан физического факультета, Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6446.jpg?itok=_wMeW5kP" alt="Avatar" style="border-radius: 50%;">
+              <p>Яна Музыченко</p>
+          <p>Заместитель директора физико-технического мегафакультета</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1494.jpg?itok=wMSCjG61" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Шикер</p>
+          <p>Заместитель декана физического факультета</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/252.jpg?itok=BUtvI1vd" alt="Avatar" style="border-radius: 50%;">
+              <p>Юрий Кившар</p>
+          <p>Distinguished Professor </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1499.jpg?itok=jKS8C-Tj" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Шелых</p>
+          <p>Distinguished Professor </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1500.jpg?itok=ouNePHiC" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Иорш</p>
+          <p>Professor </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/318.jpg?itok=MRWfc21m" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Макаров</p>
+          <p>Professor </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/290.jpg?itok=T2efvZ3Q" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Богданов</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/291.jpg?itok=nfQoSxYJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Максим Горлач</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1151.jpg?itok=j1vniZaf" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Гулевич</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1491.jpg?itok=2ZXokfRj" alt="Avatar" style="border-radius: 50%;">
+              <p>Станислав Глыбовский</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/322.jpg?itok=r1LqCYXm" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Зуев</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/363.jpg?itok=chlOUvfy" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Зубков</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1086.jpg?itok=OL03wCAP" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Зюзин</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/255.jpg?itok=Bgk_ZIzD" alt="Avatar" style="border-radius: 50%;">
+              <p>Полина Капитанова</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5937.jpg?itok=p1Z1TNYb" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Карловец</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1212.jpg?itok=WEvMOBvy" alt="Avatar" style="border-radius: 50%;">
+              <p>Василий Кравцов</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/809.jpg?itok=U6kWyTaB" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Лимонов</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/300.jpg?itok=H4qYJmSA" alt="Avatar" style="border-radius: 50%;">
+              <p>Валентин Миличко</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6609.png?itok=fgamrjog" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Петров</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1078.jpg?itok=kx8siT2P" alt="Avatar" style="border-radius: 50%;">
+              <p>Анатолий Пушкарев</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/265.jpg?itok=RZefDxRA" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Рыбин</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/273.jpg?itok=r8GBkRq-" alt="Avatar" style="border-radius: 50%;">
+              <p>Роман Савельев</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/253.jpg?itok=0nJBqi3l" alt="Avatar" style="border-radius: 50%;">
+              <p>Антон Самусев</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/260.jpg?itok=pf01PI3x" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Синев</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/251.jpg?itok=fvB3sW51" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Слобожанюк</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5858.jpg?itok=NR8XfTz_" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Тимин</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/304.jpg?itok=VXxIAu93" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Юлин</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/431.jpg?itok=lUji0kcm" alt="Avatar" style="border-radius: 50%;">
+              <p>Эдуард Агеев</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/980.jpg?itok=U0yKXa21" alt="Avatar" style="border-radius: 50%;">
+              <p>Хади Шамхи Аль-Наима</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2628.jpg?itok=ki2ZQXoz" alt="Avatar" style="border-radius: 50%;">
+              <p>Фёдор Бенимецкий</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/350.jpg?itok=7hqgT0TH" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Бруй</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3742.jpg?itok=KC-IM5rs" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Ворошилов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/389.jpg?itok=3eJQwkZ7" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Гец</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/311.jpg?itok=edDRKi4c" alt="Avatar" style="border-radius: 50%;">
+              <p>Олег Ермаков</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3986.jpg?itok=1ha8X3Uo" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Жирихин</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1201.jpg?itok=FwNBP3u6" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Зезюлин</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8258.jpg?itok=VB0V2DiP" alt="Avatar" style="border-radius: 50%;">
+              <p>Алиса Катанаева</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/891.jpg?itok=2utoGcKY" alt="Avatar" style="border-radius: 50%;">
+              <p>Денис Кислов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8111.jpg?itok=aaqqJQhT" alt="Avatar" style="border-radius: 50%;">
+              <p>Наталия Костина</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2540.jpg?itok=_BhF1eJx" alt="Avatar" style="border-radius: 50%;">
+              <p>Лев Логунов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8160.jpg?itok=Njmh8hdw" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Лутовинов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7165.jpg?itok=7o8744W5" alt="Avatar" style="border-radius: 50%;">
+              <p>Юрий Полисей</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4153.jpg?itok=1rN58lnc" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниэль Жан Поль Сапори</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1503.jpg?itok=1GWMq4ox" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Сидоренко</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/373.jpg?itok=7FRRrRIJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Георгий Соломаха</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/295.jpg?itok=yGsySeSL" alt="Avatar" style="border-radius: 50%;">
+              <p>Минчжао Сун</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/390.jpg?itok=MWAb7jxI" alt="Avatar" style="border-radius: 50%;">
+              <p>Яли Сунь</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7073.jpg?itok=VesE4hAM" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Ткалич</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2537.jpg?itok=7Pq5XeBg" alt="Avatar" style="border-radius: 50%;">
+              <p>Александра Фурасова</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2690.jpg?itok=uX12hQLy" alt="Avatar" style="border-radius: 50%;">
+              <p>Сослан Хубежов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7738.jpg?itok=wZJu_dng" alt="Avatar" style="border-radius: 50%;">
+              <p>Игорь Честнов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8177.jpg?itok=BJ4ZrunL" alt="Avatar" style="border-radius: 50%;">
+              <p>Ваник Шахназарян</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/240.jpg?itok=Y5F5K71W" alt="Avatar" style="border-radius: 50%;">
+              <p>Алёна Щёлокова</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/259.jpg?itok=L5if6_-4" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Шишкин</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1272.png?itok=4TAqigOE" alt="Avatar" style="border-radius: 50%;">
+              <p>Эдуард Даниловский</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2150.jpg?itok=AaAvz1Kd" alt="Avatar" style="border-radius: 50%;">
+              <p>Лев Зеленков</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2967.jpg?itok=pQPyuq1P" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Олехно</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/342.jpg?itok=wtUqU7Xq" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Саянский</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/320.jpg?itok=BACpKu7a" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Хуршкайнен</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6411.jpg?itok=da1JP9Mj" alt="Avatar" style="border-radius: 50%;">
+              <p>Станислав Батурин</p>
+          <p>Senior Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5851.jpg?itok=6MCeutAE" alt="Avatar" style="border-radius: 50%;">
+              <p>Николай Зверьков</p>
+          <p>Инженер по лаборатории</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3585.jpg?itok=LzhfUeJ9" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Калганов</p>
+          <p>Инженер по лаборатории</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/282.jpg?itok=jK5DYSpr" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Пермяков</p>
+          <p>Инженер по лаборатории</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3749.jpg?itok=ZN7OYSbI" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Баранов</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3748.jpg?itok=Gm7sowv-" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Долгинцев</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/263.jpg?itok=OjHF-nfY" alt="Avatar" style="border-radius: 50%;">
+              <p>Кирилл Самусев</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/359.jpg?itok=-u9TGUpg" alt="Avatar" style="border-radius: 50%;">
+              <p>Евгений Свечников</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3187.jpg?itok=qLmx2IJI" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Цибизов </p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3434.jpg?itok=DEprZrks" alt="Avatar" style="border-radius: 50%;">
+              <p>Георгий Баранов</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7714.jpeg?itok=Zz4uyPFM" alt="Avatar" style="border-radius: 50%;">
+              <p>Зиля  Бадриева </p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7716.jpg?itok=daWzfeQ1" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Власов</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/971.jpg?itok=FoC48-DO" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Кулаченков</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5538.jpg?itok=J9evjfOn" alt="Avatar" style="border-radius: 50%;">
+              <p>Анатолий Отрощенко</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/default_images/nophoto_1.png?itok=-guABFze" alt="Avatar" style="border-radius: 50%;">
+              <p>Виталий Павлов</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2686.jpg?itok=0BX5OhW_" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Санджиева</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2133.jpg?itok=qoSzXAos" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Серегин</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5539.jpg?itok=4CtRsJC5" alt="Avatar" style="border-radius: 50%;">
+              <p>Василий Суриков</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7741.jpg?itok=qaporL5e" alt="Avatar" style="border-radius: 50%;">
+              <p>Александра Скобелева </p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6317.png?itok=uMXU7Bmq" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Удров</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7735.jpg?itok=gtPn6rCo" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Хабитуева</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1110.jpg?itok=bq_Ut_TN" alt="Avatar" style="border-radius: 50%;">
+              <p>Виталий Школдин</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4062.jpg?itok=y_5g1BKn" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Волотка</p>
+          <p>Research Fellow </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4054.jpg?itok=Az98-RDC" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Шипиловских</p>
+          <p>Research Fellow </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1551.jpg?itok=I1KItwT5" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Соколенко</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/412.jpg?itok=xwA1UUYG" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Андрейченко</p>
+          <p>Leading Researcher                       </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1108.png?itok=9Udr_ZeV" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Бессараб</p>
+          <p> Research Associate</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/default_images/nophoto_1.png?itok=-guABFze" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Гагарин</p>
+          <p>Senior Research Scientist</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1115.jpg?itok=ynuwIBJP" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Евлюхин</p>
+          <p>Senior Research Scientist</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1501.jpg?itok=sLaGdUXC" alt="Avatar" style="border-radius: 50%;">
+              <p>Анвар Захидов</p>
+          <p>Head researcher</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3977.png?itok=tcomZJyA" alt="Avatar" style="border-radius: 50%;">
+              <p>Георгий Зограф</p>
+          <p>Junior Researcher</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/394.jpg?itok=Av1zVdOZ" alt="Avatar" style="border-radius: 50%;">
+              <p>Валерий Козин</p>
+          <p>Junior Researcher</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/289.jpg?itok=k2ooTaB6" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Красилин</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/420.jpg?itok=xDNZRHa5" alt="Avatar" style="border-radius: 50%;">
+              <p>Филипп Комиссаренко</p>
+          <p> Research Associate</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/268.jpg?itok=agUksIp5" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Лапин</p>
+          <p>Senior Research Scientist</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5537.jpg?itok=pLm1tXQa" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Новицкий</p>
+          <p>Senior Research Scientist</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1319.png?itok=Q9eaSegL" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Франсуа Рене Номине</p>
+          <p>Associate Professor-researcher</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2213.jpg?itok=TvdNWsXN" alt="Avatar" style="border-radius: 50%;">
+              <p>Антон Налитов</p>
+          <p> Research Associate</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2886.jpg?itok=6bZTfu5m" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Поддубный</p>
+          <p>Leading Researcher                       </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7200.jpg?itok=enti0AAb" alt="Avatar" style="border-radius: 50%;">
+              <p>Василий Перебейнос</p>
+          <p>Leading Researcher                       </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/324.jpg?itok=qXlvC-Fh" alt="Avatar" style="border-radius: 50%;">
+              <p>Артем Синельник</p>
+          <p> Research Associate</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6491.jpg?itok=l9AnJHUc" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Тихоненко</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1216.jpg?itok=5UhPl8hy" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Титов</p>
+          <p>Professor(researcher)</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3404.jpg?itok=yM3ZCEp7" alt="Avatar" style="border-radius: 50%;">
+              <p>Илья Токатлы</p>
+          <p>Professor(researcher)</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2188.jpg?itok=GRjyM-SO" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Хестанова</p>
+          <p>Senior Research Scientist</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5552.jpg?itok=4aReKEW0" alt="Avatar" style="border-radius: 50%;">
+              <p>Александра Шеремет</p>
+          <p>Senior Research Scientist</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2083.jpg?itok=8_xYlOmE" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Янкин</p>
+          <p> Research Associate</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/default_images/nophoto_1.png?itok=-guABFze" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Баева</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/default_images/nophoto_1.png?itok=-guABFze" alt="Avatar" style="border-radius: 50%;">
+              <p>Владислав Иванов</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/688.gif?itok=Fymi8t9J" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Аверкиев</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3413.png?itok=593ryOME" alt="Avatar" style="border-radius: 50%;">
+              <p>Леонид Голуб</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/815.jpg?itok=luMmatow" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Дунаевский</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3412.jpg?itok=KFOX_I1c" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Жуков</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3652.jpg?itok=lf9ElEoR" alt="Avatar" style="border-radius: 50%;">
+              <p>Александра Калашникова</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/689.gif?itok=qL7rdNDR" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Липовский</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/336.jpg?itok=SIRDp_n6" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Мухин</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/692.jpg?itok=ILCMRImF" alt="Avatar" style="border-radius: 50%;">
+              <p>Игорь Рожанский</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8105.jpg?itok=i8E0mWFI" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Родина</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4010.jpeg?itok=Dy1p8Uml" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Татарников</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1044.jpg?itok=TQynyJjj" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей  Тарасенко </p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/690.gif?itok=bkbdyGjR" alt="Avatar" style="border-radius: 50%;">
+              <p>Евгений Теруков</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1021.jpg?itok=y18CO_kQ" alt="Avatar" style="border-radius: 50%;">
+              <p>Владимир  Чалдышев </p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3376.jpg?itok=Qye9Wyzu" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Чирцов</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1203.jpg?itok=H0Dzyxr2" alt="Avatar" style="border-radius: 50%;">
+              <p>Евгений  Яревский</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7713.jpg?itok=6vxb57kc" alt="Avatar" style="border-radius: 50%;">
+              <p>Прохор Алексеев</p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1104.jpg?itok=aXdBleoP" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Большаков</p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1126.jpg?itok=A1a2QXkl" alt="Avatar" style="border-radius: 50%;">
+              <p>Леонид  Герчиков </p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/813.jpg?itok=dqo9tKWG" alt="Avatar" style="border-radius: 50%;">
+              <p>Ирина Панайотти</p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1043.jpg?itok=lKF4OzNf" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр  Пошакинский </p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1122.jpg?itok=PsUe6qzo" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Сочава</p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/979.png?itok=KCpPaoZE" alt="Avatar" style="border-radius: 50%;">
+              <p>Николай Хохлов</p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3405.jpg?itok=OhGnOBQx" alt="Avatar" style="border-radius: 50%;">
+              <p>Пётр Штернин</p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3500.jpg?itok=Pbb4fddN" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Шумилин</p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1206.jpg?itok=Q7PoUEHc" alt="Avatar" style="border-radius: 50%;">
+              <p>Инга Андреева</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3517.jpg?itok=3MruZDJi" alt="Avatar" style="border-radius: 50%;">
+              <p>Роман Бородулин</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1207.jpg?itok=sDZzRuhv" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Белов</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3423.jpg?itok=jD2p9HnX" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Буренев</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3588.jpg?itok=QybtitsX" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Виноградов</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3936.jpg?itok=EMPXP1fz" alt="Avatar" style="border-radius: 50%;">
+              <p>Антон Герт</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3596.jpg?itok=OnbeCfMq" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Егоров</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5863.jpg?itok=5LVsMkpA" alt="Avatar" style="border-radius: 50%;">
+              <p>Евгений Иевлев</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1580.jpg?itok=h27HVEXK" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Казначеева</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5930.jpg?itok=HYiwT3sJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Давид Кумаллагов</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7721.jpg?itok=9Idh7z4H" alt="Avatar" style="border-radius: 50%;">
+              <p>Вячеслав Кузьмин</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3519.jpg?itok=ehHRPRN0" alt="Avatar" style="border-radius: 50%;">
+              <p>Николай Лукъянов</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7722.jpg?itok=1cBJRDu3" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван  Маслов</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3521.png?itok=790_t0Fn" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Максимов</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5881.jpg?itok=2AigPmzb" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Маслаков</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3409.jpg?itok=m_z4OpZX" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Минин</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7726.jpg?itok=Qfjsv1CY" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел  Петтай</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7728.jpg?itok=CxkZC-tc" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Проценко</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3537.jpg?itok=gklHAHHZ" alt="Avatar" style="border-radius: 50%;">
+              <p>Федор Смирнов</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1545.jpg?itok=rbUrA1ct" alt="Avatar" style="border-radius: 50%;">
+              <p>Наталья Теплова</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5862.png?itok=JCPK_0po" alt="Avatar" style="border-radius: 50%;">
+              <p>Григорий Французов</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3401.jpg?itok=z2BnLBhn" alt="Avatar" style="border-radius: 50%;">
+              <p>Рамис Хасянов</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7740.jpg?itok=aJ5SZFO7" alt="Avatar" style="border-radius: 50%;">
+              <p>Денис Шахницкий</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1553.jpeg?itok=S5Pe6Rl_" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Эйхвальд</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1502.jpg?itok=cSlkJOTj" alt="Avatar" style="border-radius: 50%;">
+              <p>Ксения Барышникова</p>
+          <p>Senior Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1112.jpeg?itok=VXvB9TXO" alt="Avatar" style="border-radius: 50%;">
+              <p>Максим Коробков</p>
+          <p>Senior Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1200.jpg?itok=TvpzS9-7" alt="Avatar" style="border-radius: 50%;">
+              <p>Константин Ладутенко</p>
+          <p>Senior Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3417.jpg?itok=MASdslNG" alt="Avatar" style="border-radius: 50%;">
+              <p>Игорь Лобанов</p>
+          <p>Senior Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1111.jpg?itok=UCR8s2h1" alt="Avatar" style="border-radius: 50%;">
+              <p>Карлос Кабаль Мирабаль</p>
+          <p>Visiting lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2291.jpg?itok=x3TAIUjr" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Кудлис</p>
+          <p>Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3224.jpg?itok=FxuYRxa6" alt="Avatar" style="border-radius: 50%;">
+              <p>Юрий  Кривосенко</p>
+          <p>Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7733.jpg?itok=ufHuY6Dt" alt="Avatar" style="border-radius: 50%;">
+              <p>Арсений Сыромятников</p>
+          <p>Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1242.jpg?itok=tFeyDCEp" alt="Avatar" style="border-radius: 50%;">
+              <p>Ольга Сергаева</p>
+          <p>Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/335.jpg?itok=FeYAXdoU" alt="Avatar" style="border-radius: 50%;">
+              <p>Зарина Садриева</p>
+          <p>Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6311.jpg?itok=OCHwOYb7" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Тертеров</p>
+          <p>Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/969.png?itok=Sqn7nZXQ" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Щербаков</p>
+          <p>Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5687.jpg?itok=CEaj23Ny" alt="Avatar" style="border-radius: 50%;">
+              <p>Артем Алейник</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3590.jpg?itok=CVGywbsT" alt="Avatar" style="border-radius: 50%;">
+              <p>Максим Бабушкин</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/298.jpg?itok=zeBTh0O7" alt="Avatar" style="border-radius: 50%;">
+              <p>Юрий Балошин</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/810.jpg?itok=v6XAQi0H" alt="Avatar" style="border-radius: 50%;">
+              <p>Кирилл Барышников</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1129.jpg?itok=1VSbADaN" alt="Avatar" style="border-radius: 50%;">
+              <p>Кирилл Боярский</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5688.jpg?itok=Apq_BTEo" alt="Avatar" style="border-radius: 50%;">
+              <p>Константин Горшков</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7069.jpg?itok=e5tC0Z9F" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Дерябин</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1586.jpg?itok=LuWlyeZ5" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Ефремова</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3933.jpg?itok=Ql48dLja" alt="Avatar" style="border-radius: 50%;">
+              <p>Георгий Жабко</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1138.jpeg?itok=AYiJFKzX" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр  Зинчик </p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3400.jpg?itok=YaET0GBf" alt="Avatar" style="border-radius: 50%;">
+              <p>Виктор Иванов</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1213.jpg?itok=6nlQ3n5D" alt="Avatar" style="border-radius: 50%;">
+              <p>Василий Крылов</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2606.jpg?itok=XZOCa5aL" alt="Avatar" style="border-radius: 50%;">
+              <p>Светлана Курашова</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1211.jpg?itok=bLmXncyV" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Козаченко</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3587.jpg?itok=4LCCRUBY" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина  Кучерук </p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7742.jpeg?itok=hESIsJ7c" alt="Avatar" style="border-radius: 50%;">
+              <p>Полина Куксова</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4064.jpg?itok=iMCw_PtB" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Карпова</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1189.jpg?itok=T8pxvR9I" alt="Avatar" style="border-radius: 50%;">
+              <p>Борис Лебедев</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7725.jpg?itok=ECjt4Fc0" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Никитченко</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3594.jpg?itok=Le9E7CKs" alt="Avatar" style="border-radius: 50%;">
+              <p>Владимир Николаев</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6884.jpg?itok=Sva15EGA" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниил Орешников</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/default_images/nophoto_1.png?itok=-guABFze" alt="Avatar" style="border-radius: 50%;">
+              <p>Ульяна Прохорова</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7071.jpg?itok=zJs8CzC-" alt="Avatar" style="border-radius: 50%;">
+              <p>Николай Пулькин</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/411.jpg?itok=tenQQdFX" alt="Avatar" style="border-radius: 50%;">
+              <p>Роман Полозков</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3760.jpg?itok=AZMsq0gk" alt="Avatar" style="border-radius: 50%;">
+              <p>Антон Попов</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3592.jpg?itok=dlmF3OLg" alt="Avatar" style="border-radius: 50%;">
+              <p>Игорь Попов</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1155.jpg?itok=2PF0v0lZ" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Портной</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5689.jpg?itok=uxTyAPKm" alt="Avatar" style="border-radius: 50%;">
+              <p>Константин Правдин</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1066.jpg?itok=nNorXNAC" alt="Avatar" style="border-radius: 50%;">
+              <p>Алёна Рудель</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1121.jpg?itok=7vIGlni9" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей  Стафеев </p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7916.jpg?itok=Gb_-26fP" alt="Avatar" style="border-radius: 50%;">
+              <p>Максим Салогуб</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1125.jpeg?itok=PHzb38hD" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр  Смирнов </p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/default_images/nophoto_1.png?itok=-guABFze" alt="Avatar" style="border-radius: 50%;">
+              <p>Елена Сорокина</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1543.jpg?itok=kDZnYkew" alt="Avatar" style="border-radius: 50%;">
+              <p>Эльвира Тимофеева</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7737.jpg?itok=zA4McjA_" alt="Avatar" style="border-radius: 50%;">
+              <p>Николай Хвастунов</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3247.png?itok=3BDTKJ78" alt="Avatar" style="border-radius: 50%;">
+              <p>Виктор Частый</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7739.jpg?itok=eBHWxCUs" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниил Шаров</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1583.jpg?itok=qQm7AKWe" alt="Avatar" style="border-radius: 50%;">
+              <p>Владислав Шоев</p>
+          <p>Инженер по лаборатории</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2458.jpg?itok=7EBzFLo0" alt="Avatar" style="border-radius: 50%;">
+              <p>Галина Богданова</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2457.jpg?itok=H6-wltvO" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Горбунова</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2527.jpg?itok=fw_td3xn" alt="Avatar" style="border-radius: 50%;">
+              <p>Валерий  Уздин</p>
+          <p>Associate Professor </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/271.jpg?itok=Ds-Ul0wW" alt="Avatar" style="border-radius: 50%;">
+              <p>Марина Иордан</p>
+          <p>Cпециалист по расчету заработной платы</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2941.jpg?itok=MBiwH5BH" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Ким</p>
+          <p>Младший специалист по расчету заработной платы</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3282.jpg?itok=4ZHDd7D7" alt="Avatar" style="border-radius: 50%;">
+              <p>Власта Соловьева</p>
+          <p>Помощник директора и декана</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7534.jpg?itok=HEii0jSW" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Синичкина</p>
+          <p>Менеджер радиофизических научных групп</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1142.jpg?itok=TuCCjwTH" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Шорохова</p>
+          <p>Менеджер лаборатории фотопроцессов в мезоскопических системах</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8380.jpg?itok=aA_w8SHL" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Попова</p>
+          <p>Менеджер лаборатории гибридной нанофотоники и оптоэлектроники </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7570.jpg?itok=RhpZJyPq" alt="Avatar" style="border-radius: 50%;">
+              <p>Оксана Бакунович</p>
+          <p>Офис-менеджер</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6207.jpg?itok=f70YYGT4" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Михайлова</p>
+          <p>HR директор физико-технического мегафакультета</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/339.jpg?itok=prYt9YS5" alt="Avatar" style="border-radius: 50%;">
+              <p>Маргарита Чурсина</p>
+          <p>Ведущий HR-менеджер </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2431.jpg?itok=xX90brre" alt="Avatar" style="border-radius: 50%;">
+              <p>Нина Рыжова</p>
+          <p>HR бизнес-партнер</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1070.jpg?itok=S0f4Pqwn" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Пронина</p>
+          <p>Специалист по кадровому делопроизводству</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5267.jpg?itok=I_LBDoXn" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Филиппова</p>
+          <p>Младший HR-менеджер</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8344.jpg?itok=u24x_cV9" alt="Avatar" style="border-radius: 50%;">
+              <p>Светлана Серюкова</p>
+          <p>Специалист по сопровождению грантов</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7532.jpeg?itok=Kxtx-8XM" alt="Avatar" style="border-radius: 50%;">
+              <p>Анжелика Петрова</p>
+          <p>Специалист по сопровождению грантов</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7572.jpg?itok=z-EqzEUz" alt="Avatar" style="border-radius: 50%;">
+              <p>Виктория Найф</p>
+          <p>Специалист по сопровождению грантов</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3300.jpg?itok=vJGfVuEc" alt="Avatar" style="border-radius: 50%;">
+              <p>Полина Петрова</p>
+          <p>Специалист по коммерциализации инноваций</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2594.jpg?itok=BRnfh2xD" alt="Avatar" style="border-radius: 50%;">
+              <p>Александра Денисова</p>
+          <p>Специалист по коммерциализации инноваций</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/422.jpg?itok=fgaH5nLb" alt="Avatar" style="border-radius: 50%;">
+              <p>Егор Гурвиц</p>
+          <p>Менеджер инновационных проектов</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/434.jpg?itok=vwc7jrvo" alt="Avatar" style="border-radius: 50%;">
+              <p>Елена Люй (Дунаева)</p>
+          <p>Специалист по сопровождению командировок</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/340.jpg?itok=HWuRWtVB" alt="Avatar" style="border-radius: 50%;">
+              <p>Дарья Шуршевая</p>
+          <p>Специалист по сопровождению закупок</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2429.jpg?itok=zwbcEOsF" alt="Avatar" style="border-radius: 50%;">
+              <p>Юлия Каск</p>
+          <p>Специалист по сопровождению закупок</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/435.jpg?itok=xWFugWkv" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Городничая</p>
+          <p>Специалист по сопровождению закупок /возмещения по чекам/</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1546.jpg?itok=ock3DbYh" alt="Avatar" style="border-radius: 50%;">
+              <p>Юрий Демчук</p>
+          <p>Руководитель IT команды</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1513.jpg?itok=torHcSpF" alt="Avatar" style="border-radius: 50%;">
+              <p>Артём Алексеев</p>
+          <p>IT-инженер</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1240.jpg?itok=6A3O18rc" alt="Avatar" style="border-radius: 50%;">
+              <p>Тагир Касимов</p>
+          <p>IT-инженер</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1497.jpg?itok=JNs6qZKv" alt="Avatar" style="border-radius: 50%;">
+              <p>Константин Елкин</p>
+          <p>Главный инженер по эксплуатации</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1487.jpg?itok=NTH4tcjX" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Санджиев</p>
+          <p>Инженер по эксплуатации</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3538.jpg?itok=v-9VJlw8" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Шандыбин</p>
+          <p>Инженер по эксплуатации</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8112.jpg?itok=TvvGIhGl" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Крафт</p>
+          <p>Инженер-техник</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1473.jpg?itok=m_kkX4xA" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Трофимов</p>
+          <p>Менеджер по вопросам аспирантуры</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6877.jpg?itok=SivWZB8_" alt="Avatar" style="border-radius: 50%;">
+              <p>Виталий Васянович</p>
+          <p>Ведущий PR-специалист</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6185.jpg?itok=rW325Ur-" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Лоевец</p>
+          <p>Младший PR-специалист</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8294.jpg?itok=64ps7RcN" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Капцова</p>
+          <p>Руководитель группы Event и внутренних коммуникаций</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6208.jpg?itok=rLWRmOkT" alt="Avatar" style="border-radius: 50%;">
+              <p>Арина Милкова</p>
+          <p>Младший менеджер по организации научных мероприятий</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2359.jpg?itok=4UNIBk9d" alt="Avatar" style="border-radius: 50%;">
+              <p>Юлия Кузьмина</p>
+          <p>Менеджер по внутренним коммуникациям</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8350.jpg?itok=K1-Cq_5c" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Грязникова</p>
+          <p>Менеджер по внутренним коммуникациям</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/382.jpg?itok=IgpZFwKD" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Климова</p>
+          <p>Графический дизайнер-иллюстратор</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5548.jpg?itok=bNt1Vx6i" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Пустовит </p>
+          <p>Графический дизайнер-иллюстратор</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/368.jpg?itok=DiuVYCFY" alt="Avatar" style="border-radius: 50%;">
+              <p>Лидия Погорельская</p>
+          <p>Переводчик</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2218.jpg?itok=FUkm9IEI" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Пухтина</p>
+          <p>Оператор</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3657.jpg?itok=tx1qk0Nw" alt="Avatar" style="border-radius: 50%;">
+              <p>Дарья Замотина</p>
+          <p>Специалист по учебно-методической работе</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2097.jpeg?itok=g9WSiPaq" alt="Avatar" style="border-radius: 50%;">
+              <p>Анаида Вартанова</p>
+          <p>Специалист по учебно-методической работе</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1584.jpg?itok=UgF3Y0Rr" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Пилюшкина</p>
+          <p>Специалист по учебно-методической работе</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6874.jpg?itok=VUueMpuH" alt="Avatar" style="border-radius: 50%;">
+              <p>Алина Кожевникова</p>
+          <p>Специалист по учебно-методической работе</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2940.jpg?itok=nkFusXc9" alt="Avatar" style="border-radius: 50%;">
+              <p>Дарья Бочек</p>
+          <p>4th year PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/362.jpg?itok=_CYEgXp8" alt="Avatar" style="border-radius: 50%;">
+              <p>Дарья Долинина</p>
+          <p>4th year PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/329.jpg?itok=DZyXJ5v2" alt="Avatar" style="border-radius: 50%;">
+              <p>Станислав Колодный</p>
+          <p>4th year PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/963.jpg?itok=NwtsGQS1" alt="Avatar" style="border-radius: 50%;">
+              <p>Дарья Маркина</p>
+          <p>4th year PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/960.jpg?itok=IjTGy9Oe" alt="Avatar" style="border-radius: 50%;">
+              <p>Юрий Мезенов</p>
+          <p>4th year PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1541.jpg?itok=QWXqNkG5" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Пидгайко</p>
+          <p>4th year PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6274.jpg?itok=2n65v3yr" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Тофтул</p>
+          <p>4th year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/364.jpg?itok=IF8ugcTC" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Трофимов</p>
+          <p>4th year PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6492.png?itok=jSLLCb7x" alt="Avatar" style="border-radius: 50%;">
+              <p>Кристина Фризюк</p>
+          <p>4th year PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/357.jpg?itok=6u7GVZqv" alt="Avatar" style="border-radius: 50%;">
+              <p>Виталий Ярошенко</p>
+          <p>4th year PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1080.jpg?itok=gF2kfZo0" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Аношкин</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2147.jpg?itok=-dXFcNt1" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Вербицкий</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/958.jpg?itok=TuDSd9KO" alt="Avatar" style="border-radius: 50%;">
+              <p>Григорий Верхоглядов</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1266.jpg?itok=o5_SS9dS" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Дмитриев</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2122.jpg?itok=2Gq48BXG" alt="Avatar" style="border-radius: 50%;">
+              <p>Эсмаил Занганех</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/407.jpg?itok=r_hosbc8" alt="Avatar" style="border-radius: 50%;">
+              <p>Евгений Корешин</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/default_images/nophoto_1.png?itok=-guABFze" alt="Avatar" style="border-radius: 50%;">
+              <p>Владислав Куйдин</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1087.jpg?itok=VJ8-106D" alt="Avatar" style="border-radius: 50%;">
+              <p>Ирина Корякина</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2342.png?itok=XZEH4PQx" alt="Avatar" style="border-radius: 50%;">
+              <p>Артем Ларин</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1318.jpg?itok=CFrO_YPr" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Лепешов</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1550.jpg?itok=-zMYtMga" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Маслова</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3426.jpg?itok=jB_aY3fD" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Проскурин</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/408.jpg?itok=lz2MwPv1" alt="Avatar" style="border-radius: 50%;">
+              <p>Шахаб Рамезанпур</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7729.jpg?itok=AVUaWUeS" alt="Avatar" style="border-radius: 50%;">
+              <p>Ирина Севастьянова</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1571.jpg?itok=ETQszMq8" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Степаненко</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1548.png?itok=_L8lhiVE" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Тальянов</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2313.jpg?itok=X63OtQ61" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Тонкаев</p>
+          <p>3rd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3395.jpg?itok=c7CDscjk" alt="Avatar" style="border-radius: 50%;">
+              <p>Юрий Артемьев</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/952.jpg?itok=xPmM4vux" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниил Бобылев</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/966.jpg?itok=X0n5qsDa" alt="Avatar" style="border-radius: 50%;">
+              <p>Елена Герасимова</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/414.jpg?itok=MUUMU5Oi" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Гладышев</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2683.jpg?itok=jjL_BCWp" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Гунина</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1202.jpg?itok=zLsrE-xN" alt="Avatar" style="border-radius: 50%;">
+              <p>Адриа Канос Валеро</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7830.jpg?itok=r8UMmp8X" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Красиков</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2216.jpg?itok=biVCjKtT" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Красикова </p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1269.jpg?itok=jQt25ZQl" alt="Avatar" style="border-radius: 50%;">
+              <p>Ксения Леженникова</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6276.png?itok=vc5fJNch" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Машарин</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3239.jpg?itok=BdwA-f4X" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Михин</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/953.jpg?itok=1dxo6_8f" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Николаева</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7195.png?itok=ABFvy_08" alt="Avatar" style="border-radius: 50%;">
+              <p>Виктор Пучнин</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1219.jpg?itok=PsuL7tWF" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Понкратова</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3191.jpg?itok=Rhw-0zoM" alt="Avatar" style="border-radius: 50%;">
+              <p>Артем Полушкин</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6512.jpg?itok=LHI40tT7" alt="Avatar" style="border-radius: 50%;">
+              <p>Гульназ Рахманова</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7734.jpg?itok=HdQIka3x" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Тамбовцев</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3457.jpg?itok=8Uo8ms4i" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Татаринов</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2456.jpg?itok=MlZAyLIG" alt="Avatar" style="border-radius: 50%;">
+              <p>Максим Тумашов</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/956.jpeg?itok=wtLN3_FP" alt="Avatar" style="border-radius: 50%;">
+              <p>Ландыш Фатхутдинова</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3438.jpg?itok=HJjmruGI" alt="Avatar" style="border-radius: 50%;">
+              <p>Владислав Чистяков</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3752.png?itok=XTj3algK" alt="Avatar" style="border-radius: 50%;">
+              <p>Ильдар Юсупов</p>
+          <p>2nd year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7074.jpg?itok=nYeL0mRB" alt="Avatar" style="border-radius: 50%;">
+              <p>Руслан Азизов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6444.jpg?itok=mTHh-6Xh" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Алексеевский</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7712.jpg?itok=jMHjAD86" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Акулов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3159.jpg?itok=yaxpAAFJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Рустам Балафендиев</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2179.png?itok=RHJzKo8R" alt="Avatar" style="border-radius: 50%;">
+              <p>Семён Бачинин</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6149.jpg?itok=8_AoTOXh" alt="Avatar" style="border-radius: 50%;">
+              <p>Олег Бурмистров</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/default_images/nophoto_1.png?itok=-guABFze" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Бочин</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/386.jpg?itok=_EEl3GQP" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Берестенников</p>
+          <p>PhD student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/409.jpg?itok=xfeRddO0" alt="Avatar" style="border-radius: 50%;">
+              <p>Илья Волков</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3394.jpg?itok=EL--NA44" alt="Avatar" style="border-radius: 50%;">
+              <p>Роман Гапоненко</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3316.jpg?itok=H9HX9q4S" alt="Avatar" style="border-radius: 50%;">
+              <p>Илья Дерий</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2674.jpg?itok=QI1C4uln" alt="Avatar" style="border-radius: 50%;">
+              <p>Валерий Кондратьев</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6395.jpg?itok=FqyMlOfK" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Кустов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6263.jpeg?itok=7TZG49ti" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Кузнецов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6209.jpg?itok=MB6D-5gT" alt="Avatar" style="border-radius: 50%;">
+              <p>Анатолий Левчук</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3750.jpg?itok=Igvggo2-" alt="Avatar" style="border-radius: 50%;">
+              <p>Владислав Максимов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6828.jpg?itok=DtDNF26S" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Марунченко</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2379.jpg?itok=uYlhW35J" alt="Avatar" style="border-radius: 50%;">
+              <p>Аболфазл Махмудпур</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5857.jpg?itok=xpEvFSj4" alt="Avatar" style="border-radius: 50%;">
+              <p>Максим Мазанов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1481.jpg?itok=Jxii9jBC" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Пельтек</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3139.jpg?itok=yHymr1r-" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Соломонов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2321.jpg?itok=Oe1OLok6" alt="Avatar" style="border-radius: 50%;">
+              <p>Николай Солодовченко</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2367.jpg?itok=YvmZUN4U" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Смирнов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5550.jpg?itok=1TMxiWrE" alt="Avatar" style="border-radius: 50%;">
+              <p>Георгий Сизых</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5859.jpg?itok=-o5pONPm" alt="Avatar" style="border-radius: 50%;">
+              <p>Тимур Сеидов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2399.jpg?itok=dHbdXrct" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Тихонов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7070.jpg?itok=pKBlFKPJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Антон Утюшев</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2219.jpg?itok=qIIEsdIF" alt="Avatar" style="border-radius: 50%;">
+              <p>Дарья Хмелевская</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7479.jpg?itok=1XLw4ILe" alt="Avatar" style="border-radius: 50%;">
+              <p>Диана Шакирова</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2314.jpg?itok=sTIlf2iu" alt="Avatar" style="border-radius: 50%;">
+              <p>Руслан Яфясов</p>
+          <p>1st year PhD student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2139.jpeg?itok=hQY7TYM_" alt="Avatar" style="border-radius: 50%;">
+              <p>Артем Абрамов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3642.jpg?itok=zLQ9NFau" alt="Avatar" style="border-radius: 50%;">
+              <p>Сюзанна Асадулина</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7715.png?itok=pq4Do9y_" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Баранова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3229.jpg?itok=keib7dCh" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Белогур</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6873.jpg?itok=rLUWGbcz" alt="Avatar" style="border-radius: 50%;">
+              <p>Сабина Бикметова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6869.jpg?itok=WUYWS9Hn" alt="Avatar" style="border-radius: 50%;">
+              <p>Елена Бодяго</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6206.jpg?itok=sXAHBE7x" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Бочкарев</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5536.jpg?itok=TwhyadyJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниил Вабищевич</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3825.jpg?itok=gnnhnLgU" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Владимиров</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3435.jpg?itok=t-zPqjOQ" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Власюк</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3179.jpg?itok=tUaUK7gx" alt="Avatar" style="border-radius: 50%;">
+              <p>Кирилл Воронин</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5855.png?itok=Iek55Yz8" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Гейман</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2639.jpg?itok=zf2HWWBs" alt="Avatar" style="border-radius: 50%;">
+              <p>Руслан Гладков</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5853.jpg?itok=c8aXFw-f" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Глебов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6203.jpeg?itok=XKt1lx2K" alt="Avatar" style="border-radius: 50%;">
+              <p>Светлана Горенкова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3526.jpg?itok=rCuqw6dd" alt="Avatar" style="border-radius: 50%;">
+              <p>Валерия Гресс</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3826.jpg?itok=YQLgU6fa" alt="Avatar" style="border-radius: 50%;">
+              <p>Евгения Гречанинова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3231.jpg?itok=gIJg6p44" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Гросман</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6456.jpg?itok=iy-We8AB" alt="Avatar" style="border-radius: 50%;">
+              <p>Константин Гротов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6872.png?itok=1hh3tUw9" alt="Avatar" style="border-radius: 50%;">
+              <p>Айгерим Джандалиева</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6312.jpg?itok=T5WnU_pr" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Дятлович</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6205.jpg?itok=kJYNpZaD" alt="Avatar" style="border-radius: 50%;">
+              <p>Светлана Егорова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6878.jpg?itok=GG8fEMpj" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Ефимова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4858.jpg?itok=oL9wH6PF" alt="Avatar" style="border-radius: 50%;">
+              <p>Николай Жесткий</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7717.jpg?itok=H7P6ucvZ" alt="Avatar" style="border-radius: 50%;">
+              <p>Айнур Загитов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7719.png?itok=SoW5HCa4" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Золотарев</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2414.jpg?itok=S6H4Qqp7" alt="Avatar" style="border-radius: 50%;">
+              <p>Полина Иванова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5565.jpg?itok=b3yoNoNx" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Иванова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4855.png?itok=axQKQrc_" alt="Avatar" style="border-radius: 50%;">
+              <p>Владимир Игошин</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3284.png?itok=LUOwgVfV" alt="Avatar" style="border-radius: 50%;">
+              <p>Денис Ильин</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7922.jpg?itok=RX1KyL5D" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Калугина</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7068.jpg?itok=O06hnHuI" alt="Avatar" style="border-radius: 50%;">
+              <p>Григорий Карсаков</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3754.jpg?itok=2PK5g43M" alt="Avatar" style="border-radius: 50%;">
+              <p>Марина Карсакова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3641.jpeg?itok=ulkk_X_L" alt="Avatar" style="border-radius: 50%;">
+              <p>Юлия Кенжебаева</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6871.jpg?itok=XcPe5xXs" alt="Avatar" style="border-radius: 50%;">
+              <p>Владислав Колосков</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7720.jpg?itok=ctvSmGxW" alt="Avatar" style="border-radius: 50%;">
+              <p>Елена Кополева</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2137.jpg?itok=nHa0usSp" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Корзин</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4193.jpg?itok=8iB8sZpA" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Коромыслов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6875.jpg?itok=WWI4L6Dy" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Крылова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6313.jpg?itok=N2oNZUU9" alt="Avatar" style="border-radius: 50%;">
+              <p>Артем Кузнецов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6899.jpg?itok=hI92oEm5" alt="Avatar" style="border-radius: 50%;">
+              <p>Артём Кузьмин</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6879.jpg?itok=-1632o_C" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Кузьмин</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6511.jpg?itok=Xy8wAeBR" alt="Avatar" style="border-radius: 50%;">
+              <p>Георгий Курганов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3235.jpg?itok=8VJcjJo7" alt="Avatar" style="border-radius: 50%;">
+              <p>Егор Курганов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2412.jpg?itok=o_w2hqDU" alt="Avatar" style="border-radius: 50%;">
+              <p>Александра Кутузова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3931.jpg?itok=zqcCqks5" alt="Avatar" style="border-radius: 50%;">
+              <p>Ольга Кущенко</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7258.jpg?itok=XSvozt0J" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниил Литвинов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6870.jpg?itok=p_mrfaCm" alt="Avatar" style="border-radius: 50%;">
+              <p>Ольга Матвиевская</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7723.jpg?itok=n-wXl8j0" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Матченя</p>
+          <p>Undergraduated Student</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3230.jpg?itok=p_lJrkyo" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Миккола</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6880.jpg?itok=jcwXUyMk" alt="Avatar" style="border-radius: 50%;">
+              <p>Лидия Михайлова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4124.jpg?itok=6tUwTYFd" alt="Avatar" style="border-radius: 50%;">
+              <p>Юлия Михайлова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2140.jpg?itok=XpaqHgbL" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Михайловский</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3640.jpg?itok=ZV5jDw4l" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Насонов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4857.jpg?itok=fr0fDOCU" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Никитина</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2415.png?itok=0RTOKuN6" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Образцова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2696.jpg?itok=HUYoW4DP" alt="Avatar" style="border-radius: 50%;">
+              <p>Марина Обраменко</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3638.jpg?itok=pbYgi4yc" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Осипов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2142.jpg?itok=LISy1Or2" alt="Avatar" style="border-radius: 50%;">
+              <p>Олеся Пашина</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3746.jpg?itok=FdfQdAdr" alt="Avatar" style="border-radius: 50%;">
+              <p>Елена Петрова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7727.jpg?itok=xVkj80qJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Владимир Пирогов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2370.jpg?itok=Y3AbtImG" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Полева</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2534.jpg?itok=fD-kDJed" alt="Avatar" style="border-radius: 50%;">
+              <p>Софья Пономарева</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3201.jpg?itok=Oe4bKOKS" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Попов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2180.png?itok=4lSQnVDJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Ржевский</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3237.jpg?itok=Ch0vbQA4" alt="Avatar" style="border-radius: 50%;">
+              <p>Алина Розенблит</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2144.jpg?itok=xY8vf0TH" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниил Рябов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3178.jpg?itok=r7Dp5VZi" alt="Avatar" style="border-radius: 50%;">
+              <p>Ралина Салихова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7208.jpg?itok=nOu5XYge" alt="Avatar" style="border-radius: 50%;">
+              <p>Мартин Сандомирский</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6080.jpg?itok=atr_VTee" alt="Avatar" style="border-radius: 50%;">
+              <p>Денис Сахно</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2228.jpg?itok=_6RJ4wsB" alt="Avatar" style="border-radius: 50%;">
+              <p>Денис Седов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3643.jpg?itok=pXaYzMH6" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Сиганов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6309.png?itok=LMywmllV" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Смагин</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1483.jpg?itok=zkTOGvNK" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Спиридонов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3747.jpg?itok=MzlF5B1h" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Тимофеева</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6881.jpg?itok=927FC0NO" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Тюгаев</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8340.jpg?itok=NbAG4r7Z" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Устименко</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3650.png?itok=BWYi7-lC" alt="Avatar" style="border-radius: 50%;">
+              <p>Глеб Федорович</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6882.jpg?itok=WC3_iNDJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Филимонова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7736.jpg?itok=uKLppbos" alt="Avatar" style="border-radius: 50%;">
+              <p>Варвара Харитонова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4856.jpg?itok=uM-1F92L" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Цимоха </p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/6883.png?itok=O3S9SG97" alt="Avatar" style="border-radius: 50%;">
+              <p>Алтана Цыринова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8254.jpg?itok=U4hVHc-n" alt="Avatar" style="border-radius: 50%;">
+              <p>Алина Четверикова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5158.jpeg?itok=3l3J5B7R" alt="Avatar" style="border-radius: 50%;">
+              <p>Максим Чураков</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5545.jpg?itok=6SmKnKaA" alt="Avatar" style="border-radius: 50%;">
+              <p>Артём Шалев</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/8098.jpg?itok=VjENfzOs" alt="Avatar" style="border-radius: 50%;">
+              <p>Леон Шапошников </p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3644.jpg?itok=fU1F9gvj" alt="Avatar" style="border-radius: 50%;">
+              <p>Кристина Шин</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7711.jpg?itok=-n8OK8HT" alt="Avatar" style="border-radius: 50%;">
+              <p>Владимир Широбоков</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2176.jpg?itok=zmcqkZ4_" alt="Avatar" style="border-radius: 50%;">
+              <p>Антон Шубник</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3232.jpeg?itok=hZ9lFsw1" alt="Avatar" style="border-radius: 50%;">
+              <p>Ирина Шушакова</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5852.jpg?itok=3nRxDg85" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Юхтанов</p>
+          <p>Undergraduate Student </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/249.jpg?itok=q9PWmzbo" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Агейский</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3228.jpg?itok=t8crSzXk" alt="Avatar" style="border-radius: 50%;">
+              <p>Вадим Агадуллин</p>
+          <p>Помощник декана</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/333.jpg?itok=OrDBc6z9" alt="Avatar" style="border-radius: 50%;">
+              <p>Анжелин Анг</p>
+          <p>Аспирант 4 года обучения</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/299.jpg?itok=STzH-HaI" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Вошева</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1084.jpeg?itok=N48OcwoO" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Ляшенко</p>
+          <p>Аспирант 4 года обучения</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/270.jpg?itok=wPHIOsX-" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Атращенко</p>
+          <p>Head researcher</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1233.jpg?itok=yA2nqbPN" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Афанасьева</p>
+          <p>Специалист по сопровождению грантов</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/427.jpg?itok=1W0lOoeJ" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Терехов</p>
+          <p>Аспирант 4 года обучения</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/351.jpg?itok=c1SuwXVt" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Балезин</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/305.jpg?itok=J7bQ38QB" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Баранов</p>
+          <p>Специалист по сопровождению грантов</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1134.jpg?itok=YXzq6oi8" alt="Avatar" style="border-radius: 50%;">
+              <p>Кирилл Белоусов</p>
+          <p>Аспирант 4 года обучения</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1281.jpg?itok=_AUlVGgn" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Шалин</p>
+          <p>Специалист по сопровождению закупок</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/404.jpg?itok=4ouPGCrV" alt="Avatar" style="border-radius: 50%;">
+              <p>Валерия Бичайкина</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/283.jpg?itok=tjhTkncH" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Буслаев</p>
+          <p>Специалист по набору студентов</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2305.jpg?itok=tTfaFcO3" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Сутулова</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/372.jpg?itok=5h2j1f-4" alt="Avatar" style="border-radius: 50%;">
+              <p>Галина Быченкова</p>
+          <p>Invited Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/369.jpg?itok=wdCer5Fb" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Тигунцева</p>
+          <p>Инженер по эксплуатации</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/309.jpg?itok=BoECVSKu" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Варченко</p>
+          <p>Research Fellow </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3433.jpg?itok=dg_sxF7M" alt="Avatar" style="border-radius: 50%;">
+              <p>Роман Бреслав</p>
+          <p>Менеджер по организации научных мероприятий</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/303.jpg?itok=VN8x87fr" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Войтова</p>
+          <p>Младший менеджер по организации научных мероприятий</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/319.jpg?itok=DfWkh8Mo" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Макарова</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1154.jpeg?itok=L81Gviwx" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Врубель</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1141.jpg?itok=3ChpXIh9" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Головнев</p>
+          <p>Ведущий PR-специалист </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/292.jpg?itok=mTZ9v-51" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниил Горбач</p>
+          <p>Менеджер по внутренним коммуникациям</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/315.jpg?itok=Hl_61UgH" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Ли</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1474.jpg?itok=jEEt5MZY" alt="Avatar" style="border-radius: 50%;">
+              <p>Евгений Матусевич</p>
+          <p>Младший PR-специалист</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/247.jpg?itok=MqdNhmev" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Гужва</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/955.jpg?itok=OHkrbBF0" alt="Avatar" style="border-radius: 50%;">
+              <p>Константин Грешневиков</p>
+          <p>Аспирант 2 года обучения</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/325.jpg?itok=D796TuRr" alt="Avatar" style="border-radius: 50%;">
+              <p>Илья Дауров</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/310.jpg?itok=eB_ZcKvj" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Державская</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/334.jpg?itok=vBLkh31b" alt="Avatar" style="border-radius: 50%;">
+              <p>Жанна Домбровская</p>
+          <p>Invited Associate Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/317.jpg?itok=8Jw315Tw" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Жуковский</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/415.jpg?itok=YNHOyNiY" alt="Avatar" style="border-radius: 50%;">
+              <p>Виктор Залипаев</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/379.jpg?itok=IyjnAPCb" alt="Avatar" style="border-radius: 50%;">
+              <p>Юлия Толстых</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4047.jpeg?itok=VIL8J1gG" alt="Avatar" style="border-radius: 50%;">
+              <p>Георгий Зегря</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/424.jpg?itok=swUtzVm_" alt="Avatar" style="border-radius: 50%;">
+              <p>Александра Ивинская</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/366.jpg?itok=KxWGyZFz" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниил Илатовский</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/375.jpg?itok=hwtcmNTD" alt="Avatar" style="border-radius: 50%;">
+              <p>Сабина Исламова</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/418.jpg?itok=dvKGDRKV" alt="Avatar" style="border-radius: 50%;">
+              <p>Артур Иштеев</p>
+          <p>Invited Lecturer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/425.jpg?itok=aR9CfXEN" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Кадочкин</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3410.jpg?itok=91kuvtCs" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Заморянская</p>
+          <p>Внешний коллаборатор</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/7072.jpg?itok=UHwP0uwf" alt="Avatar" style="border-radius: 50%;">
+              <p>Владимир Янков</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/391.jpg?itok=bDvAEe5z" alt="Avatar" style="border-radius: 50%;">
+              <p>Вячеслав Дячук</p>
+          <p>Assistant Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/371.jpg?itok=3udlV4eR" alt="Avatar" style="border-radius: 50%;">
+              <p>Кирилл Келлер</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3586.jpeg?itok=KOPspfL6" alt="Avatar" style="border-radius: 50%;">
+              <p>Дарья Коробко</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/400.jpg?itok=2iL9wUWI" alt="Avatar" style="border-radius: 50%;">
+              <p>Юрий Кириченко</p>
+          <p>Директор физико-технического мегафакультета, профессор</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2360.jpg?itok=QnYL9ah5" alt="Avatar" style="border-radius: 50%;">
+              <p>Анна Дыма</p>
+          <p>Декан физического факультета, Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/312.jpg?itok=UrSRAtKn" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Ковров</p>
+          <p>Заместитель директора физико-технического мегафакультета</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1187.jpg?itok=Ehevh9JD" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Костко</p>
+          <p>Заместитель декана физического факультета</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3425.jpg?itok=jhA2OaVI" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Косаревская</p>
+          <p>Distinguished Professor </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3993.jpg?itok=ae90OoYj" alt="Avatar" style="border-radius: 50%;">
+              <p>Юлия Бенимецкая (Кузнецова)</p>
+          <p>Distinguished Professor </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/4111.jpeg?itok=dMCqF01d" alt="Avatar" style="border-radius: 50%;">
+              <p>Александра Воропаева</p>
+          <p>Professor </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/395.jpg?itok=2usdGHZx" alt="Avatar" style="border-radius: 50%;">
+              <p>Вячеслав Королёв</p>
+          <p>Professor </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1143.jpg?itok=bRow-HPD" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр  Королев </p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1234.jpg?itok=oXM9zXYb" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Каретников</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/384.jpg?itok=_Da94ZD9" alt="Avatar" style="border-radius: 50%;">
+              <p>Егор Кретов</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2227.jpg?itok=BdPEM5Yh" alt="Avatar" style="border-radius: 50%;">
+              <p>Лилия Кичигина</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/274.jpg?itok=HTjl9O5i" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Крылова</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1114.jpg?itok=Z1pG-Vj3" alt="Avatar" style="border-radius: 50%;">
+              <p>Ольга Прищепёнок</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/5861.jpg?itok=WK7NKU4L" alt="Avatar" style="border-radius: 50%;">
+              <p>Виталий Кочевадов</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/354.jpg?itok=8mOQXFIb" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Курдюмов</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2508.jpg?itok=hNzx7cFi" alt="Avatar" style="border-radius: 50%;">
+              <p>Венера Гилемханова</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/280.jpg?itok=1Xh6I0CY" alt="Avatar" style="border-radius: 50%;">
+              <p>Ирина Кучук</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/275.jpg?itok=fV8Rd8pR" alt="Avatar" style="border-radius: 50%;">
+              <p>Надежда Лапшина</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1518.jpg?itok=CtrQWfEt" alt="Avatar" style="border-radius: 50%;">
+              <p>Владислав Лебаков</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/410.jpg?itok=Hn-CSRk5" alt="Avatar" style="border-radius: 50%;">
+              <p>Денис Лупанов</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1061.png?itok=DWnx3t0-" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Люлякин</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/398.jpg?itok=MYCCr-_L" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Маркварт</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/267.jpg?itok=Ul1cwF-g" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Сухоруков</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/349.jpg?itok=0k0K-b0q" alt="Avatar" style="border-radius: 50%;">
+              <p>Иван Маруев</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1139.jpg?itok=8h_RScon" alt="Avatar" style="border-radius: 50%;">
+              <p>Денис Новицкий</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/361.jpg?itok=TCZ-hgEq" alt="Avatar" style="border-radius: 50%;">
+              <p>Денис Новосельский</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/276.jpg?itok=ljTxQDkq" alt="Avatar" style="border-radius: 50%;">
+              <p>Роман Носков</p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1042.jpg?itok=BsJHB8fc" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил  Нестоклон </p>
+          <p>Assistant Professor</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/313.jpg?itok=dUtzpZFL" alt="Avatar" style="border-radius: 50%;">
+              <p>Антон Овчаренко</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/245.jpg?itok=ltgr29k4" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Орлов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/307.jpg?itok=mz0rGR_A" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Одит</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3432.jpg?itok=Hfz-PSAq" alt="Avatar" style="border-radius: 50%;">
+              <p>Вячеслав Пивоваров</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3550.jpg?itok=XRnq7CdD" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей  Матвеенко </p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/346.jpg?itok=TEy3Tyla" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Омельянович</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/301.jpg?itok=UtQwEA4z" alt="Avatar" style="border-radius: 50%;">
+              <p>Ирина Хромова</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/279.jpg?itok=5UMpErm5" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Маркович</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/294.jpg?itok=Wam0xVTu" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Павлов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1107.jpg?itok=y78-MTBM" alt="Avatar" style="border-radius: 50%;">
+              <p>Наталья Пальникова</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/264.jpg?itok=mdOAkMIc" alt="Avatar" style="border-radius: 50%;">
+              <p>Станислав Масловский</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/353.jpg?itok=oRZ_USGl" alt="Avatar" style="border-radius: 50%;">
+              <p>Ксения Пашковская</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1132.png?itok=x5YZycmZ" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Можаров</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/321.jpg?itok=U8M7nzUi" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Пичкунов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/397.jpg?itok=n6POc7NC" alt="Avatar" style="border-radius: 50%;">
+              <p>Нирад Нандан</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/396.jpg?itok=ilYGpb4k" alt="Avatar" style="border-radius: 50%;">
+              <p>Адитья Пракаш</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2463.jpg?itok=MWj7L6b8" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Соловьев</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1215.jpg?itok=yglfhFp_" alt="Avatar" style="border-radius: 50%;">
+              <p>Владимир Пчёлкин</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1058.png?itok=l-rhn1iC" alt="Avatar" style="border-radius: 50%;">
+              <p>Ксения Руднева</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/356.jpg?itok=SYN5v0Ij" alt="Avatar" style="border-radius: 50%;">
+              <p>Наталья Сенкевич</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/314.jpg?itok=YvGGhAe7" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Соколов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/406.jpg?itok=Eko4BHKg" alt="Avatar" style="border-radius: 50%;">
+              <p>Денис Соколов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1119.jpg?itok=m7cZj5xU" alt="Avatar" style="border-radius: 50%;">
+              <p>Валерий Сологуб</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/416.jpg?itok=UMiaxNuh" alt="Avatar" style="border-radius: 50%;">
+              <p>Станислав Сычев</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/355.jpg?itok=9ByRyzve" alt="Avatar" style="border-radius: 50%;">
+              <p>Мохаммад Таджик</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/370.jpg?itok=WVSnq-f7" alt="Avatar" style="border-radius: 50%;">
+              <p>Максим Тарасов</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/286.jpg?itok=kCcNr-h-" alt="Avatar" style="border-radius: 50%;">
+              <p>Павел Дмитриев</p>
+          <p>Postdoc </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1135.jpg?itok=Plt2Fyem" alt="Avatar" style="border-radius: 50%;">
+              <p>Кирилл Тимощук</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3934.jpg?itok=m9TFyyOf" alt="Avatar" style="border-radius: 50%;">
+              <p>Сергей Солонец</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/429.jpg?itok=2H3SzkFf" alt="Avatar" style="border-radius: 50%;">
+              <p>Алексей Трофимов</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/367.jpg?itok=P8fr-qkt" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Урютин</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/402.jpg?itok=-15nbJfR" alt="Avatar" style="border-radius: 50%;">
+              <p>Антонина Фадеева</p>
+          <p>Industrial Postdoc</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1127.png?itok=8Dzm6TP9" alt="Avatar" style="border-radius: 50%;">
+              <p>Юрий Неронов</p>
+          <p>Senior Lecturer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/323.jpg?itok=5k-Ov74V" alt="Avatar" style="border-radius: 50%;">
+              <p>Алмаз Фаздалов</p>
+          <p>Инженер по лаборатории</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1158.jpeg?itok=m2PkiR5U" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Черепанов</p>
+          <p>Инженер по лаборатории</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/250.jpg?itok=HvCShlog" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Филонов</p>
+          <p>Инженер по лаборатории</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3402.png?itok=y1JfA_6r" alt="Avatar" style="border-radius: 50%;">
+              <p>Дарья Чернюк</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2395.jpg?itok=hl3d2eg3" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Камелин</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3932.jpg?itok=qZr0L1vk" alt="Avatar" style="border-radius: 50%;">
+              <p>Мария Швалева</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/288.jpg?itok=YJuH_TRB" alt="Avatar" style="border-radius: 50%;">
+              <p>Софья Франк</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/285.jpg?itok=tBWsykmt" alt="Avatar" style="border-radius: 50%;">
+              <p>Фабиан Хайслер</p>
+          <p>Инженер по оборудованию</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/316.jpg?itok=t1sUGMUE" alt="Avatar" style="border-radius: 50%;">
+              <p>Мехеди Хасан</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/348.jpg?itok=JrTwZF1c" alt="Avatar" style="border-radius: 50%;">
+              <p>Андреас Хемметер</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/246.jpg?itok=m-zYq-wP" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Чебыкин</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/330.jpg?itok=MXODTY7i" alt="Avatar" style="border-radius: 50%;">
+              <p>Радик Шамсин</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/332.jpg?itok=zsLZ-3It" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Царев</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/405.jpg?itok=4iKJODNS" alt="Avatar" style="border-radius: 50%;">
+              <p>Марк Любаров</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/385.jpg?itok=Q8EXBNbd" alt="Avatar" style="border-radius: 50%;">
+              <p>Екатерина Шубина</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2596.jpg?itok=kVuzvWkW" alt="Avatar" style="border-radius: 50%;">
+              <p>Дмитрий Боровков</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/331.jpg?itok=diaYHiBo" alt="Avatar" style="border-radius: 50%;">
+              <p>Михаил Югов</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/278.jpg?itok=QKQ0fFif" alt="Avatar" style="border-radius: 50%;">
+              <p>Илья Ягупов</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/393.jpg?itok=QeDGtS3q" alt="Avatar" style="border-radius: 50%;">
+              <p>Кирилл Агапьев</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2461.jpg?itok=8cNhfCyM" alt="Avatar" style="border-radius: 50%;">
+              <p>Ксения Воденкова</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/244.jpg?itok=BuoS2AAQ" alt="Avatar" style="border-radius: 50%;">
+              <p>Елизавета Янковская</p>
+          <p>Research Engineer </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/352.jpg?itok=vXMWdOc7" alt="Avatar" style="border-radius: 50%;">
+              <p>Анастасия Залогина</p>
+          <p>Research Fellow </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/1057.jpg?itok=ELy0SrgV" alt="Avatar" style="border-radius: 50%;">
+              <p>Даниил Дрыгин</p>
+          <p>Research Fellow </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/433.jpg?itok=tzEjGz4P" alt="Avatar" style="border-radius: 50%;">
+              <p>Владимир Ленец</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2510.jpg?itok=14rYMQew" alt="Avatar" style="border-radius: 50%;">
+              <p>Антон Праздничных</p>
+          <p>Leading Researcher                       </p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/962.jpg?itok=Mitd5gzH" alt="Avatar" style="border-radius: 50%;">
+              <p>Артем Черепахин</p>
+          <p> Research Associate</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2221.jpg?itok=TOdrKlKU" alt="Avatar" style="border-radius: 50%;">
+              <p>Андрей Семенов</p>
+          <p>Senior Research Scientist</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3238.png?itok=ZupW55fN" alt="Avatar" style="border-radius: 50%;">
+              <p>Константин Арабули</p>
+          <p>Senior Research Scientist</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2924.jpg?itok=3CSVHA_N" alt="Avatar" style="border-radius: 50%;">
+              <p>Никита Андреев</p>
+          <p>Head researcher</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3160.jpg?itok=8DS8GFjm" alt="Avatar" style="border-radius: 50%;">
+              <p>Валерий Качин</p>
+          <p>Junior Researcher</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2428.jpg?itok=YXfhedBy" alt="Avatar" style="border-radius: 50%;">
+              <p>Татьяна Беспалова</p>
+          <p>Junior Researcher</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2568.jpg?itok=gW06SYy3" alt="Avatar" style="border-radius: 50%;">
+              <p>Ирина Бессонова</p>
+          <p>Engineer</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/2194.jpg?itok=PF_wwqVO" alt="Avatar" style="border-radius: 50%;">
+              <p>Федор Нигматулин</p>
+          <p> Research Associate</p>
+        </li>
+		<li style="color:black; text-align:center;">
+			<img src="https://physics.itmo.ru//sites/default/files/styles/round_300x300/public/personality/photo/3368.jpg?itok=G2DyH4CI" alt="Avatar" style="border-radius: 50%;">
+              <p>Александр Корниенко</p>
+          <p>Senior Research Scientist</p>
+        </li>
+
+
+	</ul>
+</div>
+
+<div class="scrollTop" onclick="myScrollTop()"></div>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

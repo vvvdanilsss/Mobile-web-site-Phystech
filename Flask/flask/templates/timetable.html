@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleRasp.css') }}">
+	<title>NewPhystech</title>
+</head>
+
+<body>
+
+<header id="myHead" class="head">
+    <div id="myUp" class="head__up">
+        <nav class="up__logo">
+            <a href="/">
+            <p class="logo__new">Новый</p>
+            <p class="logo__phystech">Физтех</p>
+            </a>
+        </nav>
+        <nav id="myBurger" class="up__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </div>
+
+    <div id="myBottom" class="head__bottom">
+        <nav id="myTopnav" class="botton__topnav">
+            <a href="timetable">Расписание</a>
+            <a href="staff" >Сотрудники</a>
+            <a href="vacancy">Вакансии</a>
+            <a href="#" id="abit">Абитуриентам &#9658</a>
+            <div id="abitur" class="abitur">
+                <a href="bacalavriat">&#9999 Бакалавриат</a>
+                <a href="magistratura">&#9999 Магистратура</a>
+                <a href="aspirantura">&#9999 Аспирантура</a>
+            </div>
+            <a href="#" id="quick">Quicklinks &#9658</a>
+            <div id="quickl" class="quickl">
+                <a href="https://biz.mail.ru/login/metalab.ifmo.ru">&#9999 Mail</a>
+                <a href="https://wiki.physics.itmo.ru/Main_Page">&#9999 Wiki</a>
+                <a href="https://redmine.physics.itmo.ru/login?back_url=https%3A%2F%2Fredmine.physics.itmo.ru%2F">&#9999 Redmine</a>
+            </div>
+            <a href="#" id="issl">Исследования &#9658</a>
+            <div id="issled" class="issled">
+                <a href="science-groups">&#9999 Научные группы</a>
+                <a href="publications">&#9999 Публикации</a>
+            </div>
+            <a href="#" id="onas">О New Phystech &#9658</a>
+            <div id="onewph" class="onewph">
+                <a href="smiaboutus">&#9999 СМИ о нас</a>
+                <a href="video">&#9999 Видео</a>
+                <a href="history">&#9999 История</a>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+<div id="mySite" class="body__site">
+    <div class="raspisanie">
+        <h1>Расписание</h1>
+        <div class="raspisanie__knopki">
+            <div class="knopki__level">
+                <button id="baka">Бакалавриат</button>
+                <button id="maga">Магистратура</button>
+            </div>
+            <div id="knopki__group__baka" class="knopki__group__baka">
+                <button id="z3143">Z3143</button>
+                <button id="z3144">Z3144</button>
+                <button id="z3243">Z3243</button>
+                <button id="z3244">Z3244</button>
+                <button id="z33431">Z33431</button>
+            </div>
+            <div id="knopki__group__maga" class="knopki__group__maga">
+                <button id="z41761">Z41761</button>
+                <button id="z41762">Z41762</button>
+                <button id="z41772">Z41772</button>
+                <button id="z41773">Z41773</button>
+                <button id="z41775">Z41775</button>
+            </div>
+        </div>
+    </div>
+    <div class="raspisanie__img">
+        <img id="img__z3143" class="img__z3143" src="../static_dir/z3143_page-0001.jpg" alt="z3143_page-0001.jpg"/>
+        <embed id="img__z3144" class="img__z3144" src="../static_dir/z3144_page-0001.jpg" alt="z3144_page-0001.jpg"/>
+        <embed id="img__z3243" class="img__z3243" src="../static_dir/z3243_page-0001.jpg" alt="z3243_page-0001.jpg"/>
+        <embed id="img__z3244" class="img__z3244" src="../static_dir/z3244_page-0001.jpg" alt="z3244_page-0001.jpg"/>
+        <embed id="img__z33431" class="img__z33431" src="../static_dir/z33431_page-0001.jpg" alt="z33431_page-0001.jpg"/>
+        <embed id="img__z41761" class="img__z41761" src="../static_dir/z41761_page-0001.jpg" alt="z41761_page-0001.jpg"/>
+        <embed id="img__z41762" class="img__z41762" src="../static_dir/z41762_page-0001.jpg" alt="z41762_page-0001.jpg"/>
+        <embed id="img__z41772" class="img__z41772" src="../static_dir/z41772_page-0001.jpg" alt="z41772_page-0001.jpg"/>
+        <embed id="img__z41773" class="img__z41773" src="../static_dir/z41773_page-0001.jpg" alt="z41773_page-0001.jpg"/>
+        <embed id="img__z41775" class="img__z41775" src="../static_dir/z41775_page-0001.jpg" alt="z41775_page-0001.jpg"/>
+    </div>
+</div>
+
+<div class="scrollTop" onclick="myScrollTop()"></div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="{{ url_for('static', filename='scriptRasp.js') }}"></script>
+
+</body>
+</html>
