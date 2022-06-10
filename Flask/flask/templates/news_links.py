@@ -742,6 +742,6 @@ with open(".html", 'r+', encoding='utf-8') as f1, open(".html", 'w+', encoding='
                 d+=1
             else:
                 f2.write(line)
-d=0                
+d=0
 
 """
