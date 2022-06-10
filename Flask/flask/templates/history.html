@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styleMenu.css') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<title>NewPhystech</title>
 
 </head>
@@ -15,7 +16,7 @@
 <body style="font-family: 'Helvetica', serif;">
 
 <header id="myHead" class="head">
-    <div id="myUp" class="head__up">
+    <div class="head__up">
         <nav class="up__logo">
             <a href="/">
             <p class="logo__new">Новый</p>
@@ -62,77 +63,67 @@
     </div>
 
 </header>
+	<div id="mySite" class="body__site">
+		<div class="sotrudniki-begin" style="margin-left: 4%; margin-top: 2%;">
+				<h1>История</h1>
+		</div>
 
+		<div class="line" style="margin-top: 2%;"></div>
 
-	<div class="sotrudniki-begin" style="margin-left: 4%; margin-top: 2%;">
-			<h1>История</h1>
-	</div>
-	<div class="line" style="margin-top: 2%;"></div>
-	<ul id="story">
-		<li>
+		<div class="story">
+
 			<img style="border-radius: 2vh;"
 			src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/cmyk.png?itok=xHc5CYtE">
 			<h5>Создание научной группы</h5>
 			<h5>Январь 2008</h5>
-			<div id="strelka"></div>
-		</li>
+			<div class="strelka"></div>
 
-		<li>
 			<img style="border-radius: 2vh;"
 			src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/2010-bezekhovaya-kamera.jpg?itok=6ZfkMQUa">
 			<h5>Создание безэховской камеры</h5>
 			<h5>Сентябрь 2010</h5>
-			<div id="strelka"></div>
-		</li>
+			<div class="strelka"></div>
 
-		<li>
 			<img  style="border-radius: 2vh;"
 			src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/2010-megagrnat.jpg?itok=6RfwAWGi">
 			<h5>Первый мегагрант и создание лаборатории "Метаматериалы"</h5>
 			<h5>Ноябрь 2010</h5>
-			<div id="strelka"></div>
-		</li>
+			<div class="strelka"></div>
 
-		<li>
 			<img  style="border-radius: 2vh;"
 			src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/ncomms1924-f1.jpg?itok=aVP_0z6u">
 			<h5>Первая статья в Nature Group</h5>
 			<h5>Июнь 2012</h5>
-			<div id="strelka"></div>
-		</li>
+			<div class="strelka"></div>
 
-		<li>
 			<img style="border-radius: 2vh;"
 			src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/2014-magistratura.jpg?itok=ISF6Uqoj">
 			<h5>Первая магистерская программа</h5>
 			<h5>Январь 2014</h5>
-			<div id="strelka"></div>
-		</li>
+			<div class="strelka"></div>
 
-		<li>
 			<img  style="border-radius: 2vh;"
 			src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/2015-kafedra.jpg?itok=OSpQ5zI2">
 			<h5>Открытие кафедры нанофотоники и метаматериалов</h5>
 			<h5>Апрель 2015</h5>
-			<div id="strelka"></div>
-		</li>
+			<div class="strelka"></div>
 
-		<li>
 			<img  style="border-radius: 2vh;"
 			src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/logo.jpg?itok=2L0AcZKs">
 			<h5>Открытие физико-технического факультета</h5>
 			<h5>Январь 2017</h5>
-			<div id="strelka"></div>
-		</li>
+			<div class="strelka"></div>
 
-		<li>
 			<img  style="border-radius: 2vh;"
 			src="https://physics.itmo.ru/sites/default/files/styles/history/public/history/bakalavriat.jpg?itok=qtZvx-93">
 			<h5>Первый набор бакалавриата</h5>
 			<h5>Сентябрь 2017</h5>
-		</li>
-	</ul>
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+		</div>
+	</div>
+
+
+<div class="scrollTop" onclick="myScrollTop()"></div>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 </html>
