@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url(https://allfont.ru/allfont.css?fonts=hermes);
 
 html {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Hermes', arial, sans-serif;
 }
 
 .sotrudniki-begin {
@@ -188,16 +188,10 @@ html {
 }
 
 .opisanie-news {
-
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
     margin: 2vh;
     width: auto;
     display: block;
-
 }
-
 
 .perehod-news {
 
