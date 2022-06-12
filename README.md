@@ -38,5 +38,5 @@
 
 Шрифт: что-то похожее на Helvetica (бесплатные аналоги).
 
-#Ссылка на презентацию
+# Ссылка на презентацию
 https://docs.google.com/presentation/d/1ndWMFJIhDQE2XTSqAhGaLIRJXVvV0h6PwylFUAs6yXQ/edit?usp=sharing
