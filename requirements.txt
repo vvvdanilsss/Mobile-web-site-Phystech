@@ -1,0 +1,10 @@
+flask
+bs4
+BeatifulSoup
+requests
+urlib.request
+urlopen
+lxml
+render_template
+url_for
+xpath
