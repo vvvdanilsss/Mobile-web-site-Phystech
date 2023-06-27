@@ -1,4 +1,4 @@
-# Mobile_web-site_Phystech
+# Mobile-web-site-Phystech
 
 <sub>Ефимов Андрей v3103,
 Власов Данила v3102,
